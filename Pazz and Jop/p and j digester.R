@@ -64,7 +64,44 @@ pjM <- data.frame(rank=pjM$V1,
 #make rank numeric
 pjM$rank <- as.numeric(pjM$rank)
 
+#get rid of label
+for (i in 1:nrow(pjM)) {
+    pjM$label[i] <- unlist(strsplit(pjM$album[i], " \\("))[2]
+    pjM$album[i] <- unlist(strsplit(pjM$album[i], " \\("))[1]
+}
+pjM$label <- gsub("\\)", "", pjM$label)
+
 #makes the year Date format, but just gives it whatever day it is currently
 #pjM$year <- as.Date(pjM$year, "%Y")
 
 #write.csv(pjM, "pazz and jop 1974-2007.csv", row.names=F)
+
+#creating album index
+pjM$index <- seq(1, nrow(pjM))
+
+#fixing duplicate indices
+dups <- pjM[duplicated(pjM$album),]
+dupsalb <- dups$album
+
+#manually doing it
+
+#look at them individually with this
+#pjM[pjM$album==dupsalb[1],]
+
+
+###we could do this automatically, but there might be two different albums with the same name
+###and we wouldn't want to accidentally give them the same index
+### pjM[pjM$album==dupsalb[13],] for instance
+pjM[202,8] <- pjM[108,8]
+pjM[204,8] <- pjM[169,8]
+pjM[294,8] <- pjM[271,8]
+pjM[313,8] <- pjM[286,8]
+pjM[326,8] <- pjM[300,8]
+pjM[337,8] <- pjM[277,8]
+pjM[446,8] <- pjM[417,8]
+pjM[454,8] <- pjM[432,8]
+pjM[481,8] <- pjM[465,8]
+pjM[534,8] <- pjM[504,8]
+pjM[606,8] <- pjM[575,8]
+pjM[1021,8] <- pjM[990,8]
+pjM[1288,8] <- pjM[1269,8]
