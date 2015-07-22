@@ -52,18 +52,44 @@ for (i in 1:nrow(wnoM[wnoM$date<"2008-01-01",])) {
         } 
     }
 }
-# head(table(wnoM[!duplicated(wnoM$album),4]))
 
-wnoMND <- wnoM[!duplicated(wnoM$album),]
+#looking at all the albums (no duplicates for mulitple weeks on chart)
+wnoMnd <- wnoM[!duplicated(wnoM$album),]
 
-out <- wnoMND[wnoMND$index==0,]
+#dealing with out (the ones that didn't match)
+out <- wnoMnd[wnoMnd$index==0,]
 
+## looks for a match in in Pazz and Jop for an artist or album within a three year window
 looker <- function(name, years) {
     pjPick <- pjM[pjM$year==years | 
-                pjM$year==as.character(as.numeric(years)-1)
+                      pjM$year==as.character(as.numeric(years)-1)
                   | pjM$year==as.character(as.numeric(years)+1), ]
-    artists <- pjPick[grep(name, pjPick$artist, fixed=F),]
-    albums <- pjPick[grep(name, pjPick$album, fixed=F),]
-    picks <- rbind(artists, albums)
+    #get rid of regex bombs, split words, and expunge stop words
+    names <- gsub("[\\(\\)\\*\\$\\+\\?]", "", name)
+    names <- unlist(strsplit(names, " "))
+    names <- names[!grepl("^[Aa]$|^[Oo]f$|^[Ii]n$|^[Tt]he$|
+                          ^[Aa]t$|^[Ii]$|^[Ii]t$|^[Tt]o$|^&$", names)]
+    #names <- names[!grepl["in"]]
+    picks <- data.frame()
+    for (i in 1:length(names)){
+        artists <- pjPick[grep(tolower(names[i]), tolower(pjPick$artist)),]
+        albums <- pjPick[grep(tolower(names[i]), tolower(pjPick$album)),]
+        picks <- rbind(picks, artists, albums)
+    }
     picks
 }
+
+checker <- function(chart) {
+    options <- list()
+    for (i in 1:nrow(chart)) {
+        options[[i]] <- looker(paste(chart[i,2], chart[i,3]), 
+                               substring(chart[i,1], 1, 4))
+    }
+    options
+}
+
+# gives you potential options to scroll through for out
+outOpts <- checker(out)
+
+#checked manually through
+#outOpts[[13]]
