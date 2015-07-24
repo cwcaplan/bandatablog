@@ -36,11 +36,14 @@ weeksArtist$Var1 <- as.character(weeksArtist$Var1)
 #adding album index to match pjM
 wnoM$index <- rep(0, nrow(wnoM))
 
-#a start but only gets about 75 records
-for (i in 1:nrow(wnoM[wnoM$date<"2008-01-01",])) {
+#a start but misses a lot from spelling, etc. 
+#for instance (FutureSex):
+#View(wnoM[grep("Timberlake", wnoM$artist),])
+#View(pjM[grep("Timberlake", pjM$artist),])
+for (i in 1:nrow(wnoM)) {
     pjPick <- pjM[pjM$year==substring(wnoM[i,1], 1, 4) |
                       pjM$year==as.character(as.numeric(substring(wnoM[i,1], 1, 4))-1), ]
-    #dealing with puncuation idiosynchrosies
+    #dealing with puncuation idiosynchrosies, DECIDED AGAINST
     #pjPick$album <- gsub("'", " ", pjPick$album)
     #pjPick$album <- gsub("[^A-Za-z0-9 ]", "", pjPick$album)
     #matching, but only lower case
@@ -52,6 +55,43 @@ for (i in 1:nrow(wnoM[wnoM$date<"2008-01-01",])) {
         } 
     }
 }
+
+#nrow(wnoM[wnoM$date>"2008-01-01" & wnoM$date<"2014-01-01",])
+
+#run for a specific year
+for (i in nrow(wnoM[wnoM$date<"2008-01-01",]):nrow(wnoM[wnoM$date<="2009-01-01",])) {
+    pjPick <- pjM[pjM$year==substring(wnoM[i,1], 1, 4) |
+                      pjM$year==as.character(as.numeric(substring(wnoM[i,1], 1, 4))-1), ]
+    #dealing with puncuation idiosynchrosies, DECIDED AGAINST
+    #pjPick$album <- gsub("'", " ", pjPick$album)
+    #pjPick$album <- gsub("[^A-Za-z0-9 ]", "", pjPick$album)
+    #matching, but only lower case
+    if (nrow(pjPick)>0) {
+        for (j in 1:nrow(pjPick)) {
+            if(tolower(wnoM[i,2])==tolower(pjPick[j,3])) {
+                wnoM[i,4] <- pjPick[j,8]
+            }
+        } 
+    }
+}
+
+#run for a specific album
+for (i in 1348) {
+    pjPick <- pjM[pjM$year==substring(wnoM[i,1], 1, 4) |
+                      pjM$year==as.character(as.numeric(substring(wnoM[i,1], 1, 4))-1), ]
+    #dealing with puncuation idiosynchrosies, DECIDED AGAINST
+    #pjPick$album <- gsub("'", " ", pjPick$album)
+    #pjPick$album <- gsub("[^A-Za-z0-9 ]", "", pjPick$album)
+    #matching, but only lower case
+    if (nrow(pjPick)>0) {
+        for (j in 1:nrow(pjPick)) {
+            if(tolower(wnoM[i,2])==tolower(pjPick[j,3])) {
+                wnoM[i,4] <- pjPick[j,8]
+            }
+        } 
+    }
+}
+
 
 #looking at all the albums (no duplicates for mulitple weeks on chart)
 wnoMnd <- wnoM[!duplicated(wnoM$album),]
@@ -79,6 +119,7 @@ looker <- function(name, years) {
     picks
 }
 
+#this guy is outdated for checkOpts, but I'm keeping him around for a minute to be sure
 checker <- function(chart) {
     options <- list()
     for (i in 1:nrow(chart)) {
@@ -87,9 +128,27 @@ checker <- function(chart) {
     }
     options
 }
+#outOpts <- checker(out)
 
 # gives you potential options to scroll through for out
-outOpts <- checker(out)
+checkOpts <- function(chart) {
+    optsData <- data.frame()
+    tempOpts <- data.frame()
+    for (i in 1:nrow(chart)) {
+        options <- looker(paste(chart[i,2], chart[i,3]), 
+                          substring(chart[i,1], 1, 4))
+        options <- cbind(rep(substring(chart[i,1], 1, 4), nrow(options)),
+                         rep(paste(chart[i,3], chart[i,2], sep = ": "), nrow(options)),
+                         options[,c(3,2,8)])
+        names(options) <- c("year", "wno", "PJalbum", "PJartist", "index")
+        optsData <- rbind(optsData, options)
+    }
+    optsData
+}
+#lookAtEm <- checkOpts(out)
 
-#checked manually through
-#outOpts[[13]]
+#double check with things like:
+#View(pjM[grep("Prince", pjM$artist),])
+
+#first match is Bruce at lookAtEm[108,]
+#what do we do once we find a match?
