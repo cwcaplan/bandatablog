@@ -1,5 +1,25 @@
 #need to load billboard digester.R and p and j digester.R
 
+#IDEAS
+
+#percentage of chart toppers that made the critics list
+length(wnoMnd$index[wnoMnd$index>0]) / length(wnoMnd$index)
+
+# % of charttoppers on crit list per year
+year <- "1983"
+yearPerc <- data.frame()
+for (i in 1:35) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- wnoMnd$index[substring(wnoMnd$date, 1, 4)==year]
+    yearPerc[i,1] <- year
+    yearPerc[i,2] <- length(indices[indices>0]) / length(indices)
+}
+# should add a column with the album names
+
+
+
+
+### OLD STUFF TO CLEAN UP
 # gets too many, Sharon Jones for instance
 ##because part of the weeksAlbum[i] will show up in an erronous pjM$album
 pjC <- data.frame()

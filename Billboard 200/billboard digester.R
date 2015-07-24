@@ -139,7 +139,7 @@ checkOpts <- function(chart) {
                           substring(chart[i,1], 1, 4))
         options <- cbind(rep(substring(chart[i,1], 1, 4), nrow(options)),
                          rep(paste(chart[i,3], chart[i,2], sep = ": "), nrow(options)),
-                         options[,c(3,2,8)])
+                         options[,c(3,2,8)], stringsAsFactors=F)
         names(options) <- c("year", "wno", "PJalbum", "PJartist", "index")
         optsData <- rbind(optsData, options)
     }
@@ -149,6 +149,18 @@ checkOpts <- function(chart) {
 
 #double check with things like:
 #View(pjM[grep("Prince", pjM$artist),])
+#View(pjM[grep("True", pjM$album),])
 
-#first match is Bruce at lookAtEm[108,]
-#what do we do once we find a match?
+#now look through and match manually (there must be another way, right?)
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[108,2], ": "))[2],4] <- 436
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[491,2], ": "))[2],4] <- 565
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[499,2], ": "))[2],4] <- 565
+wnoM[wnoM$album=="Soundtrack: Batman",4] <- 584
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[701,2], ": "))[2],4] <- 582
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[2912,2], ": "))[2],4] <- 938
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[4850,2], ": "))[2],4] <- 1232
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[5229,2], ": "))[2],4] <- 1260
+wnoM[wnoM$album==unlist(strsplit(lookAtEm[5750,2], ": "))[2],4] <- 1333
+
+
+
