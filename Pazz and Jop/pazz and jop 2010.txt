@@ -1,0 +1,80 @@
+1	Kanye West, My Beautiful Dark Twisted Fantasy 
+Def Jam/Roc-a-Fella	3250	266
+2	LCD Soundsystem, This Is Happening 
+Virgin/DFA	1634	152
+3	Arcade Fire, The Suburbs 
+Merge	1559	145
+4	Janelle Monáe, The ArchAndroid 
+Bad Boy/Wondaland Arts Society	1448	134
+5	Vampire Weekend, Contra 
+XL	1295	120
+6	Big Boi, Sir Lucious Left Foot: The Son of Chico Dusty 
+Def Jam	1156	120
+7	Beach House, Teen Dream 
+Sub Pop	1143	111
+8	The National, High Violet 
+4AD	1036	97
+9	Sleigh Bells, Treats 
+Mom + Pop/N.E.E.T.	902	86
+10	Black Keys, Brothers 
+Nonesuch	900	89
+11	Deerhunter, Halcyon Digest 
+4AD	878	77
+12	Titus Andronicus, The Monitor 
+XL	852	75
+13	Robyn, Body Talk 
+Cherrytree/Konichiwa	767	74
+14	Joanna Newsom, Have One on Me 
+Drag City	754	65
+15	Grinderman, Grinderman 2 
+Anti	640	62
+16	Ariel Pink's Haunted Graffiti, Before Today 
+4AD	587	52
+17	Superchunk, Majesty Shredding 
+Merge	563	49
+18	The Roots, How I Got Over 
+Def Jam	533	50
+19	Flying Lotus, Cosmogramma 
+Warp	500	53
+20	Jamey Johnson, The Guitar Song 
+Mercury Nashville	466	48
+21	Cee Lo Green, The Lady Killer 
+Elektra/Asylum	414	44
+22	Best Coast, Crazy for You 
+Mexican Summer/Wichita	407	44
+23	Erykah Badu, New Amerykah Part Two: Return of the Ankh 
+Universal Motown	391	40
+24	Drake, Thank Me Later 
+Universal Motown/Cash Money	388	42
+25	Caribou, Swim 
+Merge/City Slang	362	36
+26	Taylor Swift, Speak Now 
+Big Machine	362	35
+27	Bruce Springsteen, The Promise 
+Columbia	362	34
+28	Spoon, Transference 
+Merge	346	38
+29	Swans, My Father Will Guide Me Up a Rope to the Sky 
+Young God	332	29
+30	Gorillaz, Plastic Beach 
+Virgin	327	33
+31	M.I.A., Maya 
+Interscope/N.E.E.T.	307	29
+32	Das Racist, Sit Down, Man 
+Greedhead/Mad Decent	299	28
+33	The-Dream, Love King 
+Def Jam/Radio Killa	297	24
+34	Rick Ross, Teflon Don 
+Def Jam/Maybach Music	287	32
+35	Four Tet, There Is Love in You 
+Domino	287	30
+36	No Age, Everything in Between 
+Sub Pop	280	27
+37	Sufjan Stevens, The Age of Adz 
+Asthmatic Kitty	279	34
+38	Neil Young, Le Noise 
+Reprise	277	28
+39	Sharon Jones & the Dap-Kings, I Learned the Hard Way 
+Daptone	253	27
+40	Tallest Man on Earth, The Wild Hunt 
+Dead Oceans	247	23

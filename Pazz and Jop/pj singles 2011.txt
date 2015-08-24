@@ -1,0 +1,86 @@
+1	Adele, Rolling in the Deep 
+Columbia/XL	116
+2	Beyoncé, Countdown 
+Columbia	98
+3	Nicki Minaj, Super Bass 
+Young Money/Cash Money/Universal	95
+4	M83, Midnight City 
+Mute	66
+5	Jay-Z and Kanye West, Niggas in Paris 
+Def Jam/Roc-a-Fella/Roc Nation	64
+6	Azealia Banks, 212 
+Self-Released	53
+7	Britney Spears, Till the World Ends 
+Jive	47
+7	Lana Del Rey, Video Games 
+Stranger/Interscope	47
+9	Adele, Someone Like You 
+Columbia/XL	46
+10	Foster the People, Pumped Up Kicks 
+Startime/Columbia	40
+10	Tyler, the Creator, Yonkers 
+XL	40
+12	tUnE-yArDs, Bizness 
+4AD	38
+13	Jay-Z and Kanye West, Otis 
+Def Jam/Roc-a-Fella/Roc Nation	36
+14	Drake, Marvin's Room 
+Cash Money/Young Money/Universal	35
+15	EMA, California 
+Souterrain Transmissions	33
+16	Frank Ocean, Novacane 
+Frankocean.Tumblr.Com	32
+16	Wild Flag, Romance 
+Merge	32
+18	Black Keys, Lonely Boy 
+Nonesuch	30
+18	Rihanna (ft. Calvin Harris), We Found Love 
+Def Jam	30
+20	DJ Khaled (ft. Drake, Lil Wayne and Rick Ross), I'm on One 
+We the Best/Terror Squad/Cash Money/Universal	26
+20	Robyn, Call Your Girlfriend 
+Cherrytree/Konichiwa	26
+22	Cass McCombs, County Line 
+Domino	25
+23	Lady Gaga, The Edge of Glory 
+Interscope	23
+24	Kreayshawn, Gucci Gucci 
+Columbia	22
+24	Lil Wayne (ft. Cory Gunz), 6 Foot 7 Foot 
+Cash Money/Young Money/Universal	22
+26	Bon Iver, Holocene 
+Jagjaguwar	21
+26	Lady Gaga, Born This Way 
+Interscope	21
+28	Das Racist, Michael Jackson 
+Greedhead	20
+29	Lykke Li, Get Some 
+LL/Atlantic	19
+30	LMFAO, Party Rock Anthem 
+Interscope	18
+30	Pistol Annies, Hell on Heels 
+Columbia Nashville	18
+30	Real Estate, It's Real 
+Domino	18
+33	Joy Formidable, Whirring 
+Atlantic	17
+34	Florence & the Machine, Shake It Out 
+Universal	16
+34	Girls, Vomit 
+True Panther	16
+34	PJ Harvey, The Words That Maketh Murder 
+Vagrant	16
+34	Radiohead, Lotus Flower 
+Self-Released	16
+34	The Rapture, How Deep Is Your Love? 
+DFA	16
+39	A$AP Rocky, Peso 
+RCA/Sony	15
+39	Battles, Ice Cream 
+Warp	15
+39	Cults, Go Outside 
+Columbia/In the Name Of	15
+39	St. Vincent, Cruel 
+4AD	15
+39	Taylor Swift, Mean 
+Big Machine	15

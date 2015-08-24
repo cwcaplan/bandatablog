@@ -3,38 +3,27 @@
 #IDEAS
 
 #percentage of chart toppers that made the critics list
-length(wnoMnd$index[wnoMnd$index>0]) / length(wnoMnd$index)
+length(rbMnd$index[rbMnd$index>0]) / length(rbMnd$index)
+
+#the album names of charttoppers that made the critics list
+View(rbMnd[rbMnd$index>0,])
 
 # % of charttoppers on crit list per year
-year <- "1983"
-yearPerc <- data.frame()
-for (i in 1:35) {
+year <- "1984"
+rbYearPerc <- data.frame()
+for (i in 1:31) {
     year <- (as.character(as.numeric(year)+1))
-    indices <- wnoMnd$index[substring(wnoMnd$date, 1, 4)==year]
-    yearPerc[i,1] <- year
-    yearPerc[i,2] <- length(indices[indices>0]) / length(indices)
+    indices <- rbMnd$index[substring(rbMnd$date, 1, 4)==year]
+    rbYearPerc[i,1] <- year
+    rbYearPerc[i,2] <- length(indices[indices>0]) / length(indices)
 }
 # should add a column with the album names
+#plot(rbYearPerc$V1, rbYearPerc$V2, type="l")
+#### OR compare it to overal with 
 #plot(yearPerc$V1, yearPerc$V2, type="l")
+#lines(rbYearPerc$V1, rbYearPerc$V2, col="red")
+#### (have to run BB200 vs PJ1.R first to get yearPerc)
 
-
-yearBoth <- function(year) {
-    both <- wnoMnd[substring(wnoMnd$date, 1, 4)==year & wnoMnd$index>0, ]
-    albums <- character()
-    for (i in 1:nrow(both)) {
-        albums[i] <- paste(both[i,2], " - ", both[i,3], "\n", sep="")
-    }
-    albums
-}
-
-yearBB <- function(year) {
-    BB <- wnoMnd[substring(wnoMnd$date, 1, 4)==year & wnoMnd$index==0, ]
-    albums <- character()
-    for (i in 1:nrow(BB)) {
-        albums[i] <- paste(BB[i,2], " - ", BB[i,3], "\n", sep="")
-    }
-    albums
-}
 
 
 ### OLD STUFF TO CLEAN UP

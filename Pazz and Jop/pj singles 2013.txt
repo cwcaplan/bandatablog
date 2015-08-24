@@ -1,0 +1,96 @@
+1	Daft Punk (ft. Pharrell Williams), Get Lucky 
+Columbia	117
+2	Lorde, Royals 
+Universal	76
+3	Haim, The Wire 
+Columbia	59
+4	Kanye West, New Slaves 
+Def Jam	41
+4	Robin Thicke (ft. T.I. and Pharrell), Blurred Lines 
+Interscope	41
+6	Drake (ft. Majid Jordan), Hold On, We're Going Home 
+Cash Money	38
+7	Kanye West, Black Skinhead 
+Def Jam	37
+8	Icona Pop (ft. Charli XCX), I Love It 
+Big Beat/WEA	34
+9	Miley Cyrus, We Can't Stop 
+RCA	33
+10	Kanye West, Bound 2 
+Def Jam	30
+11	Arcade Fire, Reflektor 
+Merge	27
+11	Justin Timberlake, Mirrors 
+RCA	27
+13	Tegan and Sara, Closer 
+Warner Bros.	26
+14	Ciara, Body Party 
+Epic	24
+15	Miley Cyrus, Wrecking Ball 
+RCA	23
+15	Phosphorescent, Song for Zula 
+Dead Oceans	23
+17	Kacey Musgraves, Follow Your Arrow 
+Mercury	22
+18	Vampire Weekend, Diane Young 
+XL	20
+19	Janelle Monáe (ft. Erykah Badu), Q.U.E.E.N. 
+Bad Boy	19
+20	James Blake, Retrograde 
+Republic	18
+21	Disclosure (ft. Sam Smith), Latch 
+PMR	17
+21	Migos, Versace 
+Quality Control Music	17
+21	Parquet Courts, Stoned and Starving 
+What's Your Rupture?	17
+21	Vampire Weekend, Step 
+XL	17
+25	Sky Ferreira, I Blame Myself 
+Capitol	16
+26	Macklemore & Ryan Lewis (ft. Mary Lambert), Same Love 
+Macklemore	15
+26	Superchunk, Me & You & Jackie Mittoo 
+Merge	15
+28	Big Sean (ft. Kendrick Lamar and Jay Electronica), Control 
+Good Music	14
+28	Chvrches, The Mother We Share 
+Glassnote	14
+28	Mariah Carey (ft. Miguel), #Beautiful 
+Island	14
+28	Neko Case, Man 
+Anti	14
+28	Pusha T, Numbers on the Boards 
+Def Jam	14
+33	David Bowie, Where Are We Now? 
+Columbia	13
+33	Katy Perry, Roar 
+Capitol	13
+35	Courtney Barnett, Avant Gardener 
+House Anxiety/Marathon Artists	12
+35	Drake, Started From the Bottom 
+Cash Money	12
+35	Kanye West, Blood on the Leaves 
+Def Jam	12
+35	Rich Homie Quan, Type of Way 
+Def Jam	12
+35	Vampire Weekend, Hannah Hunt 
+XL	12
+40	Autre Ne Veut, Play by Play 
+Mexican Summer	11
+40	Charli XCX, You (Ha Ha Ha) 
+Atlantic	11
+40	Chvrches, Recover 
+Glassnote	11
+40	Deafheaven, Dream House 
+Deathwish	11
+40	Disclosure (ft. AlunaGeorge), White Noise 
+Cherrytree	11
+40	Lady Gaga, Applause 
+Interscope	11
+40	Paramore, Still Into You 
+Fueled by Ramen	11
+40	The Knife, Full of Fire 
+Rabid	11
+40	Yo la Tengo, Ohm 
+Matador	11

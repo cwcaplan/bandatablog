@@ -145,7 +145,7 @@ checkOpts <- function(chart) {
     }
     optsData
 }
-#lookAtEm <- checkOpts(out)
+lookAtEm <- checkOpts(out)
 
 #double check with things like:
 #View(pjM[grep("Prince", pjM$artist),])

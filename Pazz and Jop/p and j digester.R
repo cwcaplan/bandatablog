@@ -1,11 +1,18 @@
 setwd("C:/Users/Seth/Documents/bandatablog/Pazz and Jop")
 
+#got info from
+
+#2008-present
+#http://www.villagevoice.com/pazznjop/albums/2008
+#http://www.villagevoice.com/pazznjop/singles/2008
+
 #year <- as.character(as.numeric(year)+1)
 #year <- "1994"
 #load data
 #pj <- read.delim(paste("pazz and jop ", year, ".txt", sep=""), 
 #                       header=F, stringsAsFactors=F)
 
+### 1974-2007 (the rest is below)
 pj <- list()
 pjM <- data.frame()
 year <- "1973"
@@ -19,6 +26,7 @@ for (i in 1:34) {
     pj[[i]] <- pj[[i]][,1:4]
     #add year
     pj[[i]]$year <- year
+    #add to master list
     pjM <- rbind(pjM, pj[[i]])
 }
 #write.csv(wnoM, "weekly number ones.csv", row.names=F)
@@ -79,6 +87,39 @@ pjM$label <- gsub("\\)", "", pjM$label)
 #creating album index
 pjM$index <- seq(1, nrow(pjM))
 
+## 2008-2014
+year <- "2007"
+for (i in 35:41) {
+    #set year
+    year <- as.character(as.numeric(year)+1)
+    #load data
+    pjN <- read.delim(paste("pazz and jop ", year, ".txt", sep=""), 
+                      header=F, stringsAsFactors=F)
+    #split every other line 
+    pj1 <- pjN[seq(1,79,2),]
+    pj2 <- pjN[seq(2,80,2),]
+    #split artist and album
+    pj1[,2] <- sub(", ", "~", pj1[,2])
+    trim.trailing <- function (x) sub("\\s+$", "", x)
+    for (j in 1:nrow(pj1)) {
+        both <- unlist(strsplit(pj1[j,2], "~"))
+        pj1[j,2] <- trim.trailing(both[1])
+        pj1[j,3] <- trim.trailing(both[2])
+    }
+    # build data frame for year
+    pj[[i]] <- data.frame(rank=pj1$V1, 
+                          artist=pj1$V2, 
+                          album=pj1$V3,
+                          points=pj2$V2,
+                          mentions=pj2$V3,
+                          year=rep(year, nrow(pj1)),
+                          label=pj2$V1,
+                          index=seq(nrow(pjM)+1, by=1, length.out=40),
+                          stringsAsFactors=F)
+    # attach to master
+    pjM <- rbind(pjM, pj[[i]])
+}
+
 #fixing duplicate indices
 dups <- pjM[duplicated(pjM$album),]
 dupsalb <- dups$album
@@ -87,7 +128,6 @@ dupsalb <- dups$album
 
 #look at them individually with this
 #pjM[pjM$album==dupsalb[1],]
-
 
 ###we could do this automatically, but there might be two different albums with the same name
 ###and we wouldn't want to accidentally give them the same index
@@ -105,3 +145,5 @@ pjM[534,8] <- pjM[504,8]
 pjM[606,8] <- pjM[575,8]
 pjM[1021,8] <- pjM[990,8]
 pjM[1288,8] <- pjM[1269,8]
+
+#write.csv(pjM, "pazz and jop 1974-2014.csv", row.names=F)
