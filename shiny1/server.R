@@ -1,7 +1,6 @@
 #setwd("C:/Users/Seth/Documents/bandatablog/")
 
-
-
+#BILLBOARD 200
 year <- "1983"
 yearStats <- data.frame()
 for (i in 1:31) {
@@ -22,6 +21,26 @@ for (i in 1:31) {
 }
 names(yearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
 
+# R&B
+year <- "1983"
+rbYearStats <- data.frame()
+for (i in 1:30) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- rbMnd$index[substring(rbMnd$date, 1, 4)==year]
+    rbYearStats[i,1] <- year
+    rbYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    rbYearStats[i,3] <- length(indices[indices>0])
+    rbYearStats[i,4] <- length(indices)
+    ya <- rbMnd[substring(rbMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(rbM[ya[j,2]==rbM[,2] & ya[j,3]==rbM[,3],])
+    }
+    rbYearStats[i, 5] <- round(mean(ya$weeks),1)
+    rbYearStats[i, 6] <- max(ya$weeks)
+}
+names(rbYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
 
 
 pickAYear <- function(year) {
@@ -57,16 +76,39 @@ shinyServer(
         output$winners <- renderText({winners()})
         losers <- reactive({yearBB(input$year)})
         output$losers <- renderText({losers()})
+        chartChoice <- reactive({input$chartChoice})
+        output$chartChoice <- renderText({chartChoice()})
         output$percPlot <- renderPlot({
+            plot(yearStats$year, yearStats$percentage, 
+                 type="n", main="Percentage of Chart-Toppers on Critic's List",
+                 xlab="Year", ylab="Percentage of Albums", ylim=c(0,.5))
+            if(any(chartChoice()==1)){
+                lines(yearStats$year, yearStats$percentage, col="gray70")
+                points(yearStats$year, yearStats$percentage)
+            }
+            if(any(chartChoice()==2)){
+                abline(h=.2, col="firebrick3")
+                #points(mrYearStats$year, mrYearStats$percentage, col="firebrick4")
+            }
+            if(any(chartChoice()==3)){
+                lines(rbYearStats$year, rbYearStats$percentage, col="darkorchid3")
+                points(rbYearStats$year, rbYearStats$percentage, col="darkorchid4")
+            }
+        })
+        output$percPlotI <- renderPlot({
             plot(yearStats$year, yearStats$percentage, 
                  type="l", main="Percentage of Chart-Toppers on Critic's List",
                  xlab="Year", ylab="Percentage of Albums", col="gray70")
-            points(yearStats$year, yearStats$percentage, col="firebrick4")
+            points(yearStats$year, yearStats$percentage, pch=21, 
+                   col="darkorchid4", bg="darkorchid1", cex=.1*yearStats$total)
+            points(yearStats$year, yearStats$percentage, pch=20,
+                   col="firebrick4", cex=.35*yearStats$critPicks)
         })
         output$numPlotC <- renderPlot({
             plot(yearStats$year, yearStats$critPicks, 
                  type="l", main="Number of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="Number of Albums", col="gray70")
+                 xlab="Year", ylab="Number of Albums", ylim=c(0,8),
+                 col="gray70")
             points(yearStats$year, yearStats$critPicks, col="midnightblue")
         })
         output$numPlotT <- renderPlot({
