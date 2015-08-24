@@ -1,7 +1,7 @@
 shinyUI(pageWithSidebar(
-    headerPanel("Look At A Year"),
+    headerPanel(""),
     sidebarPanel(
-        sliderInput('year', 'Which Year?', value = 2000, 
+        sliderInput('year', 'Look At A Specific Year', value = 2000, 
                     min = 1984, max = 2015, step = 1,),
         h4('albums on both lists:'),
         verbatimTextOutput("winners"),
@@ -10,7 +10,11 @@ shinyUI(pageWithSidebar(
     ),
     mainPanel(
         h3('Sales vs. Critics, Since 1984'),
-        plotOutput("percPlot")
+        plotOutput("percPlot"),
+        plotOutput("numPlotC"),
+        plotOutput("numPlotT"),
+        plotOutput("weeksPlotAvg"),
+        plotOutput("weeksPlot")
         #dataTableOutput("albums")
     )
 ))
