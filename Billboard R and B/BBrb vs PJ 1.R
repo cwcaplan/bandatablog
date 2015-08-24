@@ -1,5 +1,28 @@
 #need to load billboard digester.R and p and j digester.R
 
+year <- "1983"
+rbYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- rbMnd$index[substring(rbMnd$date, 1, 4)==year]
+    rbYearStats[i,1] <- year
+    rbYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    rbYearStats[i,3] <- length(indices[indices>0])
+    rbYearStats[i,4] <- length(indices)
+    ya <- rbMnd[substring(rbMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(rbM[ya[j,2]==rbM[,2] & ya[j,3]==rbM[,3],])
+    }
+    rbYearStats[i, 5] <- round(mean(ya$weeks),1)
+    rbYearStats[i, 6] <- max(ya$weeks)
+}
+rbYearStats[1,2:6] <- 0
+names(rbYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
+
+
+
 #IDEAS
 
 #percentage of chart toppers that made the critics list
