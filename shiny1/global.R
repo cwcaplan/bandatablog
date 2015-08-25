@@ -1,4 +1,4 @@
-setwd("C:/Users/Seth/Documents/bandatablog/")
+#setwd("C:/Users/Seth/Documents/bandatablog/shiny1/")
 
 #pazz and jop
 pjM <- read.csv("data/pazz and jop 1974-2014.csv", stringsAsFactors=F)

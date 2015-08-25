@@ -99,7 +99,7 @@ yearBoth <- function(year, chart) {
     both <- chart[substring(chart$date, 1, 4)==year & chart$index>0, ]
     albums <- character()
     for (i in 1:nrow(both)) {
-        albums[i] <- paste(both[i,2], "\n\t\t\t\t- ", both[i,3], "\n", sep="")
+        albums[i] <- paste(both[i,2], "\n\t- ", both[i,3], "\n", sep="")
     }
     albums
 }
@@ -115,7 +115,7 @@ yearBB <- function(year, chart) {
     BB <- chart[substring(chart$date, 1, 4)==year & chart$index==0, ]
     albums <- character()
     for (i in 1:nrow(BB)) {
-        albums[i] <- paste(BB[i,2], "\n\t\t\t\t- ", BB[i,3], "\n", sep="")
+        albums[i] <- paste(BB[i,2], "\n\t- ", BB[i,3], "\n", sep="")
     }
     albums
 }
@@ -138,7 +138,7 @@ weeksTop5 <- function(year, chart) {
     ya <- ya[order(ya$weeks, decreasing=T),]
     top5 <- character()
     for (i in 1:5) {
-        top5[i] <- paste(ya[i,5], " weeks:", "\n\t\t\t", ya[i,2], "\n\t\t\t\t\t- ", ya[i,3], "\n", sep="")
+        top5[i] <- paste(ya[i,5], " weeks:", "\n   ", ya[i,2], "\n   \t- ", ya[i,3], "\n", sep="")
     }
     top5
 }
