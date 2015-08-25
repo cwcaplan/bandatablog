@@ -143,6 +143,19 @@ weeksTop5 <- function(year, chart) {
     top5
 }
 
+weeksAvg <- function(year, chart) {
+    if(chart==1) {
+        chart <- yearStats
+    } else if (chart==2) {
+        chart <- coYearStats
+    } else if (chart==3) {
+        chart <- rbYearStats
+    }
+    chart <- chart[chart$year==year,]
+    avg <- chart$avgWeeks
+    as.character(avg)
+}
+
 
 shinyServer(
     function(input, output) {
@@ -150,6 +163,8 @@ shinyServer(
         #output$albums <- renderDataTable({
         #    pickedYear()[,2:3]
         #    })
+        avg <- reactive({weeksAvg(input$year, input$top5ChartPick)})
+        output$avg <- renderText({paste("Avg Weeks At #1:", avg())})
         top5 <- reactive({weeksTop5(input$year, input$top5ChartPick)})
         output$top5 <- renderText({top5()})
         winners <- reactive({yearBoth(input$year, input$top5ChartPick)})

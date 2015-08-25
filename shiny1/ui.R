@@ -8,6 +8,8 @@ shinyUI(pageWithSidebar(
         selectInput("top5ChartPick", "Pick a Chart:", 
                     choices=list("Billboard 200"=1, "Country"=2, "R&B/Hip-Hop"=3),
                     selected=1),
+        #h5('Avg Weeks at #1:'),
+        textOutput("avg"),
         h4('Most Weeks at #1:'),
         verbatimTextOutput("top5"),
         h4('albums on both lists:'),
