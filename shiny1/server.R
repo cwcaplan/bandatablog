@@ -10,8 +10,7 @@ for (i in 1:31) {
     yearStats[i,2] <- length(indices[indices>0]) / length(indices)
     yearStats[i,3] <- length(indices[indices>0])
     yearStats[i,4] <- length(indices)
-    ya <- wnoM[substring(wnoM$date, 1, 4)==year,]
-    ya <- ya[!duplicated(ya$album),]
+    ya <- wnoMnd[substring(wnoMnd$date, 1, 4)==year,]
     weeks <- rep(0, nrow(ya))
     ya <- cbind(ya, weeks)
     for (j in 1:nrow(ya)) {
@@ -32,8 +31,7 @@ for (i in 1:31) {
     coYearStats[i,2] <- length(indices[indices>0]) / length(indices)
     coYearStats[i,3] <- length(indices[indices>0])
     coYearStats[i,4] <- length(indices)
-    ya <- coM[substring(coM$date, 1, 4)==year,]
-    ya <- ya[!duplicated(ya$album),]
+    ya <- coMnd[substring(coMnd$date, 1, 4)==year,]
     weeks <- rep(0, nrow(ya))
     ya <- cbind(ya, weeks)
     for (j in 1:nrow(ya)) {
@@ -56,8 +54,7 @@ for (i in 1:31) {
     rbYearStats[i,2] <- length(indices[indices>0]) / length(indices)
     rbYearStats[i,3] <- length(indices[indices>0])
     rbYearStats[i,4] <- length(indices)
-    ya <- rbM[substring(rbM$date, 1, 4)==year,]
-    ya <- ya[!duplicated(ya$album),]
+    ya <- rbMnd[substring(rbMnd$date, 1, 4)==year,]
     weeks <- rep(0, nrow(ya))
     ya <- cbind(ya, weeks)
     for (j in 1:nrow(ya)) {
@@ -123,13 +120,15 @@ yearBB <- function(year, chart) {
 weeksTop5 <- function(year, chart) {
     if(chart==1) {
         chart <- wnoM
+        chartnd <- wnoMnd
     } else if (chart==2) {
         chart <- coM
+        chartnd <- coMnd
     } else if (chart==3) {
         chart <- rbM
+        chartnd <- rbMnd
     }
-    ya <- chart[substring(chart$date, 1, 4)==year,]
-    ya <- ya[!duplicated(ya$album),]
+    ya <- chartnd[substring(chartnd$date, 1, 4)==year,]
     weeks <- rep(0, nrow(ya))
     ya <- cbind(ya, weeks)
     for (j in 1:nrow(ya)) {
@@ -232,7 +231,7 @@ shinyServer(
             plot(yearStats$year, yearStats$total,
                  type="n", main="Number of Albums on Both Lists", ylim=c(0,43),
                  xlab="Year", ylab="Number of Chart-Toppers")
-            legend("topleft", lty=1, pch=1, col=c("midnightblue", "darkred"),
+            legend("topleft", lty=c(2,1), col="midnightblue",
                    legend=c("Total", "on Critic's List"))
             if(any(chartChoice()==1)){
                 lines(yearStats$year, yearStats$total, col="gray70", lty=2)
