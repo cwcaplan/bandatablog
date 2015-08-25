@@ -1,17 +1,17 @@
-setwd("C:/Users/Seth/Documents/bandatablog/Billboard R and B/weekly top albums")
+setwd("C:/Users/Seth/Documents/bandatablog/Billboard Country/weekly top albums")
 
 ## got data from
-## http://www.billboard.com/archive/charts/1985/r-b-hip-hop-albums
+## http://www.billboard.com/archive/charts/1985/country-albums
 
 # builds weekly number ones list
 wno <- list()
-rbM <- data.frame()
+coM <- data.frame()
 year <- "1984"
 for (i in 1:31) {
     #set year
     year <- as.character(as.numeric(year)+1)
     #load data
-    wno[[i]] <- read.delim(paste("r and b ", year, ".txt", sep=""), 
+    wno[[i]] <- read.delim(paste("country albums ", year, ".txt", sep=""), 
                            header=F, stringsAsFactors=F)
     #add year to date and convert to date format
     wno[[i]][,1] <- paste(wno[[i]][,1], year)
@@ -23,50 +23,49 @@ for (i in 1:31) {
             wno[[i]][j+1,3] <- wno[[i]][j,3]
         }
     }
-    rbM <- rbind(rbM, wno[[i]])
+    coM <- rbind(coM, wno[[i]])
 }
-#write.csv(rbM, "weekly number ones.csv", row.names=F)
-names(rbM) <- c("date", "album", "artist")
+names(coM) <- c("date", "album", "artist")
 
-weeksAlbum <- data.frame(table(rbM[,2]), stringsAsFactors=F)
+weeksAlbum <- data.frame(table(coM[,2]), stringsAsFactors=F)
 weeksAlbum <- weeksAlbum[order(weeksAlbum$Freq, decreasing=T),]
 weeksAlbum$Var1 <- as.character(weeksAlbum$Var1)
 
-weeksArtist <- data.frame(table(rbM[,3]), stringsAsFactors=F)
+weeksArtist <- data.frame(table(coM[,3]), stringsAsFactors=F)
 weeksArtist <- weeksArtist[order(weeksArtist$Freq, decreasing=T),]
 weeksArtist$Var1 <- as.character(weeksArtist$Var1)
 
 #adding album index to match pjM
-rbM$index <- rep(0, nrow(rbM))
+coM$index <- rep(0, nrow(coM))
 
 #a start but misses a lot from spelling, etc. 
 #for instance (FutureSex):
-#View(rbM[grep("Timberlake", rbM$artist),])
+#View(coM[grep("Timberlake", coM$artist),])
 #View(pjM[grep("Timberlake", pjM$artist),])
-for (i in 1:nrow(rbM)) {
-    pjPick <- pjM[pjM$year==substring(rbM[i,1], 1, 4) |
-                      pjM$year==as.character(as.numeric(substring(rbM[i,1], 1, 4))-1), ]
+for (i in 1:nrow(coM)) {
+    pjPick <- pjM[pjM$year==substring(coM[i,1], 1, 4) |
+                      pjM$year==as.character(as.numeric(substring(coM[i,1], 1, 4))-1), ]
     #dealing with puncuation idiosynchrosies, DECIDED AGAINST
     #pjPick$album <- gsub("'", " ", pjPick$album)
     #pjPick$album <- gsub("[^A-Za-z0-9 ]", "", pjPick$album)
     #matching, but only lower case
     if (nrow(pjPick)>0) {
         for (j in 1:nrow(pjPick)) {
-            if(tolower(rbM[i,2])==tolower(pjPick[j,3])) {
-                rbM[i,4] <- pjPick[j,8]
+            if(tolower(coM[i,2])==tolower(pjPick[j,3])) {
+                coM[i,4] <- pjPick[j,8]
             }
         } 
     }
 }
-#View(rbM[rbM$index>0,])
+#View(coM[coM$index>0,])
 
-#nrow(rbM[rbM$date>"2008-01-01" & rbM$date<"2014-01-01",])
+#nrow(coM[coM$date>"2008-01-01" & coM$date<"2014-01-01",])
 
 #looking at all the albums (no duplicates for mulitple weeks on chart)
-rbMnd <- rbM[!duplicated(rbM$album),]
+coMnd <- coM[!duplicated(coM$album),]
 
 #dealing with out (the ones that didn't match)
-rbMout <- rbMnd[rbMnd$index==0,]
+coMout <- coMnd[coMnd$index==0,]
 
 ## looks for a match in in Pazz and Jop for an artist or album within a three year window
 looker <- function(name, years) {
@@ -89,7 +88,7 @@ looker <- function(name, years) {
     picks
 }
 
-# gives you potential options to scroll through for rbMout
+# gives you potential options to scroll through for coMout
 checkOpts <- function(chart) {
     optsData <- data.frame()
     tempOpts <- data.frame()
@@ -104,7 +103,7 @@ checkOpts <- function(chart) {
     }
     optsData
 }
-rbLookAtEm <- checkOpts(rbMout)
+coLookAtEm <- checkOpts(coMout)
 
 #double check with things like:
 #View(pjM[grep("Prince", pjM$artist),])
@@ -112,9 +111,10 @@ rbLookAtEm <- checkOpts(rbMout)
 
 #now look through and match manually (there must be another way, right?)
 # uses the rbLookAtEm index (108 in the sample) to look up the right
-# entry in rbM and then replaces the index column with whatever (436 in the sample)
+# entry in coM and then replaces the index column with whatever (436 in the sample)
 #   sample:
-#   rbM[rbM$album==unlist(strsplit(rbLookAtEm[108,2], ": "))[2],4] <- 436
+#   coM[coM$album==unlist(strsplit(rbLookAtEm[108,2], ": "))[2],4] <- 436
 
-
-
+#setwd("C:/Users/Seth/Documents/bandatablog/data")
+#write.csv(coM, "country weekly number ones.csv", row.names=F)
+#write.csv(coMnd, "country no duplicates.csv", row.names=F)

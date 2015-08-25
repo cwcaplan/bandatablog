@@ -1,4 +1,3 @@
-#setwd("C:/Users/Seth/Documents/bandatablog/data")
 setwd("C:/Users/Seth/Documents/bandatablog/")
 
 #pazz and jop
@@ -8,6 +7,11 @@ wnoM <- read.csv("data/BB200 weekly number ones.csv", stringsAsFactors=F)
 wnoM$date <- as.Date(wnoM$date, "%Y-%m-%d")
 wnoMnd <- read.csv("data/BB200 no duplicates.csv", stringsAsFactors=F)
 wnoMnd$date <- as.Date(wnoMnd$date, "%Y-%m-%d")
+#Billboard Country
+coM <- read.csv("data/country weekly number ones.csv", stringsAsFactors=F)
+coM$date <- as.Date(coM$date, "%Y-%m-%d")
+coMnd <- read.csv("data/country no duplicates.csv", stringsAsFactors=F)
+coMnd$date <- as.Date(coMnd$date, "%Y-%m-%d")
 #Billboard R and B
 rbM <- read.csv("data/r and b weekly number ones.csv", stringsAsFactors=F)
 rbM$date <- as.Date(rbM$date, "%Y-%m-%d")

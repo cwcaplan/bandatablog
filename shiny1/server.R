@@ -10,7 +10,8 @@ for (i in 1:31) {
     yearStats[i,2] <- length(indices[indices>0]) / length(indices)
     yearStats[i,3] <- length(indices[indices>0])
     yearStats[i,4] <- length(indices)
-    ya <- wnoMnd[substring(wnoMnd$date, 1, 4)==year,]
+    ya <- wnoM[substring(wnoM$date, 1, 4)==year,]
+    ya <- ya[!duplicated(ya$album),]
     weeks <- rep(0, nrow(ya))
     ya <- cbind(ya, weeks)
     for (j in 1:nrow(ya)) {
@@ -20,6 +21,30 @@ for (i in 1:31) {
     yearStats[i, 6] <- max(ya$weeks)
 }
 names(yearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
+
+# COUNTRY
+year <- "1983"
+coYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- coMnd$index[substring(coMnd$date, 1, 4)==year]
+    coYearStats[i,1] <- year
+    coYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    coYearStats[i,3] <- length(indices[indices>0])
+    coYearStats[i,4] <- length(indices)
+    ya <- coM[substring(coM$date, 1, 4)==year,]
+    ya <- ya[!duplicated(ya$album),]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(coM[ya[j,2]==coM[,2] & ya[j,3]==coM[,3],])
+    }
+    coYearStats[i, 5] <- round(mean(ya$weeks),1)
+    coYearStats[i, 6] <- max(ya$weeks)
+}
+coYearStats[1,2:6] <- NA
+names(coYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
+
 
 # R&B
 year <- "1983"
@@ -31,7 +56,8 @@ for (i in 1:31) {
     rbYearStats[i,2] <- length(indices[indices>0]) / length(indices)
     rbYearStats[i,3] <- length(indices[indices>0])
     rbYearStats[i,4] <- length(indices)
-    ya <- rbMnd[substring(rbMnd$date, 1, 4)==year,]
+    ya <- rbM[substring(rbM$date, 1, 4)==year,]
+    ya <- ya[!duplicated(ya$album),]
     weeks <- rep(0, nrow(ya))
     ya <- cbind(ya, weeks)
     for (j in 1:nrow(ya)) {
@@ -43,6 +69,19 @@ for (i in 1:31) {
 rbYearStats[1,2:6] <- NA
 names(rbYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
 
+### RANDY VS. GARTH VS. TAYLOR
+year <- "1983"
+RanGarTayStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    coMy <- coM[substring(coM$date, 1, 4)==year,]
+    RanGarTayStats[i,1] <- year
+    RanGarTayStats[i,2] <- round(length(grep("Randy Travis", coMy$artist)) / 52, 3)
+    RanGarTayStats[i,3] <- round(length(grep("Garth Brooks", coMy$artist)) / 52, 3)
+    RanGarTayStats[i,4] <- round(length(grep("Taylor Swift", coMy$artist)) / 52, 3)
+}
+RanGarTayStats[1,2:4] <- NA
+names(RanGarTayStats) <- c("year", "Randy", "Garth", "Taylor")
 
 pickAYear <- function(year) {
     pickedYear <- wnoMnd[substring(wnoMnd$date, 1, 4)==year & wnoMnd$index>0, ]
@@ -53,7 +92,7 @@ yearBoth <- function(year, chart) {
     if(chart==1) {
         chart <- wnoMnd
     } else if (chart==2) {
-        chart <- mrMnd
+        chart <- coMnd
     } else if (chart==3) {
         chart <- rbMnd
     }
@@ -69,7 +108,7 @@ yearBB <- function(year, chart) {
     if(chart==1) {
         chart <- wnoMnd
     } else if (chart==2) {
-        chart <- mrMnd
+        chart <- coMnd
     } else if (chart==3) {
         chart <- rbMnd
     }
@@ -85,7 +124,7 @@ weeksTop5 <- function(year, chart) {
     if(chart==1) {
         chart <- wnoM
     } else if (chart==2) {
-        chart <- mrM
+        chart <- coM
     } else if (chart==3) {
         chart <- rbM
     }
@@ -122,14 +161,15 @@ shinyServer(
         output$percPlot <- renderPlot({
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="Percentage of Albums", ylim=c(0,.5))
+                 xlab="Year", ylab="Percentage of Albums", ylim=c(0,.5), yaxt="n")
+            axis(2, at=c(.1, .2, .3, .4, .5), lab=c("10%", "20%", "30%", "40%", "50%"))
             if(any(chartChoice()==1)){
                 lines(yearStats$year, yearStats$percentage, col="gray70")
                 points(yearStats$year, yearStats$percentage, col="midnightblue")
             }
             if(any(chartChoice()==2)){
-                abline(h=.2, col="firebrick3")
-                #points(mrYearStats$year, mrYearStats$percentage, col="firebrick4")
+                lines(coYearStats$year, coYearStats$percentage, col="springgreen3")
+                points(coYearStats$year, coYearStats$percentage, col="springgreen4")
             }
             if(any(chartChoice()==3)){
                 lines(rbYearStats$year, rbYearStats$percentage, col="darkorchid3")
@@ -138,8 +178,10 @@ shinyServer(
         })
         output$percPlotI <- renderPlot({
             plot(yearStats$year, yearStats$percentage, 
-                 type="l", main="Percentage of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="Percentage of Albums", col="gray70")
+                 type="n", main="Percentage of Chart-Toppers on Critic's List",
+                 xlab="Year", ylab="Percentage of Albums", yaxt="n")
+            axis(2, at=c(.1, .2, .3, .4, .5), lab=c("10%", "20%", "30%", "40%", "50%"))
+            lines(yearStats$year, yearStats$percentage, col="gray70")
             points(yearStats$year, yearStats$percentage, pch=21, 
                    col="darkorchid4", bg="darkorchid1", cex=.1*yearStats$total)
             points(yearStats$year, yearStats$percentage, pch=20,
@@ -163,8 +205,8 @@ shinyServer(
                 points(yearStats$year, yearStats$critPicks, col="midnightblue")
             }
             if(any(chartChoice()==2)){
-                abline(h=2, col="firebrick3")
-                #points(mrYearStats$year, mrYearStats$critPicks, col="firebrick4")
+                lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
+                points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
             }
             if(any(chartChoice()==3)){
                 lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
@@ -184,8 +226,10 @@ shinyServer(
                 points(yearStats$year, yearStats$critPicks, col="midnightblue")
             }
             if(any(chartChoice()==2)){
-                abline(h=.2, col="firebrick3")
-                #points(mrYearStats$year, mrYearStats$critPicks, col="firebrick4")
+                lines(coYearStats$year, coYearStats$total, col="springgreen3", lty=2)
+                points(coYearStats$year, coYearStats$total, col="springgreen4")
+                lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
+                points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
             }
             if(any(chartChoice()==3)){
                 lines(rbYearStats$year, rbYearStats$total, col="darkorchid3", lty=2)
@@ -203,8 +247,8 @@ shinyServer(
                 points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
             }
             if(any(chartChoice()==2)){
-                abline(h=2, col="firebrick3")
-                #points(mrYearStats$year, mrYearStats$avgWeeks, col="firebrick4")
+                lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
+                points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
             }
             if(any(chartChoice()==3)){
                 lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
@@ -212,7 +256,7 @@ shinyServer(
             }
         })
         output$weeksPlot <- renderPlot({
-            plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,25), 
+            plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,30), 
                  main="Weeks At Number One", xlab="Year", ylab="Weeks")
             legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
                    legend=c("Yearly High", "Average"))
@@ -223,8 +267,10 @@ shinyServer(
                 points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
             }
             if(any(chartChoice()==2)){
-                abline(h=2, col="firebrick3")
-                #points(mrYearStats$year, mrYearStats$avgWeeks, col="firebrick4")
+                lines(coYearStats$year, coYearStats$mostWeeks, col="springgreen3", lty=2)
+                points(coYearStats$year, coYearStats$mostWeeks, col="springgreen4")
+                lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
+                points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
             }
             if(any(chartChoice()==3)){
                 lines(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid3", lty=2)
@@ -232,6 +278,24 @@ shinyServer(
                 lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
                 points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
             }
+        })
+        output$RanGarTayPlot <- renderPlot({
+            if(any(chartChoice()==2)) {
+                plot(RanGarTayStats$year, RanGarTayStats$Garth,
+                     type="n", main="Percentage of the Year that Randy Travis, Garth Brooks, or Taylor Swift were #1",
+                     xlab="Year", ylab="Percentage", yaxt="n")
+                axis(2, at=c(.15, .30, .45, .6, .75), lab=c("15%", "30%", "45%", "60%", "75%"))
+                lines(RanGarTayStats$year, RanGarTayStats$Randy, col="springgreen3")
+                points(RanGarTayStats$year, RanGarTayStats$Randy, col="springgreen4")
+                lines(RanGarTayStats$year, RanGarTayStats$Garth, col="gray70")
+                points(RanGarTayStats$year, RanGarTayStats$Garth, col="midnightblue")
+                lines(RanGarTayStats$year, RanGarTayStats$Taylor, col="firebrick3")
+                points(RanGarTayStats$year, RanGarTayStats$Taylor, col="firebrick4")
+                legend("topright", lty=c(1,1,1), col=c("springgreen4", "midnightblue", "firebrick4"), 
+                       pch=21, legend=c("Randy", "Garth", "Taylor"))
+                
+            }
+            
         })
     }
 )

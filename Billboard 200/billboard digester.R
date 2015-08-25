@@ -1,5 +1,8 @@
 setwd("C:/Users/Seth/Documents/bandatablog/Billboard 200/weekly top albums")
 
+## got data from
+## http://www.billboard.com/archive/charts/1985/billboard-200
+
 # builds weekly number ones list
 wno <- list()
 wnoM <- data.frame()
