@@ -1,0 +1,90 @@
+1	M.I.A., Paper Planes 
+XL	107
+2	Estelle (ft. Kanye West), American Boy 
+Atlantic	70
+3	Beyoncé, Single Ladies (Put a Ring on It) 
+RCA	58
+4	MGMT, Time to Pretend 
+Columbia	53
+5	Lil Wayne, A Milli 
+Universal	50
+6	Santogold, L.E.S. Artistes 
+Warner	49
+7	Hercules and Love Affair, Blind 
+Mute	47
+8	Coldplay, Viva la Vida 
+Parlophone	39
+9	Kanye West, Love Lockdown 
+Roc-a-Fella	38
+10	Fleet Foxes, White Winter Hymnal 
+Sub Pop	32
+11	Hot Chip, Ready for the Floor 
+EMI	25
+11	Portishead, Machine Gun 
+Mercury	25
+13	T.I. (ft. Rihanna), Live Your Life 
+Atlantic	23
+14	Death Cab for Cutie, I Will Possess Your Heart 
+Atlantic	21
+14	Rihanna, Disturbia 
+Def Jam	21
+14	T.I., Whatever You Like 
+Atlantic	21
+17	Adele, Chasing Pavements 
+XL	20
+17	MGMT, Electric Feel 
+Columbia	20
+17	Pink, So What 
+Universal	20
+20	Vampire Weekend, Oxford Comma 
+XL	19
+21	TV on the Radio, Golden Age 
+Interscope	18
+21	Young Jeezy (ft. Kanye West), Put On 
+Def Jam	18
+23	Duffy, Mercy 
+Universal	17
+23	Lykke Li, Little Bit 
+LL	17
+25	Kings of Leon, Sex on Fire 
+RCA	16
+25	Ne-Yo, Closer 
+Def Jam	16
+25	T.I. (ft. Jay-Z, Kanye West, and Lil Wayne), Swagger Like Us 
+Roc-a-Fella	16
+25	Ting Tings, That's Not My Name 
+Columbia	16
+29	Bon Iver, Skinny Love 
+Jagjaguwar	15
+29	Britney Spears, Womanizer 
+Zomba	15
+29	Hayes Carll, She Left Me for Jesus 
+Universal	15
+29	Katy Perry, I Kissed a Girl 
+EMI	15
+29	Lil' Wayne (ft. Static Major), Lollipop 
+Universal	15
+29	M83, Kim & Jessie 
+Mute	15
+35	Black Kids, I'm Not Gonna Teach Your Boyfriend How to Dance With You 
+Columbia	14
+35	Nick Cave and the Bad Seeds, Dig, Lazarus, Dig!!! 
+Mute	14
+37	Beyoncé, If I Were a Boy 
+Columbia	13
+37	Katy Perry, Hot 'N' Cold 
+Capitol	13
+37	The Juan MacLean, Happy House 
+DFA	13
+40	Killers, Human 
+Vertigo	12
+40	Santogold, Lights Out 
+Downtown	12
+40	The Hold Steady, Constructive Summer 
+Vagrant	12
+40	The Hold Steady, Sequestered in Memphis 
+Vagrant	12
+40	Vampire Weekend, A-Punk 
+XL	12
+40	Weezer, Pork and Beans 
+DGC	12

@@ -1,0 +1,220 @@
+---
+title: "Sales vs. Critics 1"
+author: "Seth Green"
+date: "Tuesday, August 25, 2015"
+output: html_document
+---
+
+``` {r load data, echo=FALSE}
+setwd("C:/Users/Seth/Documents/bandatablog/shiny1/")
+
+#pazz and jop
+pjM <- read.csv("data/pazz and jop 1974-2014.csv", stringsAsFactors=F)
+#Billboard 200
+wnoM <- read.csv("data/BB200 weekly number ones.csv", stringsAsFactors=F)
+wnoM$date <- as.Date(wnoM$date, "%Y-%m-%d")
+wnoMnd <- read.csv("data/BB200 no duplicates.csv", stringsAsFactors=F)
+wnoMnd$date <- as.Date(wnoMnd$date, "%Y-%m-%d")
+#Billboard Country
+coM <- read.csv("data/country weekly number ones.csv", stringsAsFactors=F)
+coM$date <- as.Date(coM$date, "%Y-%m-%d")
+coMnd <- read.csv("data/country no duplicates.csv", stringsAsFactors=F)
+coMnd$date <- as.Date(coMnd$date, "%Y-%m-%d")
+#Billboard R and B
+rbM <- read.csv("data/r and b weekly number ones.csv", stringsAsFactors=F)
+rbM$date <- as.Date(rbM$date, "%Y-%m-%d")
+rbMnd <- read.csv("data/r and b no duplicates.csv", stringsAsFactors=F)
+rbMnd$date <- as.Date(rbMnd$date, "%Y-%m-%d")
+
+#BILLBOARD 200
+year <- "1983"
+yearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- wnoMnd$index[substring(wnoMnd$date, 1, 4)==year]
+    yearStats[i,1] <- year
+    yearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    yearStats[i,3] <- length(indices[indices>0])
+    yearStats[i,4] <- length(indices)
+    ya <- wnoMnd[substring(wnoMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(wnoM[ya[j,2]==wnoM[,2] & ya[j,3]==wnoM[,3],])
+    }
+    yearStats[i, 5] <- round(mean(ya$weeks),1)
+    yearStats[i, 6] <- max(ya$weeks)
+}
+names(yearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
+
+# COUNTRY
+year <- "1983"
+coYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- coMnd$index[substring(coMnd$date, 1, 4)==year]
+    coYearStats[i,1] <- year
+    coYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    coYearStats[i,3] <- length(indices[indices>0])
+    coYearStats[i,4] <- length(indices)
+    ya <- coMnd[substring(coMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(coM[ya[j,2]==coM[,2] & ya[j,3]==coM[,3],])
+    }
+    coYearStats[i, 5] <- round(mean(ya$weeks),1)
+    coYearStats[i, 6] <- max(ya$weeks)
+}
+coYearStats[1,2:6] <- NA
+names(coYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
+
+
+# R&B
+year <- "1983"
+rbYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- rbMnd$index[substring(rbMnd$date, 1, 4)==year]
+    rbYearStats[i,1] <- year
+    rbYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    rbYearStats[i,3] <- length(indices[indices>0])
+    rbYearStats[i,4] <- length(indices)
+    ya <- rbMnd[substring(rbMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(rbM[ya[j,2]==rbM[,2] & ya[j,3]==rbM[,3],])
+    }
+    rbYearStats[i, 5] <- round(mean(ya$weeks),1)
+    rbYearStats[i, 6] <- max(ya$weeks)
+}
+rbYearStats[1,2:6] <- NA
+names(rbYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
+
+### RANDY VS. GARTH VS. TAYLOR
+year <- "1983"
+RanGarTayStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    coMy <- coM[substring(coM$date, 1, 4)==year,]
+    RanGarTayStats[i,1] <- year
+    RanGarTayStats[i,2] <- round(length(grep("Randy Travis", coMy$artist)) / 52, 3)
+    RanGarTayStats[i,3] <- round(length(grep("Garth Brooks", coMy$artist)) / 52, 3)
+    RanGarTayStats[i,4] <- round(length(grep("Taylor Swift", coMy$artist)) / 52, 3)
+}
+RanGarTayStats[1,2:4] <- NA
+names(RanGarTayStats) <- c("year", "Randy", "Garth", "Taylor")
+
+pickAYear <- function(year) {
+    pickedYear <- wnoMnd[substring(wnoMnd$date, 1, 4)==year & wnoMnd$index>0, ]
+    pickedYear
+}
+
+yearBoth <- function(year, chart) {
+    if(chart==1) {
+        chart <- wnoMnd
+    } else if (chart==2) {
+        chart <- coMnd
+    } else if (chart==3) {
+        chart <- rbMnd
+    }
+    both <- chart[substring(chart$date, 1, 4)==year & chart$index>0, ]
+    albums <- character()
+    for (i in 1:nrow(both)) {
+        albums[i] <- paste(both[i,2], "\n\t- ", both[i,3], "\n", sep="")
+    }
+    albums
+}
+
+yearBB <- function(year, chart) {
+    if(chart==1) {
+        chart <- wnoMnd
+    } else if (chart==2) {
+        chart <- coMnd
+    } else if (chart==3) {
+        chart <- rbMnd
+    }
+    BB <- chart[substring(chart$date, 1, 4)==year & chart$index==0, ]
+    albums <- character()
+    for (i in 1:nrow(BB)) {
+        albums[i] <- paste(BB[i,2], "\n\t- ", BB[i,3], "\n", sep="")
+    }
+    albums
+}
+
+weeksTop5 <- function(year, chart) {
+    if(chart==1) {
+        chart <- wnoM
+        chartnd <- wnoMnd
+    } else if (chart==2) {
+        chart <- coM
+        chartnd <- coMnd
+    } else if (chart==3) {
+        chart <- rbM
+        chartnd <- rbMnd
+    }
+    ya <- chartnd[substring(chartnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(chart[ya[j,2]==chart[,2] & ya[j,3]==chart[,3],])
+    }
+    ya <- ya[order(ya$weeks, decreasing=T),]
+    top5 <- character()
+    for (i in 1:5) {
+        top5[i] <- paste(ya[i,5], " weeks:", "\n   ", ya[i,2], "\n   \t- ", ya[i,3], "\n", sep="")
+    }
+    top5
+}
+
+weeksAvg <- function(year, chart) {
+    if(chart==1) {
+        chart <- yearStats
+    } else if (chart==2) {
+        chart <- coYearStats
+    } else if (chart==3) {
+        chart <- rbYearStats
+    }
+    chart <- chart[chart$year==year,]
+    avg <- chart$avgWeeks
+    as.character(avg)
+}
+
+```
+
+Billboard has caught some flack recently, and deservedly so, for completing their long slide from a legitimate trade journal to a pop culture click-bait recepticle.  While it's true that visitors to Billboard.com are greeted with ads about Kylie Jenner's swimsuit or the "16 scariest most evil kids you've ever seen," it is one of the only places still at least attempting to rate and rank legal music consumption in this anarchic "marketplace" in which we find ourselves.  And as such, I have used it's charts for the basis of the following analysis.  
+
+The Billboard charts are being compared to the esteemed Pazz & Jop Poll.  The Poll was originally curated by the "Dean of Rock Criticism" Mr. Robert Christgau and published yearly in the Village Voice.  It is basically an aggregation of Top 10 lists from several hundred critics.  The Village Voice maintains it to this day, and I believe Mr. Christgau still submits a ballot.  Links to all of the charts I used, as well as my reproducible code, can be found at the bottom of this page.
+
+Originally, this analysis was going to be another "music just ain't what it used to be" sort of tirade, but supported by facts.  Something a companion piece to [this musing](http://sonsofbill.tumblr.com/post/22601664717/fighting-with-ghosts) I penned several years back.  Unfortunately, the facts--at least the facts I had--didn't bear out my intended point.  Luckily, however, another story seemed to coalesce out of the grim morass of lists and charts.  
+
+Music industry commentator Bob Lefsetz pointed to [this New York *Times* article](http://www.nytimes.com/2015/08/25/science/the-widening-world-of-hand-picked-truths.html) in his recent post about, among other things, Billboard's recent foolishness.  The title, "The Widening World of Hand-Picked Truths," pretty much sums it up.  But while the *Times* seems mainly concerned with people's staggering ability to disregard scientific evidence when it contradicts their world view, I am more interested in our inability to agree on something so visceral as a great record.
+
+I began this project by comparing, over the past thirty years, how many of the albums that topped the Billboard 200 chart for at least a week ended up in the Top 40 of the year-end Pazz and Jop Poll.  Basically, how many of America's *top-selling* records were considered by critics to also be among America's *best* records.  I began by looking at the percentage of chart-toppers each year that also made the Pazz and Jop.
+
+```{r perc plot, echo=FALSE}
+plot(yearStats$year, yearStats$percentage, 
+                 type="n", main="Percentage of Chart-Toppers on Critic's List",
+                 xlab="Year", ylab="Percentage of Albums", ylim=c(0,.5), yaxt="n")
+            axis(2, at=c(.1, .2, .3, .4, .5), lab=c("10%", "20%", "30%", "40%", "50%"))
+
+lines(yearStats$year, yearStats$percentage, col="gray70")
+points(yearStats$year, yearStats$percentage, col="midnightblue")
+```
+
+There appears to be some correlation over time, but what really catches the eye is the wild flucuation in the 80's, and somewhat in the early 90's too.  I puzzled over this briefly and then dialed up the *number* of chart-topping albums that made the critic's list.
+
+```{r num plot, echo=FALSE}
+plot(yearStats$year, yearStats$critPicks, 
+                 type="n", main="Number of Chart-Toppers on Critic's List",
+                 xlab="Year", ylab="Number of Albums", ylim=c(0,8))
+lines(yearStats$year, yearStats$critPicks, col="gray70")
+points(yearStats$year, yearStats$critPicks, col="midnightblue")
+```
+
+This one seems to go in the opposite direction overall, but overall it's fairly level.  That pretty much sunk my hopes of correlating critical and popular agreement to overall music quality of an era.  But it did point us towards the more intriguing narrative...
+
+50% of 1984's #1 records got critical approval, but only two records from the '84 Billboard charts showed up on Pazz and Jop.  You don't need a Stats PhD to scratch your head a little and think, "were there really only four #1 albums in 1984?"  
+
+The answer is yes.  Bruce Springsteen, Prince, Huey Lewis and the Footloose Soundtrack.  And, somehow, Christgau and friends didn't give Huey or Kevin Bacon the nod.

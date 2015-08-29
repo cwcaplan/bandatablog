@@ -1,0 +1,80 @@
+1	Frank Ocean, Channel Orange 
+Def Jam	1952	170
+2	Kendrick Lamar, Good Kid, m.A.A.d City
+Interscope	1461	126
+3	Fiona Apple, The Idler Wheel... 
+Epic	1124	101
+4	Japandroids, Celebration Rock 
+Polyvinyl	908	73
+5	Miguel, Kaleidoscope Dream 
+RCA	751	69
+6	Tame Impala, Lonerism 
+Modular	589	56
+7	Swans, The Seer 
+Young God	543	51
+8	Killer Mike, R.A.P. Music 
+Williams Street	542	52
+9	Grimes, Visions 
+4AD	482	51
+10	Beach House, Bloom 
+Sub Pop	409	40
+11	Jack White, Blunderbuss 
+Third Man	387	41
+12	Dirty Projectors, Swing Lo Magellan 
+Domino	387	34
+13	Cloud Nothings, Attack on Memory 
+Carpark	374	38
+14	Father John Misty, Fear Fun 
+Sub Pop	363	33
+15	Bruce Springsteen, Wrecking Ball 
+Columbia	361	36
+16	Bob Dylan, Tempest 
+Columbia	349	33
+17	Taylor Swift, Red 
+Big Machine	347	34
+18	Future, Pluto 
+Epic	329	28
+19	Sharon Van Etten, Tramp 
+Jagjaguwar	327	34
+20	Alabama Shakes, Boys & Girls 
+ATO	327	33
+21	Dr. John, Locked Down 
+Nonesuch	313	32
+22	Leonard Cohen, Old Ideas 
+Columbia	311	31
+23	Cat Power, Sun 
+Matador	303	32
+24	Baroness, Yellow & Green 
+Relapse	282	25
+25	Scott Walker, Bish Bosch 
+4AD	278	22
+26	El-P, Cancer 4 Cure 
+Fat Possum	262	29
+27	Grizzly Bear, Shields 
+Warp	258	30
+28	Chromatics, Kill for Love 
+Italians Do It Better	242	22
+29	Andy Stott, Luxury Problems 
+Modern Love	239	21
+30	Jessie Ware, Devotion 
+Island	234	23
+31	Neil Young & Crazy Horse, Psychedelic Pill 
+Reprise	220	22
+32	Mountain Goats, Transcendental Youth
+Merge	215	23
+33	Loudon Wainwright III, Older Than My Old Man Now 
+2nd Story Sound	210	16
+34	Bat for Lashes, The Haunted Man 
+Parlophone	202	19
+35	Spiritualized, Sweet Heart Sweet Light 
+Fat Possum	202	18
+36	Godspeed You! Black Emperor, Allelujah! Don't Bend! Ascend! 
+Constellation	196	22
+37	Julia Holter, Ekstasis 
+RVNG	192	19
+38	Hot Chip, In Our Heads 
+Domino	182	16
+39	Todd Snider, Agnostic Hymns & Stoner Fables 
+Aimless/Thirty Tigers	182	14
+40	Carly Rae Jepsen, Kiss 
+604/Schoolboy/Interscope	174	15

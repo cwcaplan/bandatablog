@@ -1,4 +1,4 @@
-setwd("C:/Users/Seth/Documents/bandatablog/Pazz and Jop")
+setwd("C:/Users/Seth/Documents/bandatablog/Pazz and Jop/albums")
 
 #got info from
 

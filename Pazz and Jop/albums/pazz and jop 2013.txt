@@ -1,0 +1,80 @@
+1	Kanye West, Yeezus 
+Def Jam	1991	160
+2	Vampire Weekend, Modern Vampires of the City 
+XL	1342	109
+3	Daft Punk, Random Access Memories 
+Columbia	833	76
+4	Beyoncé, Beyoncé 
+Columbia	736	57
+5	Chance the Rapper, Acid Rap 
+none	672	63
+6	My Bloody Valentine, m b v 
+m b v	624	61
+7	Haim, Days Are Gone 
+Columbia	598	62
+8	Janelle Monáe, The Electric Lady 
+Bad Boy	510	51
+9	Kurt Vile, Wakin on a Pretty Daze 
+Matador	502	46
+10	Kacey Musgraves, Same Trailer Different Park 
+Mercury Nashville	489	43
+11	Neko Case, The Worse Things Get, the Harder I Fight, the Harder I Fight, the More I Love You 
+Anti	453	46
+12	Savages, Silence Yourself 
+Matador	440	42
+13	Disclosure, Settle 
+PMR	438	42
+14	Arcade Fire, Reflektor 
+Merge	437	43
+15	David Bowie, The Next Day 
+Columbia	428	46
+16	Sky Ferreira, Night Time, My Time 
+Capitol	413	46
+17	Jason Isbell, Southeastern 
+Southeastern	391	34
+18	Drake, Nothing Was the Same 
+OVO	390	38
+19	Deafheaven, Sunbather 
+Deathwish	361	35
+20	Queens of the Stone Age, ...Like Clockwork 
+Matador	349	33
+21	The National, Trouble Will Find Me 
+4AD	349	30
+22	Run the Jewels, Run the Jewels 
+Fool's Gold	322	32
+23	Ashley Monroe, Like a Rose 
+Warner Bros.	321	31
+24	Parquet Courts, Light Up Gold 
+What's Your Rupture?	320	30
+25	Lorde, Pure Heroine 
+Universal	317	32
+26	Nick Cave and the Bad Seeds, Push the Sky Away 
+Bad Seed Ltd.	305	27
+27	Danny Brown, Old 
+Fool's Gold	291	31
+28	M.I.A., Matangi 
+Interscope	282	34
+29	The Knife, Shaking the Habitual 
+Mute	270	27
+30	Pusha T, My Name Is My Name 
+Def Jam	261	32
+31	Waxahatchee, Cerulean Salt 
+Don Giovanni	260	24
+32	Tim Hecker, Virgins 
+Kranky	256	27
+33	Tegan and Sara, Heartthrob 
+Warner Bros.	254	22
+34	Paramore, Paramore 
+Fueled By Ramen	253	21
+35	Deerhunter, Monomania 
+4AD	252	23
+36	Laura Marling, Once I Was an Eagle 
+Virgin	222	22
+37	Carcass, Surgical Steel 
+Nuclear Blast	220	17
+38	Superchunk, I Hate Music 
+Merge	211	20
+39	Mikal Cronin, Mcii 
+Merge	210	21
+40	Chvrches, The Bones of What You Believe 
+Glassnote	207	23

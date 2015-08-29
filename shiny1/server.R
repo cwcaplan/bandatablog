@@ -175,7 +175,7 @@ shinyServer(
         output$percPlot <- renderPlot({
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="Percentage of Albums", ylim=c(0,.5), yaxt="n")
+                 xlab="Year", ylab="", ylim=c(0,.5), yaxt="n")
             axis(2, at=c(.1, .2, .3, .4, .5), lab=c("10%", "20%", "30%", "40%", "50%"))
             if(any(chartChoice()==1)){
                 lines(yearStats$year, yearStats$percentage, col="gray70")
@@ -193,7 +193,7 @@ shinyServer(
         output$percPlotI <- renderPlot({
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="Percentage of Albums", yaxt="n")
+                 xlab="Year", ylab="", yaxt="n")
             axis(2, at=c(.1, .2, .3, .4, .5), lab=c("10%", "20%", "30%", "40%", "50%"))
             lines(yearStats$year, yearStats$percentage, col="gray70")
             points(yearStats$year, yearStats$percentage, pch=21, 
@@ -229,7 +229,7 @@ shinyServer(
         })
         output$numPlotT <- renderPlot({
             plot(yearStats$year, yearStats$total,
-                 type="n", main="Number of Albums on Both Lists", ylim=c(0,43),
+                 type="n", main="Number of Chart-Topping Albums in a Given Year", ylim=c(0,43),
                  xlab="Year", ylab="Number of Chart-Toppers")
             legend("topleft", lty=c(2,1), col="midnightblue",
                    legend=c("Total", "on Critic's List"))
@@ -297,7 +297,7 @@ shinyServer(
             if(any(chartChoice()==2)) {
                 plot(RanGarTayStats$year, RanGarTayStats$Garth,
                      type="n", main="Percentage of the Year that Randy Travis, Garth Brooks, or Taylor Swift were #1",
-                     xlab="Year", ylab="Percentage", yaxt="n")
+                     xlab="Year", ylab="", yaxt="n")
                 axis(2, at=c(.15, .30, .45, .6, .75), lab=c("15%", "30%", "45%", "60%", "75%"))
                 lines(RanGarTayStats$year, RanGarTayStats$Randy, col="springgreen3")
                 points(RanGarTayStats$year, RanGarTayStats$Randy, col="springgreen4")

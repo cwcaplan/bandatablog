@@ -1,0 +1,80 @@
+1	D'Angelo, Black Messiah 
+RCA	2008	163
+2	Run the Jewels, Run the Jewels 2 
+Mass Appeal	1734	163
+3	The War on Drugs, Lost in the Dream 
+Secretly Canadian	1244	104
+4	St. Vincent, St. Vincent 
+Loma Vista/Republic	1224	112
+5	FKA Twigs, Lp1 
+Young Turks	819	86
+6	Sturgill Simpson, Metamodern Sounds in Country Music 
+High Top Mountain	815	78
+7	Taylor Swift, 1989 
+Big Machine	745	71
+8	Angel Olsen, Burn Your Fire for No Witness 
+Jagjaguwar	683	65
+9	Spoon, They Want My Soul 
+Loma Vista	670	71
+10	Against Me!, Transgender Dysphoria Blues 
+Total Treble	643	57
+11	Ex Hex, Rips 
+Merge	604	58
+12	Miranda Lambert, Platinum 
+RCA Nashville	599	54
+13	Flying Lotus, You're Dead! 
+Warp	584	60
+14	Azealia Banks, Broke With Expensive Taste 
+Prospect Park	519	53
+15	Sharon Van Etten, Are We There 
+Jagjaguwar	512	53
+16	Beck, Morning Phase 
+Capitol	509	51
+17	Aphex Twin, Syro 
+Warp	492	49
+18	Sun Kil Moon, Benji 
+Caldo Verde	474	48
+19	Swans, To Be Kind 
+Young God	469	50
+20	Parquet Courts, Sunbathing Animal 
+What's Your Rupture?	466	47
+21	Caribou, Our Love 
+Merge	466	43
+22	Lana Del Rey, Ultraviolence 
+Interscope	421	45
+23	New Pornographers, Brill Bruisers 
+Matador	408	43
+24	Wussy, Attica! 
+Shake It	398	29
+25	YG, My Krazy Life 
+Def Jam	389	34
+26	Jenny Lewis, The Voyager 
+Warner Bros.	381	38
+27	Ty Segall, Manipulator 
+Drag City	373	34
+28	Perfume Genius, Too Bright 
+Matador	348	36
+29	tUnE-yArDs, Nikki Nack 
+4AD	344	32
+30	Future Islands, Singles 
+4AD	329	34
+31	Leonard Cohen, Popular Problems 
+Columbia	318	29
+32	Todd Terje, It's Album Time 
+Olsen	316	29
+33	Rosanne Cash, The River & the Thread 
+Blue Note	314	28
+34	Charli XCX, Sucker 
+Atlantic	302	32
+35	Freddie Gibbs & Madlib, Piñata 
+Madlib Invazion	299	31
+36	Protomartyr, Under Color of Official Right 
+Hardly Art	277	24
+37	Cloud Nothings, Here and Nowhere Else 
+Carpark	256	28
+38	Lydia Loveless, Somewhere Else 
+Bloodshot	254	26
+39	TV on the Radio, Seeds 
+Harvest	241	24
+40	Grouper, Ruins 
+Kranky	239	25

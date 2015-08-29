@@ -1,0 +1,53 @@
+January 01	Firework	Katy Perry
+January 08	Grenade	Bruno Mars
+January 15	Firework	Katy Perry
+January 22	Grenade	Bruno Mars
+January 29	Hold It Against Me	Britney Spears
+February 05	Grenade	Bruno Mars
+February 12
+February 19	Black And Yellow	Wiz Khalifa
+February 26	Born This Way	Lady Gaga
+March 05
+March 12
+March 19
+March 26
+April 02
+April 09	E.T.	Katy Perry Featuring Kanye West
+April 16
+April 23
+April 30	S&M	Rihanna Featuring Britney Spears
+May 07	E.T.	Katy Perry Featuring Kanye West
+May 14
+May 21	Rolling In The Deep	Adele
+May 28
+June 04
+June 11
+June 18
+June 25
+July 02
+July 09	Give Me Everything	Pitbull Featuring Ne-Yo, Afrojack & Nayer
+July 16	Party Rock Anthem	LMFAO Featuring Lauren Bennett & GoonRock
+July 23
+July 30
+August 06
+August 13
+August 20
+August 27	Last Friday Night (T.G.I.F.)	Katy Perry
+September 03
+September 10	Moves Like Jagger	Maroon 5 Featuring Christina Aguilera
+September 17	Someone Like You	Adele
+September 24	Moves Like Jagger	Maroon 5 Featuring Christina Aguilera
+October 01
+October 08
+October 15	Someone Like You	Adele
+October 22
+October 29
+November 05
+November 12	We Found Love	Rihanna Featuring Calvin Harris
+November 19
+November 26
+December 03
+December 10
+December 17
+December 24
+December 31

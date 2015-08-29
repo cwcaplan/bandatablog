@@ -1,0 +1,80 @@
+1	Animal Collective, Merriweather Post Pavilion 
+Domino	1794	154
+2	Phoenix, Wolfgang Amadeus Phoenix 
+Glassnote	1463	139
+3	Neko Case, Middle Cyclone 
+Anti	1201	106
+4	Yeah Yeah Yeahs, It's Blitz! 
+DGC/Interscope	1199	114
+5	Dirty Projectors, Bitte Orca 
+Domino	1169	108
+6	Grizzly Bear, Veckatimest 
+Warp	1073	106
+7	The xx, xx 
+Young Turks	977	93
+8	Raekwon, Only Built 4 Cuban Linx...Part II 
+Ice H2O/EMI	857	85
+9	The Flaming Lips, Embryonic 
+Warner	681	65
+10	Girls, Album 
+True Panther	652	63
+11	Mos Def, The Ecstatic 
+Downtown	613	59
+12	St. Vincent, Actor 
+4AD	573	62
+13	Fever Ray, Fever Ray 
+Rabid	551	53
+14	Maxwell, BLACKsummers'night 
+Columbia	525	49
+15	The Avett Brothers, I and Love and You 
+American/Columbia	497	42
+16	The-Dream, Love vs. Money 
+Def Jam/Radio Killa	487	37
+17	The Pains of Being Pure at Heart, The Pains of Being Pure at Heart 
+Slumberland	450	48
+18	Mastodon, Crack the Skye 
+Reprise	447	44
+19	Baroness, The Blue Record 
+Relapse	437	39
+20	Sonic Youth, The Eternal 
+Matador	423	42
+21	Wilco, Wilco (The Album) 
+Nonesuch	410	44
+22	Bat for Lashes, Two Suns 
+Astralwerks	400	40
+23	Lily Allen, It's Not Me, It's You 
+EMI	400	37
+24	Converge, Axe to Fall 
+Epitaph	343	34
+25	Miranda Lambert, Revolution 
+Sony/Columbia Nashville	313	31
+26	Antony and the Johnsons, The Crying Light 
+Secretly Canadian	312	30
+27	Jay-Z, The Blueprint 3 
+Roc Nation	303	31
+28	The Dead Weather, Horehound 
+Third Man/Warner	294	29
+29	The Decemberists, The Hazards of Love 
+Capitol	290	33
+30	Camera Obscura, My Maudlin Career 
+4AD	287	32
+31	Lady Gaga, The Fame/The Fame Monster 
+Streamline/Interscope	281	27
+32	U2, No Line on the Horizon 
+Interscope	280	26
+33	Brad Paisley, American Saturday Night 
+Arista Nashville	279	27
+33	Japandroids, Post-Nothing 
+Unfamiliar	279	27
+35	Passion Pit, Manners 
+French Kiss	276	29
+36	K'Naan, Troubadour 
+A&M/Octone	276	28
+37	Green Day, 21st Century Breakdown 
+Warner	275	26
+38	Micachu and the Shapes, Jewellery 
+Rough Trade	270	26
+39	Fuck Buttons, Tarot Sport 
+ATP	263	27
+40	Yo La Tengo, Popular Songs 
+Matador	260	25

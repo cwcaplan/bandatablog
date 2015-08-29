@@ -1,0 +1,80 @@
+1	TV on the Radio, Dear Science 
+Interscope	1744	154
+2	Vampire Weekend, Vampire Weekend 
+XL	1075	105
+3	Portishead, Third 
+Vagrant	1058	102
+4	Fleet Foxes, Fleet Foxes 
+Sub Pop	917	88
+5	Erykah Badu, New Amerykah, Pt. 1: 4th World War 
+Universal	910	80
+6	Lil Wayne, Tha Carter III 
+Universal	817	78
+7	Santogold, Santogold 
+Downtown	808	79
+8	Bon Iver, For Emma, Forever Ago 
+XL	775	75
+9	Nick Cave and the Bad Seeds, Dig!!! Lazarus Dig!!! 
+Mute	687	61
+10	Kanye West, 808s & Heartbreak 
+Roc-a-Fella	603	57
+11	Deerhunter, Microcastle/Weird Era Continued 
+Kranky	585	55
+12	Randy Newman, Harps and Angels 
+Nonesuch	546	48
+13	The Hold Steady, Stay Positive 
+Vagrant	540	54
+14	No Age, Nouns 
+Sub Pop	452	45
+15	Girl Talk, Feed the Animals 
+Illegal Art	440	43
+16	My Morning Jacket, Evil Urges 
+RED	429	43
+17	Raphael Saadiq, The Way I See It 
+Columbia	425	45
+18	MGMT, Oracular Spectacular 
+Interscope	425	43
+19	Hercules and Love Affair, Hercules and Love Affair 
+Mute	416	42
+20	Bob Dylan, The Bootleg Series, Vol. 8: Tell Tale Signs - Rare and Unreleased 1989-2006 
+Columbia	402	36
+21	Coldplay, Viva la Vida, or Death and All His Friends 
+Capitol	366	36
+22	Los Campesinos!, Hold on Now, Youngster... 
+Wichita	365	32
+23	Cut Copy, In Ghost Colours 
+Modular	338	30
+24	Gaslight Anthem, The '59 Sound 
+Side One Dummy	321	28
+25	Q-Tip, The Renaissance 
+Universal	320	32
+26	R.E.M., Accelerate 
+Warner	313	29
+27	The Drive-By Truckers, Brighter Than Creation's Dark 
+Soul Dump	304	28
+28	M83, Saturdays=Youth 
+Mute	285	28
+29	David Byrne and Brian Eno, Everything That Happens Will Happen Today 
+Todomundo/Opal	281	28
+29	She and Him, Volume One 
+Merge	281	28
+31	Torche, Meanderthal 
+Hydra Head	276	26
+32	Walkmen, You & Me 
+Gigantic	265	26
+33	Hot Chip, Made in the Dark 
+EMI	261	26
+34	Frightened Rabbit, The Midnight Organ Fight 
+Fat Cat	258	23
+35	Alejandro Escovedo, Real Animal 
+Manhattan	253	23
+36	Kings of Leon, Only by the Night 
+RCA	252	24
+37	Metallica, Death Magnetic 
+Warner	240	24
+38	Fucked Up, The Chemistry of Common Life 
+Matador	233	20
+39	Roots, Rising Down 
+Nonesuch	224	25
+40	T.I., Paper Trail 
+Atlantic	221	22
