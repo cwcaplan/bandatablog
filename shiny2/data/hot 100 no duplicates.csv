@@ -9,12 +9,12 @@
 1983-05-21,"Let's Dance","David Bowie",118
 1983-05-28,"Flashdance...What A Feeling","Irene Cara",0
 1983-07-09,"Every Breath You Take","The Police",106
-1983-09-03,"Sweet Dreams (Are Made Of This)","Eurythmics",0
+1983-09-03,"Sweet Dreams (Are Made Of This)","Eurythmics",121
 1983-09-10,"Maniac","Michael Sembello",0
 1983-09-24,"Tell Her About It","Billy Joel",0
 1983-10-01,"Total Eclipse Of The Heart","Bonnie Tyler",0
 1983-10-29,"Islands In The Stream","Kenny Rogers with Dolly Parton",0
-1983-11-12,"All Night Long (All Night)","Lionel Richie",0
+1983-11-12,"All Night Long (All Night)","Lionel Richie",119
 1983-12-10,"Say Say Say","Paul McCartney And Michael Jackson",0
 1984-01-21,"Owner Of A Lonely Heart","Yes",0
 1984-02-04,"Karma Chameleon","Culture Club",125
@@ -78,7 +78,7 @@
 1986-07-19,"Invisible Touch","Genesis",0
 1986-07-26,"Sledgehammer","Peter Gabriel",186
 1986-08-02,"Glory Of Love (Theme From The Karate Kid Part II)","Peter Cetera",0
-1986-08-16,"Papa Don t Preach","Madonna",0
+1986-08-16,"Papa Don t Preach","Madonna",203
 1986-08-30,"Higher Love","Steve Winwood",190
 1986-09-06,"Venus","Bananarama",0
 1986-09-13,"Take My Breath Away (Love Theme From Top Gun)","Berlin",0
@@ -107,7 +107,7 @@
 1987-06-27,"I Wanna Dance With Somebody (Who Loves Me)","Whitney Houston",0
 1987-07-11,"Alone","Heart",0
 1987-08-01,"Shakedown (From Beverly Hills Cop II)","Bob Seger",0
-1987-08-08,"I Still Haven t Found What I m Looking For","U2",0
+1987-08-08,"I Still Haven t Found What I m Looking For","U2",226
 1987-08-22,"Who s That Girl","Madonna",0
 1987-08-29,"La Bamba","Los Lobos",210
 1987-09-19,"I Just Can t Stop Loving You","Michael Jackson With Siedah Garrett",0
@@ -172,7 +172,7 @@
 1989-07-08,"Good Thing","Fine Young Cannibals",0
 1989-07-15,"If You Don t Know Me By Now","Simply Red",0
 1989-07-22,"Toy Soldiers","Martika",0
-1989-08-05,"Batdance (From Batman)","The Artist",0
+1989-08-05,"Batdance (From Batman)","The Artist",272
 1989-08-12,"Right Here Waiting","Richard Marx",0
 1989-09-02,"Cold Hearted","Paula Abdul",0
 1989-09-09,"Hangin Tough","New Kids On The Block",0
@@ -216,7 +216,7 @@
 1991-02-23,"All The Man That I Need","Whitney Houston",0
 1991-03-09,"Someday","Mariah Carey",0
 1991-03-30,"Coming Out Of The Dark","Gloria Estefan",0
-1991-04-13,"I ve Been Thinking About You","Londonbeat",0
+1991-04-13,"I ve Been Thinking About You","Londonbeat",335
 1991-04-20,"You re In Love","Wilson Phillips",0
 1991-04-27,"Baby Baby","Amy Grant",0
 1991-05-11,"Joyride","Roxette",0
@@ -249,7 +249,7 @@
 1993-03-06,"A Whole New World (Aladdin s Theme)","Peabo Bryson",0
 1993-03-13,"Informer","Snow",391
 1993-05-01,"Freak Me","Silk",0
-1993-05-15,"That s The Way Love Goes","Janet Jackson",0
+1993-05-15,"That s The Way Love Goes","Janet Jackson",378
 1993-07-10,"Weak","SWV",0
 1993-07-24,"Can t Help Falling In Love (From Sliver)","UB40",0
 1993-09-11,"Dreamlover","Mariah Carey",0
@@ -264,15 +264,15 @@
 1994-08-06,"Stay (I Missed You) (From Reality Bites)","Lisa Loeb",0
 1994-08-27,"I ll Make Love To You","Boyz II Men",0
 1994-12-03,"On Bended Knee","Boyz II Men",0
-1994-12-17,"Here Comes The Hotstepper (From Ready To Wear)","Ini Kamoze",0
+1994-12-17,"Here Comes The Hotstepper (From Ready To Wear)","Ini Kamoze",404
 1995-01-28,"Creep","TLC",427
 1995-02-25,"Take A Bow","Madonna",0
 1995-04-15,"This Is How We Do It","Montell Jordan",0
 1995-06-03,"Have You Ever Really Loved A Woman?","Bryan Adams",0
 1995-07-08,"Waterfalls","TLC",424
-1995-08-26,"Kiss From A Rose (From Batman Forever)","Seal",0
+1995-08-26,"Kiss From A Rose (From Batman Forever)","Seal",437
 1995-09-02,"You Are Not Alone","Michael Jackson",0
-1995-09-09,"Gangsta's Paradise (From Dangerous Minds)","Coolio Featuring L.V.",0
+1995-09-09,"Gangsta's Paradise (From Dangerous Minds)","Coolio Featuring L.V.",420
 1995-09-30,"Fantasy","Mariah Carey",0
 1995-11-25,"Exhale (Shoop Shoop) (From Waiting To Exhale)","Whitney Houston",0
 1995-12-02,"One Sweet Day","Mariah Carey & Boyz II Men",0
@@ -281,7 +281,7 @@
 1996-05-18,"Tha Crossroads","Bone Thugs-N-Harmony",0
 1996-07-13,"How Do U Want It/California Love","2Pac Featuring KC And JoJo",0
 1996-07-27,"You're Makin' Me High/Let It Flow","Toni Braxton",0
-1996-08-03,"Macarena (Bayside Boys Mix)","Los Del Rio",0
+1996-08-03,"Macarena (Bayside Boys Mix)","Los Del Rio",460
 1996-11-09,"No Diggity","BLACKstreet (Featuring Dr. Dre)",453
 1996-12-07,"Un-Break My Heart","Toni Braxton",0
 1997-02-22,"Wannabe","Spice Girls",487
@@ -307,7 +307,7 @@
 1998-09-12,"I Don't Want To Miss A Thing","Aerosmith",0
 1998-10-03,"The First Night","Monica",0
 1998-10-17,"One Week","Barenaked Ladies",522
-1998-11-14,"Doo Wop (That Thing)","Lauryn Hill",0
+1998-11-14,"Doo Wop (That Thing)","Lauryn Hill",500
 1998-11-28,"Lately","Divine",0
 1998-12-05,"I m Your Angel","R. Kelly",0
 1999-01-16,"Have You Ever?","Brandy",0
@@ -423,7 +423,7 @@
 2007-07-28,"Hey There Delilah","Plain White T's",0
 2007-08-11,"Beautiful Girls","Sean Kingston",0
 2007-09-08,"Big Girls Don't Cry","Fergie",0
-2007-09-15,"Crank That (Soulja Boy)","Soulja Boy",0
+2007-09-15,"Crank That (Soulja Boy)","Soulja Boy",861
 2007-09-29,"Stronger","Kanye West",841
 2007-11-10,"Kiss Kiss","Chris Brown Featuring T-Pain",0
 2007-12-01,"No One","Alicia Keys",858
@@ -439,7 +439,7 @@
 2008-09-27,"So What","Pink",893
 2008-10-18,"Live Your Life","T.I. Featuring Rihanna",887
 2008-10-25,"Womanizer","Britney Spears",904
-2008-12-13,"Single Ladies (Put A Ring On It)","Beyonce",0
+2008-12-13,"Single Ladies (Put A Ring On It)","Beyonce",877
 2009-01-17,"Just Dance","Lady GaGa Featuring Colby O'Donis",0
 2009-02-07,"My Life Would Suck Without You","Kelly Clarkson",0
 2009-02-21,"Crack A Bottle","Eminem, Dr. Dre & 50 Cent",0

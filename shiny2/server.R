@@ -9,9 +9,17 @@ yearBoth <- function(year, chart) {
     if(chart==1) {
         chart <- wnoMnd
     } else if (chart==2) {
-        chart <- coMnd
+        chart <- h1Mnd
     } else if (chart==3) {
+        chart <- coMnd
+    } else if (chart==4) {
+        chart <- cosMnd
+    } else if (chart==5) {
         chart <- rbMnd
+    } else if (chart==6) {
+        chart <- rbsMnd
+    } else if (chart==7) {
+        chart <- mrsMnd
     }
     both <- chart[substring(chart$date, 1, 4)==year & chart$index>0, ]
     albums <- character()
@@ -25,9 +33,17 @@ yearBB <- function(year, chart) {
     if(chart==1) {
         chart <- wnoMnd
     } else if (chart==2) {
-        chart <- coMnd
+        chart <- h1Mnd
     } else if (chart==3) {
+        chart <- coMnd
+    } else if (chart==4) {
+        chart <- cosMnd
+    } else if (chart==5) {
         chart <- rbMnd
+    } else if (chart==6) {
+        chart <- rbsMnd
+    } else if (chart==7) {
+        chart <- mrsMnd
     }
     BB <- chart[substring(chart$date, 1, 4)==year & chart$index==0, ]
     albums <- character()
@@ -42,11 +58,23 @@ weeksTop5 <- function(year, chart) {
         chart <- wnoM
         chartnd <- wnoMnd
     } else if (chart==2) {
+        chart <- h1M
+        chartnd <- h1Mnd
+    } else if (chart==3) {
         chart <- coM
         chartnd <- coMnd
-    } else if (chart==3) {
+    } else if (chart==4) {
+        chart <- cosM
+        chartnd <- cosMnd
+    } else if (chart==5) {
         chart <- rbM
         chartnd <- rbMnd
+    } else if (chart==6) {
+        chart <- rbsM
+        chartnd <- rbsMnd
+    } else if (chart==7) {
+        chart <- mrsM
+        chartnd <- mrsMnd
     }
     ya <- chartnd[substring(chartnd$date, 1, 4)==year,]
     weeks <- rep(0, nrow(ya))
@@ -133,7 +161,7 @@ shinyServer(
                 points(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid4")
             }
         } else if (albSing()=="Both") {
-            par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,6,2))
+            par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,7,2))
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Albums",
                  xlab="", ylab="", ylim=c(0,.62), yaxt="n")
@@ -167,7 +195,7 @@ shinyServer(
                 points(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid4")
             }
             title("Percentage of Chart-Toppers on Critic's List", outer = T, 
-                  line = -1, cex = 1.5)
+                  line = -2, cex = 1.5)
         }
         })
         output$numPlotC <- renderPlot({
@@ -206,7 +234,7 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
                 }
             } else if (albSing()=="Both") {
-                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,6,2))
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,7,2))
                 plot(yearStats$year, yearStats$critPicks, 
                      type="n", main="Albums",
                      xlab="", ylab="", ylim=c(0,8))
@@ -238,7 +266,7 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
                 }
                 title("Number of Chart-Toppers on Critic's List", outer = T, 
-                      line = -1, cex = 1.5)
+                      line = -2, cex = 1.5)
             }
         })
         output$numPlotT <- renderPlot({
@@ -293,7 +321,7 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
                 }
             } else if (albSing()=="Both") {
-                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,6,2))
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
                 plot(yearStats$year, yearStats$total,
                      type="n", main="Albums", ylim=c(0,43),
                      xlab="", ylab="")
@@ -341,7 +369,7 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
                 }
                 title("Number of Chart-Toppers in a Given Year", outer = T, 
-                      line = -1, cex = 1.5)
+                      line = -2, cex = 1.5)
             }
         })
         output$weeksPlotAvg <- renderPlot({
@@ -392,7 +420,7 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
                 }
             } else if (albSing()=="Both") {
-                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,6,2))
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$avgWeeks, 
                          type="n", main="Albums",
@@ -501,7 +529,7 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
                 }
             } else if (albSing()=="Both") {
-                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,6,2))
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,50), 
                          main="Albums", xlab="", ylab="")
