@@ -24,8 +24,9 @@ shinyUI(pageWithSidebar(
             is an aggregated Best Albums of the Year list from several hundred critics.  
             It was started by Robert Christgau in 1971 and has been curated by the 
             Village Voice ever since."),
+        radioButtons('albSing', "", c("Albums"="Albums", "Singles"="Singles", "Both"="Both"), inline=T),
         checkboxGroupInput('chartChoice', "Compare Critic's List To:", 
-                           c("Billboard 200"="1", "Country"="2", "R&B/Hip-Hop" = "3"),
+                           c("Billboard 200"="1", "Country"="2", "R&B/Hip-Hop" = "3", "Mainstream Rock" = "4"),
                            selected="1", inline=T),
         plotOutput("percPlot"),
         plotOutput("numPlotC"),

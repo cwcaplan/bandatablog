@@ -82,7 +82,6 @@ shinyServer(
         #output$albums <- renderDataTable({
         #    pickedYear()[,2:3]
         #    })
-        par(lwd=4)
         avg <- reactive({weeksAvg(input$year, input$top5ChartPick)})
         output$avg <- renderText({paste("Avg Weeks At #1:", avg())})
         top5 <- reactive({weeksTop5(input$year, input$top5ChartPick)})
@@ -93,7 +92,9 @@ shinyServer(
         output$losers <- renderText({losers()})
         chartChoice <- reactive({input$chartChoice})
         output$chartChoice <- renderText({chartChoice()})
+        albSing <- reactive({input$albSing})
         output$percPlot <- renderPlot({
+        if(albSing()=="Albums"){
             par(lwd=2, cex=1.05)
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
@@ -113,129 +114,455 @@ shinyServer(
                 lines(rbYearStats$year, rbYearStats$percentage, col="darkorchid3")
                 points(rbYearStats$year, rbYearStats$percentage, col="darkorchid4")
             }
-        })
-        output$percPlotI <- renderPlot({
+        } else if (albSing()=="Singles") {
             par(lwd=2, cex=1.05)
-            plot(yearStats$year, yearStats$percentage, 
+            plot(h1YearStats$year, h1YearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="", yaxt="n")
-            axis(2, at=c(.1, .2, .3, .4, .5), lab=c("10%", "20%", "30%", "40%", "50%"))
-            lines(yearStats$year, yearStats$percentage, col="gray70")
-            points(yearStats$year, yearStats$percentage, pch=21, 
-                   col="darkorchid4", bg="darkorchid1", cex=.1*yearStats$total)
-            points(yearStats$year, yearStats$percentage, pch=20,
-                   col="firebrick4", cex=.35*yearStats$critPicks)
+                 xlab="Year", ylab="", ylim=c(0,.62), yaxt="n")
+            axis(2, at=c(.1, .2, .3, .4, .5, .6), lab=c("10%", "20%", "30%", "40%", "50%", "60%"))
             if(any(chartChoice()==1)){
-                
+                lines(h1YearStats$year, h1YearStats$percentage, col="gray70")
+                points(h1YearStats$year, h1YearStats$percentage, col="midnightblue")
             }
             if(any(chartChoice()==2)){
-                
+                lines(cosYearStats$year, cosYearStats$percentage, col="springgreen3")
+                points(cosYearStats$year, cosYearStats$percentage, col="springgreen4")
             }
             if(any(chartChoice()==3)){
-                
+                lines(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid3")
+                points(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid4")
             }
+        } else if (albSing()=="Both") {
+            par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,6,2))
+            plot(yearStats$year, yearStats$percentage, 
+                 type="n", main="Albums",
+                 xlab="", ylab="", ylim=c(0,.62), yaxt="n")
+            axis(2, at=c(.1, .2, .3, .4, .5, .6), lab=c("10%", "20%", "30%", "40%", "50%", "60%"))
+            if(any(chartChoice()==1)){
+                lines(yearStats$year, yearStats$percentage, col="gray70")
+                points(yearStats$year, yearStats$percentage, col="midnightblue")
+            }
+            if(any(chartChoice()==2)){
+                lines(coYearStats$year, coYearStats$percentage, col="springgreen3")
+                points(coYearStats$year, coYearStats$percentage, col="springgreen4")
+            }
+            if(any(chartChoice()==3)){
+                lines(rbYearStats$year, rbYearStats$percentage, col="darkorchid3")
+                points(rbYearStats$year, rbYearStats$percentage, col="darkorchid4")
+            }
+            plot(h1YearStats$year, h1YearStats$percentage, 
+                 type="n", main="Singles",
+                 xlab="", ylab="", ylim=c(0,.62), yaxt="n")
+            axis(2, at=c(.1, .2, .3, .4, .5, .6), lab=c("10%", "20%", "30%", "40%", "50%", "60%"))
+            if(any(chartChoice()==1)){
+                lines(h1YearStats$year, h1YearStats$percentage, col="gray70")
+                points(h1YearStats$year, h1YearStats$percentage, col="midnightblue")
+            }
+            if(any(chartChoice()==2)){
+                lines(cosYearStats$year, cosYearStats$percentage, col="springgreen3")
+                points(cosYearStats$year, cosYearStats$percentage, col="springgreen4")
+            }
+            if(any(chartChoice()==3)){
+                lines(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid3")
+                points(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid4")
+            }
+            title("Percentage of Chart-Toppers on Critic's List", outer = T, 
+                  line = -1, cex = 1.5)
+        }
         })
         output$numPlotC <- renderPlot({
-            par(lwd=2, cex=1.05)
-            plot(yearStats$year, yearStats$critPicks, 
-                 type="n", main="Number of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="Number of Albums", ylim=c(0,8))
-            if(any(chartChoice()==1)){
-                lines(yearStats$year, yearStats$critPicks, col="gray70")
-                points(yearStats$year, yearStats$critPicks, col="midnightblue")
-            }
-            if(any(chartChoice()==2)){
-                lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
-                points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
-            }
-            if(any(chartChoice()==3)){
-                lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
-                points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
+            if(albSing()=="Albums"){
+                par(lwd=2, cex=1.05)
+                plot(yearStats$year, yearStats$critPicks, 
+                     type="n", main="Number of Chart-Toppers on Critic's List",
+                     xlab="", ylab="Number of Albums", ylim=c(0,8))
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$critPicks, col="gray70")
+                    points(yearStats$year, yearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
+                }
+            } else if (albSing()=="Singles") {
+                par(lwd=2, cex=1.05)
+                plot(h1YearStats$year, h1YearStats$critPicks, 
+                     type="n", main="Number of Chart-Toppers on Critic's List",
+                     xlab="", ylab="Number of Singles", ylim=c(0,8))
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$critPicks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$critPicks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
+                }
+            } else if (albSing()=="Both") {
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,6,2))
+                plot(yearStats$year, yearStats$critPicks, 
+                     type="n", main="Albums",
+                     xlab="", ylab="", ylim=c(0,8))
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$critPicks, col="gray70")
+                    points(yearStats$year, yearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
+                }
+                plot(yearStats$year, yearStats$critPicks, 
+                     type="n", main="Singles",
+                     xlab="", ylab="", ylim=c(0,8))
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$critPicks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$critPicks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
+                }
+                title("Number of Chart-Toppers on Critic's List", outer = T, 
+                      line = -1, cex = 1.5)
             }
         })
         output$numPlotT <- renderPlot({
-            par(lwd=2, cex=1.05)
-            plot(yearStats$year, yearStats$total,
-                 type="n", main="Number of Chart-Topping Albums in a Given Year", ylim=c(0,43),
-                 xlab="Year", ylab="Number of Chart-Toppers")
-            legend("topleft", lty=c(2,1), col="midnightblue",
-                   legend=c("Total", "on Critic's List"))
-            if(any(chartChoice()==1)){
-                lines(yearStats$year, yearStats$total, col="gray70", lty=2)
-                points(yearStats$year, yearStats$total, col="midnightblue")
-                lines(yearStats$year, yearStats$critPicks, col="gray70")
-                points(yearStats$year, yearStats$critPicks, col="midnightblue")
-            }
-            if(any(chartChoice()==2)){
-                lines(coYearStats$year, coYearStats$total, col="springgreen3", lty=2)
-                points(coYearStats$year, coYearStats$total, col="springgreen4")
-                lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
-                points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
-            }
-            if(any(chartChoice()==3)){
-                lines(rbYearStats$year, rbYearStats$total, col="darkorchid3", lty=2)
-                points(rbYearStats$year, rbYearStats$total, col="darkorchid4")
-                lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
-                points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
+            if(albSing()=="Albums") {
+                par(lwd=2, cex=1.05)
+                plot(yearStats$year, yearStats$total,
+                     type="n", main="Number of Chart-Topping Albums in a Given Year", ylim=c(0,43),
+                     xlab="Year", ylab="Number of Chart-Toppers")
+                legend("topleft", lty=c(2,1), col="midnightblue",
+                       legend=c("Total", "on Critic's List"))
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$total, col="gray70", lty=2)
+                    points(yearStats$year, yearStats$total, col="midnightblue")
+                    lines(yearStats$year, yearStats$critPicks, col="gray70")
+                    points(yearStats$year, yearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$total, col="springgreen3", lty=2)
+                    points(coYearStats$year, coYearStats$total, col="springgreen4")
+                    lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$total, col="darkorchid3", lty=2)
+                    points(rbYearStats$year, rbYearStats$total, col="darkorchid4")
+                    lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
+                }
+            } else if (albSing()=="Singles") {
+                par(lwd=2, cex=1.05)
+                plot(yearStats$year, yearStats$total,
+                     type="n", main="Number of Chart-Topping Singles in a Given Year", ylim=c(0,43),
+                     xlab="Year", ylab="Number of Chart-Toppers")
+                legend("topleft", lty=c(2,1), col="midnightblue",
+                       legend=c("Total", "on Critic's List"))
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$total, col="gray70", lty=2)
+                    points(h1YearStats$year, h1YearStats$total, col="midnightblue")
+                    lines(h1YearStats$year, h1YearStats$critPicks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$total, col="springgreen3", lty=2)
+                    points(cosYearStats$year, cosYearStats$total, col="springgreen4")
+                    lines(cosYearStats$year, cosYearStats$critPicks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$total, col="darkorchid3", lty=2)
+                    points(rbsYearStats$year, rbsYearStats$total, col="darkorchid4")
+                    lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
+                }
+            } else if (albSing()=="Both") {
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,6,2))
+                plot(yearStats$year, yearStats$total,
+                     type="n", main="Albums", ylim=c(0,43),
+                     xlab="", ylab="")
+                legend("topleft", lty=c(2,1), col="midnightblue",
+                       legend=c("Total", "on Critic's List"))
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$total, col="gray70", lty=2)
+                    points(yearStats$year, yearStats$total, col="midnightblue")
+                    lines(yearStats$year, yearStats$critPicks, col="gray70")
+                    points(yearStats$year, yearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$total, col="springgreen3", lty=2)
+                    points(coYearStats$year, coYearStats$total, col="springgreen4")
+                    lines(coYearStats$year, coYearStats$critPicks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$total, col="darkorchid3", lty=2)
+                    points(rbYearStats$year, rbYearStats$total, col="darkorchid4")
+                    lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
+                }
+                plot(yearStats$year, yearStats$total,
+                     type="n", main="Singles", ylim=c(0,43),
+                     xlab="", ylab="")
+                legend("topleft", lty=c(2,1), col="midnightblue",
+                       legend=c("Total", "on Critic's List"))
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$total, col="gray70", lty=2)
+                    points(h1YearStats$year, h1YearStats$total, col="midnightblue")
+                    lines(h1YearStats$year, h1YearStats$critPicks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$critPicks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$total, col="springgreen3", lty=2)
+                    points(cosYearStats$year, cosYearStats$total, col="springgreen4")
+                    lines(cosYearStats$year, cosYearStats$critPicks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$critPicks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$total, col="darkorchid3", lty=2)
+                    points(rbsYearStats$year, rbsYearStats$total, col="darkorchid4")
+                    lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
+                }
+                title("Number of Chart-Toppers in a Given Year", outer = T, 
+                      line = -1, cex = 1.5)
             }
         })
         output$weeksPlotAvg <- renderPlot({
-            par(lwd=2, cex=1.05)
-            if(any(chartChoice()==2)) {
-                plot(yearStats$year, yearStats$avgWeeks, 
-                     type="n", main="Average Weeks At Number One",
-                     xlab="Year", ylab="Weeks", ylim=c(0,19))
-            } else {
-                plot(yearStats$year, yearStats$avgWeeks, 
-                     type="n", main="Average Weeks At Number One",
-                     xlab="Year", ylab="Weeks", ylim=c(0,11))
-            }
-            if(any(chartChoice()==1)){
-                lines(yearStats$year, yearStats$avgWeeks, col="gray70")
-                points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
-            }
-            if(any(chartChoice()==2)){
-                lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
-                points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
-            }
-            if(any(chartChoice()==3)){
-                lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
-                points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
+            if(albSing()=="Albums") {
+                par(lwd=2, cex=1.05)
+                if(any(chartChoice()==2)) {
+                    plot(yearStats$year, yearStats$avgWeeks, 
+                         type="n", main="Average Weeks At Number One",
+                         xlab="Year", ylab="Weeks", ylim=c(0,19))
+                } else {
+                    plot(yearStats$year, yearStats$avgWeeks, 
+                         type="n", main="Average Weeks At Number One",
+                         xlab="Year", ylab="Weeks", ylim=c(0,11))
+                }
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$avgWeeks, col="gray70")
+                    points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
+                }
+            } else if (albSing()=="Singles") {
+                par(lwd=2, cex=1.05)
+                if(any(chartChoice()==2)) {
+                    plot(h1YearStats$year, h1YearStats$avgWeeks, 
+                         type="n", main="Average Weeks At Number One",
+                         xlab="Year", ylab="Weeks", ylim=c(0,19))
+                } else {
+                    plot(h1YearStats$year, h1YearStats$avgWeeks, 
+                         type="n", main="Average Weeks At Number One",
+                         xlab="Year", ylab="Weeks", ylim=c(0,11))
+                }
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$avgWeeks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+            } else if (albSing()=="Both") {
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,6,2))
+                if(any(chartChoice()==2)) {
+                    plot(yearStats$year, yearStats$avgWeeks, 
+                         type="n", main="Albums",
+                         xlab="", ylab="", ylim=c(0,19))
+                } else {
+                    plot(yearStats$year, yearStats$avgWeeks, 
+                         type="n", main="Albums",
+                         xlab="", ylab="", ylim=c(0,11))
+                }
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$avgWeeks, col="gray70")
+                    points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
+                }
+                if(any(chartChoice()==2)) {
+                    plot(h1YearStats$year, h1YearStats$avgWeeks, 
+                         type="n", main="Average Weeks At Number One",
+                         xlab="Year", ylab="Weeks", ylim=c(0,19))
+                } else {
+                    plot(h1YearStats$year, h1YearStats$avgWeeks, 
+                         type="n", main="Singles",
+                         xlab="", ylab="", ylim=c(0,11))
+                }
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$avgWeeks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+                title("Average Weeks At Number One", outer = T, 
+                      line = -2, cex = 1.5)
             }
         })
         output$weeksPlot <- renderPlot({
-            par(lwd=2, cex=1.05)
-            if(any(chartChoice()==2)) {
-                plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,50), 
-                     main="Weeks At Number One", xlab="Year", ylab="Weeks")
-            } else {
-                plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,30), 
-                     main="Weeks At Number One", xlab="Year", ylab="Weeks")
-            }
-            
-            legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
-                   legend=c("Yearly High", "Average"))
-            if(any(chartChoice()==1)){
-                lines(yearStats$year, yearStats$mostWeeks, col="gray70", lty=2)
-                points(yearStats$year, yearStats$mostWeeks, col="midnightblue")
-                lines(yearStats$year, yearStats$avgWeeks, col="gray70")
-                points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
-            }
-            if(any(chartChoice()==2)){
-                lines(coYearStats$year, coYearStats$mostWeeks, col="springgreen3", lty=2)
-                points(coYearStats$year, coYearStats$mostWeeks, col="springgreen4")
-                lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
-                points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
-            }
-            if(any(chartChoice()==3)){
-                lines(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid3", lty=2)
-                points(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid4")
-                lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
-                points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
+            if(albSing()=="Albums") {
+                par(lwd=2, cex=1.05)
+                if(any(chartChoice()==2)) {
+                    plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,50), 
+                         main="Weeks At Number One", xlab="Year", ylab="Weeks")
+                } else {
+                    plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,30), 
+                         main="Weeks At Number One", xlab="Year", ylab="Weeks")
+                }
+                
+                legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
+                       legend=c("Yearly High", "Average"))
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$mostWeeks, col="gray70", lty=2)
+                    points(yearStats$year, yearStats$mostWeeks, col="midnightblue")
+                    lines(yearStats$year, yearStats$avgWeeks, col="gray70")
+                    points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$mostWeeks, col="springgreen3", lty=2)
+                    points(coYearStats$year, coYearStats$mostWeeks, col="springgreen4")
+                    lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid3", lty=2)
+                    points(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid4")
+                    lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
+                }
+            } else if (albSing()=="Singles") {
+                par(lwd=2, cex=1.05)
+                if(any(chartChoice()==2)) {
+                    plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,50), 
+                         main="Weeks At Number One", xlab="Year", ylab="Weeks")
+                } else {
+                    plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,30), 
+                         main="Weeks At Number One", xlab="Year", ylab="Weeks")
+                }
+                
+                legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
+                       legend=c("Yearly High", "Average"))
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$mostWeeks, col="gray70", lty=2)
+                    points(h1YearStats$year, h1YearStats$mostWeeks, col="midnightblue")
+                    lines(h1YearStats$year, h1YearStats$avgWeeks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$mostWeeks, col="springgreen3", lty=2)
+                    points(cosYearStats$year, cosYearStats$mostWeeks, col="springgreen4")
+                    lines(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$mostWeeks, col="darkorchid3", lty=2)
+                    points(rbsYearStats$year, rbsYearStats$mostWeeks, col="darkorchid4")
+                    lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+            } else if (albSing()=="Both") {
+                par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,6,2))
+                if(any(chartChoice()==2)) {
+                    plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,50), 
+                         main="Albums", xlab="", ylab="")
+                } else {
+                    plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,30), 
+                         main="Albums", xlab="", ylab="")
+                }
+                
+                legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
+                       legend=c("Yearly High", "Average"))
+                if(any(chartChoice()==1)){
+                    lines(yearStats$year, yearStats$mostWeeks, col="gray70", lty=2)
+                    points(yearStats$year, yearStats$mostWeeks, col="midnightblue")
+                    lines(yearStats$year, yearStats$avgWeeks, col="gray70")
+                    points(yearStats$year, yearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(coYearStats$year, coYearStats$mostWeeks, col="springgreen3", lty=2)
+                    points(coYearStats$year, coYearStats$mostWeeks, col="springgreen4")
+                    lines(coYearStats$year, coYearStats$avgWeeks, col="springgreen3")
+                    points(coYearStats$year, coYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid3", lty=2)
+                    points(rbYearStats$year, rbYearStats$mostWeeks, col="darkorchid4")
+                    lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
+                    points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
+                }
+                if(any(chartChoice()==2)) {
+                    plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,50), 
+                         main="Singles", xlab="", ylab="")
+                } else {
+                    plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,30), 
+                         main="Singles", xlab="", ylab="")
+                }
+                legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
+                       legend=c("Yearly High", "Average"))
+                if(any(chartChoice()==1)){
+                    lines(h1YearStats$year, h1YearStats$mostWeeks, col="gray70", lty=2)
+                    points(h1YearStats$year, h1YearStats$mostWeeks, col="midnightblue")
+                    lines(h1YearStats$year, h1YearStats$avgWeeks, col="gray70")
+                    points(h1YearStats$year, h1YearStats$avgWeeks, col="midnightblue")
+                }
+                if(any(chartChoice()==2)){
+                    lines(cosYearStats$year, cosYearStats$mostWeeks, col="springgreen3", lty=2)
+                    points(cosYearStats$year, cosYearStats$mostWeeks, col="springgreen4")
+                    lines(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen3")
+                    points(cosYearStats$year, cosYearStats$avgWeeks, col="springgreen4")
+                }
+                if(any(chartChoice()==3)){
+                    lines(rbsYearStats$year, rbsYearStats$mostWeeks, col="darkorchid3", lty=2)
+                    points(rbsYearStats$year, rbsYearStats$mostWeeks, col="darkorchid4")
+                    lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
+                    points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+                title("Weeks At Number One", outer = T, 
+                      line = -2, cex = 1.5)
             }
         })
         output$RanGarTayPlot <- renderPlot({
-            if(any(chartChoice()==2)) {
+            if(any(chartChoice()==2) & albSing()=="Albums") {
                 par(lwd=2, cex=1.05)
                 plot(RanGarTayStats$year, RanGarTayStats$Garth,
                      type="n", main="Percentage of the Year that Randy Travis, Garth Brooks, or Taylor Swift were #1",
