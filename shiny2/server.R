@@ -1,85 +1,5 @@
 #setwd("C:/Users/Seth/Documents/bandatablog/")
 
-#BILLBOARD 200
-year <- "1983"
-yearStats <- data.frame()
-for (i in 1:31) {
-    year <- (as.character(as.numeric(year)+1))
-    indices <- wnoMnd$index[substring(wnoMnd$date, 1, 4)==year]
-    yearStats[i,1] <- year
-    yearStats[i,2] <- length(indices[indices>0]) / length(indices)
-    yearStats[i,3] <- length(indices[indices>0])
-    yearStats[i,4] <- length(indices)
-    ya <- wnoMnd[substring(wnoMnd$date, 1, 4)==year,]
-    weeks <- rep(0, nrow(ya))
-    ya <- cbind(ya, weeks)
-    for (j in 1:nrow(ya)) {
-        ya[j,5] <- nrow(wnoM[ya[j,2]==wnoM[,2] & ya[j,3]==wnoM[,3],])
-    }
-    yearStats[i, 5] <- round(mean(ya$weeks),1)
-    yearStats[i, 6] <- max(ya$weeks)
-}
-names(yearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
-
-# COUNTRY
-year <- "1983"
-coYearStats <- data.frame()
-for (i in 1:31) {
-    year <- (as.character(as.numeric(year)+1))
-    indices <- coMnd$index[substring(coMnd$date, 1, 4)==year]
-    coYearStats[i,1] <- year
-    coYearStats[i,2] <- length(indices[indices>0]) / length(indices)
-    coYearStats[i,3] <- length(indices[indices>0])
-    coYearStats[i,4] <- length(indices)
-    ya <- coMnd[substring(coMnd$date, 1, 4)==year,]
-    weeks <- rep(0, nrow(ya))
-    ya <- cbind(ya, weeks)
-    for (j in 1:nrow(ya)) {
-        ya[j,5] <- nrow(coM[ya[j,2]==coM[,2] & ya[j,3]==coM[,3],])
-    }
-    coYearStats[i, 5] <- round(mean(ya$weeks),1)
-    coYearStats[i, 6] <- max(ya$weeks)
-}
-coYearStats[1,2:6] <- NA
-names(coYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
-
-
-# R&B
-year <- "1983"
-rbYearStats <- data.frame()
-for (i in 1:31) {
-    year <- (as.character(as.numeric(year)+1))
-    indices <- rbMnd$index[substring(rbMnd$date, 1, 4)==year]
-    rbYearStats[i,1] <- year
-    rbYearStats[i,2] <- length(indices[indices>0]) / length(indices)
-    rbYearStats[i,3] <- length(indices[indices>0])
-    rbYearStats[i,4] <- length(indices)
-    ya <- rbMnd[substring(rbMnd$date, 1, 4)==year,]
-    weeks <- rep(0, nrow(ya))
-    ya <- cbind(ya, weeks)
-    for (j in 1:nrow(ya)) {
-        ya[j,5] <- nrow(rbM[ya[j,2]==rbM[,2] & ya[j,3]==rbM[,3],])
-    }
-    rbYearStats[i, 5] <- round(mean(ya$weeks),1)
-    rbYearStats[i, 6] <- max(ya$weeks)
-}
-rbYearStats[1,2:6] <- NA
-names(rbYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks")
-
-### RANDY VS. GARTH VS. TAYLOR
-year <- "1983"
-RanGarTayStats <- data.frame()
-for (i in 1:31) {
-    year <- (as.character(as.numeric(year)+1))
-    coMy <- coM[substring(coM$date, 1, 4)==year,]
-    RanGarTayStats[i,1] <- year
-    RanGarTayStats[i,2] <- round(length(grep("Randy Travis", coMy$artist)) / 52, 3)
-    RanGarTayStats[i,3] <- round(length(grep("Garth Brooks", coMy$artist)) / 52, 3)
-    RanGarTayStats[i,4] <- round(length(grep("Taylor Swift", coMy$artist)) / 52, 3)
-}
-RanGarTayStats[1,2:4] <- NA
-names(RanGarTayStats) <- c("year", "Randy", "Garth", "Taylor")
-
 pickAYear <- function(year) {
     pickedYear <- wnoMnd[substring(wnoMnd$date, 1, 4)==year & wnoMnd$index>0, ]
     pickedYear
@@ -162,6 +82,7 @@ shinyServer(
         #output$albums <- renderDataTable({
         #    pickedYear()[,2:3]
         #    })
+        par(lwd=4)
         avg <- reactive({weeksAvg(input$year, input$top5ChartPick)})
         output$avg <- renderText({paste("Avg Weeks At #1:", avg())})
         top5 <- reactive({weeksTop5(input$year, input$top5ChartPick)})
@@ -181,6 +102,8 @@ shinyServer(
             if(any(chartChoice()==1)){
                 lines(yearStats$year, yearStats$percentage, col="gray70")
                 points(yearStats$year, yearStats$percentage, col="midnightblue")
+                #lines(yearStats$year, yearStats$percWeeks, col="gray70", lty=2)
+                #points(yearStats$year, yearStats$percWeeks, col="midnightblue")
             }
             if(any(chartChoice()==2)){
                 lines(coYearStats$year, coYearStats$percentage, col="springgreen3")
@@ -289,6 +212,7 @@ shinyServer(
                 plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,30), 
                      main="Weeks At Number One", xlab="Year", ylab="Weeks")
             }
+            
             legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
                    legend=c("Yearly High", "Average"))
             if(any(chartChoice()==1)){
@@ -321,6 +245,8 @@ shinyServer(
                 points(RanGarTayStats$year, RanGarTayStats$Randy, col="springgreen4")
                 lines(RanGarTayStats$year, RanGarTayStats$Garth, col="gray70")
                 points(RanGarTayStats$year, RanGarTayStats$Garth, col="midnightblue")
+                #lines(RanGarTayStats$year, RanGarTayStats$Shania, col="darkorchid3")
+                #points(RanGarTayStats$year, RanGarTayStats$Shania, col="darkorchid4")
                 lines(RanGarTayStats$year, RanGarTayStats$Taylor, col="firebrick3")
                 points(RanGarTayStats$year, RanGarTayStats$Taylor, col="firebrick4")
                 legend("topright", lty=c(1,1,1), col=c("springgreen4", "midnightblue", "firebrick4"), 

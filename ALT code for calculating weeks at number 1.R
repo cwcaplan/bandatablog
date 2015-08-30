@@ -2,6 +2,7 @@
 
 ##puts an album only under the year it came out
 ##and then counts its TOTAL weeks at #1
+###THE ONE WE'RE USING NOW
 
 #BILLBOARD 200
 year <- "1983"

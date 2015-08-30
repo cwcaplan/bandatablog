@@ -1,8 +1,8 @@
-#setwd("C:/Users/Seth/Documents/bandatablog/shiny1/")
+#setwd("C:/Users/Seth/Documents/bandatablog/shiny2/")
 
 #pazz and jop
 pjM <- read.csv("data/pazz and jop 1974-2014.csv", stringsAsFactors=F)
-pjsM <- read.csv("data/pj singles 1979-2014.csv", stingsAsFactors=F)
+pjsM <- read.csv("data/pj singles 1979-2014.csv", stringsAsFactors=F)
 ##ALBUMS
 #Billboard 200
 wnoM <- read.csv("data/BB200 weekly number ones.csv", stringsAsFactors=F)
@@ -25,4 +25,9 @@ h1M <- read.csv("data/hot 100 weekly number ones.csv", stringsAsFactors=F)
 h1M$date <- as.Date(h1M$date, "%Y-%m-%d")
 h1Mnd <- read.csv("data/hot 100 no duplicates.csv", stringsAsFactors=F)
 h1Mnd$date <- as.Date(h1Mnd$date, "%Y-%m-%d")
-
+##YEAR STATS
+yearStats <- read.csv("data/yearStats.csv", stringsAsFactors=F)
+coYearStats <- read.csv("data/coYearStats.csv", stringsAsFactors=F)
+rbYearStats <- read.csv("data/rbYearStats.csv", stringsAsFactors=F)
+RanGarTayStats <- read.csv("data/RanGarTayStats.csv", stringsAsFactors=F)
+h1YearStats <- read.csv("data/h1YearStats.csv", stringsAsFactors=F)
