@@ -127,4 +127,89 @@ for (i in 1:31) {
 names(h1YearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
 #write.csv(h1YearStats, "data/h1YearStats.csv", row.names=F)
 
+# COUNTRY SINGLES
+year <- "1985"
+cosYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- cosMnd$index[substring(cosMnd$date, 1, 4)==year]
+    cosYearStats[i,1] <- year
+    #percentage of #1's on crit list
+    cosYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    #number of #1's on crit list
+    cosYearStats[i,3] <- length(indices[indices>0])
+    #number of #1's (per year)
+    cosYearStats[i,4] <- length(indices)
+    #weeks at number #1 (avg and max)
+    ya <- cosMnd[substring(cosMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(cosM[ya[j,2]==cosM[,2] & ya[j,3]==cosM[,3],])
+    }
+    cosYearStats[i, 5] <- round(mean(ya$weeks),1)
+    cosYearStats[i, 6] <- max(ya$weeks)
+    #perc of weeks with a crit pick at #1
+    yaD <- cosM[substring(cosM$date, 1, 4)==year,]
+    cosYearStats[i, 7] <- length(yaD$index[yaD$index>0])/length(yaD$index)
+}
+names(cosYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
+#write.csv(cosYearStats, "data/cosYearStats.csv", row.names=F)
 
+#R AND B SINGLES
+year <- "1985"
+rbsYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- rbsMnd$index[substring(rbsMnd$date, 1, 4)==year]
+    rbsYearStats[i,1] <- year
+    #percentage of #1's on crit list
+    rbsYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    #number of #1's on crit list
+    rbsYearStats[i,3] <- length(indices[indices>0])
+    #number of #1's (per year)
+    rbsYearStats[i,4] <- length(indices)
+    #weeks at number #1 (avg and max)
+    ya <- rbsMnd[substring(rbsMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(rbsM[ya[j,2]==rbsM[,2] & ya[j,3]==rbsM[,3],])
+    }
+    rbsYearStats[i, 5] <- round(mean(ya$weeks),1)
+    rbsYearStats[i, 6] <- max(ya$weeks)
+    #perc of weeks with a crit pick at #1
+    yaD <- rbsM[substring(rbsM$date, 1, 4)==year,]
+    rbsYearStats[i, 7] <- length(yaD$index[yaD$index>0])/length(yaD$index)
+}
+names(rbsYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
+#write.csv(rbsYearStats, "data/rbsYearStats.csv", row.names=F)
+
+# MAINSTREAM ROCK SINGLES
+year <- "1985"
+mrsYearStats <- data.frame()
+for (i in 1:31) {
+    year <- (as.character(as.numeric(year)+1))
+    indices <- mrsMnd$index[substring(mrsMnd$date, 1, 4)==year]
+    mrsYearStats[i,1] <- year
+    #percentage of #1's on crit list
+    mrsYearStats[i,2] <- length(indices[indices>0]) / length(indices)
+    #number of #1's on crit list
+    mrsYearStats[i,3] <- length(indices[indices>0])
+    #number of #1's (per year)
+    mrsYearStats[i,4] <- length(indices)
+    #weeks at number #1 (avg and max)
+    ya <- mrsMnd[substring(mrsMnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(mrsM[ya[j,2]==mrsM[,2] & ya[j,3]==mrsM[,3],])
+    }
+    mrsYearStats[i, 5] <- round(mean(ya$weeks),1)
+    mrsYearStats[i, 6] <- max(ya$weeks)
+    #perc of weeks with a crit pick at #1
+    yaD <- mrsM[substring(mrsM$date, 1, 4)==year,]
+    mrsYearStats[i, 7] <- length(yaD$index[yaD$index>0])/length(yaD$index)
+}
+names(mrsYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
+#write.csv(mrsYearStats, "data/mrsYearStats.csv", row.names=F)

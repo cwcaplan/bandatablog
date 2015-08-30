@@ -1,0 +1,53 @@
+January 01	Higher	Creed
+January 08
+January 15
+January 22	No Leaf Clover	Metallica
+January 29
+February 05
+February 12
+February 19
+February 26
+March 04
+March 11	Stiff Upper Lip	AC/DC
+March 18
+March 25
+April 01
+April 08	Kryptonite	3 Doors Down
+April 15
+April 22
+April 29
+May 06
+May 13
+May 20
+May 27
+June 03
+June 10	I Disappear	Metallica
+June 17
+June 24
+July 01
+July 08	With Arms Wide Open	Creed
+July 15
+July 22
+July 29
+August 05	I Disappear	Metallica
+August 12
+August 19
+August 26	Californication	Red Hot Chili Peppers
+September 02
+September 09	Loser	3 Doors Down
+September 16
+September 23
+September 30
+October 07
+October 14
+October 21
+October 28
+November 04
+November 11
+November 18
+November 25
+December 02
+December 09
+December 16
+December 23
+December 30

@@ -1,349 +1,841 @@
-"date","album","artist","index"
-1985-01-05,"Kentucky Hearts","Exile",0
-1985-01-26,"Why Not Me","The Judds",0
-1985-02-23,"Country Boy","Ricky Skaggs",0
-1985-03-16,"Treadin Water","Earl Thomas Conley",0
-1985-03-23,"Friendship","Ray Charles",0
-1985-03-30,"40 Hour Week","Alabama",0
-1985-06-22,"Five-O","Hank Williams Jr.",0
-1985-09-07,"Greatest Hits Vol. 2","Ronnie Milsap",0
-1985-09-28,"Highwayman","Willie, Waylon, Johnny",0
-1985-10-19,"Pardners In Rhyme","The Statler Brothers",0
-1985-12-07,"Rhythm And Romance","Rosanne Cash",0
-1985-12-14,"Something Special","George Strait",0
-1985-12-21,"Anything Goes","Gary Morris",0
-1985-12-28,"The Heart Of The Matter","Kenny Rogers",0
-1986-02-08,"Greatest Hits, Volume II","Hank Williams Jr.",0
-1986-02-22,"Streamline","Lee Greenwood",0
-1986-03-01,"Rockin With The Rhythm","The Judds",0
-1986-03-08,"Won t Be Blue Anymore","Dan Seals",0
-1986-03-15,"I Have Returned","Ray Stevens",0
-1986-03-22,"Greatest Hits","Earl Thomas Conley",0
-1986-03-29,"Live In London","Ricky Skaggs",0
-1986-04-19,"A Memory Like You","John Schneider",0
-1986-05-24,"Whoever s In New England","Reba McEntire",0
-1986-05-31,"The Promiseland","Willie Nelson",0
-1986-06-14,"Will The Wolf Survive","Waylon Jennings",0
-1986-06-21,"Lost In The Fifties Tonight","Ronnie Milsap",0
-1986-06-28,"Guitars, Cadillacs, Etc., Etc.","Dwight Yoakam",471
-1986-07-12,"#7","George Strait",0
-1986-08-09,"Storms Of Life","Randy Travis",0
-1986-09-13,"Montana Cafe","Hank Williams Jr.",0
-1986-11-08,"Guitar Town","Steve Earle",445
-1986-11-15,"The Touch","Alabama",0
-1987-01-24,"What Am I Gonna Do About You","Reba McEntire",0
-1987-02-14,"Ocean Front Property","George Strait",0
-1987-03-21,"Heartland","The Judds",0
-1987-04-11,"Hank Live","Hank Williams Jr.",0
-1987-04-18,"Wheels","Restless Heart",0
-1987-05-02,"Trio","Dolly Parton, Linda Ronstadt, Emmylou Harris",0
-1987-06-06,"Hillbilly Deluxe","Dwight Yoakam",0
-1987-06-20,"Always","Randy Travis",0
+"date","song","artist","index"
+1985-01-05,"Does Fort Worth Ever Cross Your Mind","George Strait",0
+1985-01-12,"The Best Year Of My Life","Eddie Rabbitt",0
+1985-01-19,"How Blue","Reba McEntire",0
+1985-01-26,"(There s A) Fire In The Night","Alabama",0
+1985-02-02,"A Place To Fall Apart","Merle Haggard",0
+1985-02-09,"Ain t She Something Else","Conway Twitty",0
+1985-02-16,"Make My Life With You","The Oak Ridge Boys",0
+1985-02-23,"Baby s Got Her Blue Jeans On","Mel McDaniel",0
+1985-03-02,"Baby Bye Bye","Gary Morris",0
+1985-03-09,"My Only Love","The Statler Brothers",0
+1985-03-16,"Crazy For Your Love","Exile",0
+1985-03-23,"Seven Spanish Angels","Ray Charles with Willie Nelson",0
+1985-03-30,"Crazy","Kenny Rogers",0
+1985-04-06,"Country Girls","John Schneider",0
+1985-04-13,"Honor Bound","Earl Thomas Conley",0
+1985-04-20,"I Need More Of You","The Bellamy Brothers",0
+1985-04-27,"Girls Night Out","The Judds",0
+1985-05-04,"There s No Way","Alabama",0
+1985-05-11,"Somebody Should Leave","Reba McEntire",0
+1985-05-18,"Step That Step","Sawyer Brown",0
+1985-05-25,"Radio Heart","Charly McClain",0
+1985-06-01,"Don t Call Him A Cowboy","Conway Twitty",0
+1985-06-08,"Natural High","Merle Haggard",0
+1985-06-15,"Country Boy","Ricky Skaggs",0
+1985-06-22,"Little Things","The Oak Ridge Boys",0
+1985-06-29,"She Keeps The Home Fires Burning","Ronnie Milsap",0
+1985-07-06,"She s A Miracle","Exile",0
+1985-07-13,"Forgiving You Was Easy","Willie Nelson",0
+1985-07-20,"Dixie Road","Lee Greenwood",0
+1985-07-27,"Love Don t Care","Earl Thomas Conley",0
+1985-08-03,"40 Hour Week (For A Livin )","Alabama",0
+1985-08-10,"I m For Love","Hank Williams Jr.",0
+1985-08-17,"Highwayman","W.Jennings,W.Nelson,J.Cash,K.Kristofferson",0
+1985-08-24,"Real Love","Dolly Parton (Duet With Kenny Rogers)",0
+1985-08-31,"Love Is Alive","The Judds",0
+1985-09-07,"I Don t Know Why You Don t Want Me","Rosanne Cash",0
+1985-09-14,"Modern Day Romance","The Nitty Gritty Dirt Band",0
+1985-09-21,"I Fell In Love Again Last Night","The Forester Sisters",0
+1985-09-28,"Lost In The Fifties Tonight(In The Still)","Ronnie Milsap",0
+1985-10-12,"Meet Me In Montana","Marie Osmond (With Dan Seals)",0
+1985-10-19,"You Make Me Want To Make You Mine","Juice Newton",0
+1985-10-26,"Touch A Hand,Make A Friend","The Oak Ridge Boys",0
+1985-11-02,"Some Fools Never Learn","Steve Wariner",0
+1985-11-09,"Can t Keep A Good Man Down","Alabama",0
+1985-11-16,"Hang On To Your Heart","Exile",0
+1985-11-23,"I ll Never Stop Loving You","Gary Morris",0
+1985-11-30,"Too Much On My Heart","The Statler Brothers",0
+1985-12-07,"I Don t Mind The Thorns (If You re The Rose)","Lee Greenwood",0
+1985-12-14,"Nobody Falls Like A Fool","Earl Thomas Conley",0
+1985-12-21,"The Chair","George Strait",0
+1985-12-28,"Have Mercy","The Judds",0
+1986-01-04,"Morning Desire","Kenny Rogers",0
+1986-01-18,"Bop","Dan Seals",0
+1986-01-25,"Never Be You","Rosanne Cash",0
+1986-02-01,"Just In Case","The Forester Sisters",0
+1986-02-08,"Hurt","Juice Newton",0
+1986-02-15,"Makin Up For Lost Time","Crystal Gayle And Gary Morris",0
+1986-02-22,"There s No Stopping Your Heart","Marie Osmond",0
+1986-03-01,"You Can Dream Of Me","Steve Wariner",0
+1986-03-08,"Think About Love","Dolly Parton",0
+1986-03-15,"I Could Get Used To You","Exile",0
+1986-03-22,"What s A Memory Like You (Doing In A Love Like This)","John Schneider",0
+1986-03-29,"Don t Underestimate My Love For You","Lee Greenwood",0
+1986-04-05,"100% Chance Of Rain","Gary Morris",0
+1986-04-12,"She And I","Alabama",0
+1986-04-19,"Cajun Moon","Ricky Skaggs",0
+1986-04-26,"Now And Forever (You","Anne Murray",0
+1986-05-03,"Once In A Blue Moon","Earl Thomas Conley",0
+1986-05-10,"Grandpa (Tell Me bout The Good Old Days)","The Judds",0
+1986-05-17,"Ain t Misbehavin","Hank Williams Jr.",0
+1986-05-24,"Tomb Of The Unknown Love","Kenny Rogers",0
+1986-05-31,"Whoever s In New England","Reba McEntire",0
+1986-06-07,"Happy, Happy Birthday Baby","Ronnie Milsap",0
+1986-06-14,"Life s Highway","Steve Wariner",0
+1986-06-21,"Mama s Never Seen Those Eyes","The Forester Sisters",0
+1986-06-28,"Living In The Promiseland","Willie Nelson",0
+1986-07-05,"Everything That Glitters (Is Not Gold)","Dan Seals",0
+1986-07-12,"Hearts Aren t Made To Break (They re Made To Love)","Lee Greenwood",0
+1986-07-19,"Until I Met You","Judy Rodman",0
+1986-07-26,"On The Other Hand","Randy Travis",0
+1986-08-02,"Nobody In His Right Mind Would ve Left Her","George Strait",0
+1986-08-09,"Rockin With The Rhythm Of The Rain","The Judds",0
+1986-08-16,"You re The Last Thing I Needed Tonight","John Schneider",0
+1986-08-23,"Strong Heart","T.G. Sheppard",0
+1986-08-30,"Heartbeat In The Darkness","Don Williams",0
+1986-09-06,"Desperado Love","Conway Twitty",0
+1986-09-13,"Little Rock","Reba McEntire",0
+1986-09-20,"Got My Heart Set On You","John Conlee",0
+1986-09-27,"In Love","Ronnie Milsap",0
+1986-10-04,"Always Have Always Will","Janie Frickie",0
+1986-10-11,"Both To Each Other (Friends","Eddie Rabbitt",0
+1986-10-18,"Just Another Love","Tanya Tucker",0
+1986-10-25,"Cry","Crystal Gayle",0
+1986-11-01,"It ll Be Me","Exile",0
+1986-11-08,"Diggin Up Bones","Randy Travis",0
+1986-11-15,"That Rock Won t Roll","Restless Heart",0
+1986-11-22,"You re Still New To Me","Marie Osmond With Paul Davis",0
+1986-11-29,"Touch Me When We re Dancing","Alabama",0
+1986-12-06,"It Ain t Cool To Be Crazy About You","George Strait",0
+1986-12-13,"Hell And High Water","T. Graham Brown",0
+1986-12-20,"Too Much Is Not Enough","Bellamy Brothers With the Forester Sisters",0
+1986-12-27,"Mind Your Own Business","Hank Williams Jr.",0
+1987-01-10,"Give Me Wings","Michael Johnson",0
+1987-01-17,"What Am I Gonna Do About You","Reba McEntire",0
+1987-01-24,"Cry Myself To Sleep","The Judds",0
+1987-01-31,"You Still Move Me","Dan Seals",0
+1987-02-07,"Leave Me Lonely","Gary Morris",0
+1987-02-14,"How Do I Turn You On","Ronnie Milsap",0
+1987-02-21,"Straight To The Heart","Crystal Gayle",0
+1987-02-28,"I Can t Win For Losin You","Earl Thomas Conley",0
+1987-03-07,"Mornin Ride","Lee Greenwood",0
+1987-03-14,"Baby s Got A New Baby","Schuyler, Knobloch And Bickhardt",0
+1987-03-21,"I ll Still Be Loving You","Restless Heart",0
+1987-03-28,"Small Town Girl","Steve Wariner",0
+1987-04-04,"Ocean Front Property","George Strait",0
+1987-04-11,"You ve Got The Touch","Alabama",0
+1987-04-18,"Kids Of The Baby Boom","The Bellamy Brothers",0
+1987-04-25,"Rose In Paradise","Waylon Jennings",0
+1987-05-02,"Don t Go To Strangers","T. Graham Brown",0
+1987-05-09,"The Moon Is Still Over Her Shoulder","Michael Johnson",0
+1987-05-16,"To Know Him Is To Love Him","Dolly Parton, Linda Ronstadt, Emmylou Harris",0
+1987-05-23,"Can t Stop My Heart From Loving You","The O Kanes",0
+1987-05-30,"It Takes A Little Rain","The Oak Ridge Boys",0
+1987-06-06,"I Will Be There","Dan Seals",0
+1987-06-13,"Forever And Ever, Amen","Randy Travis",0
+1987-07-04,"That Was A Close One","Earl Thomas Conley",0
+1987-07-11,"All My Ex s Live In Texas","George Strait",0
+1987-07-18,"I Know Where I m Going","The Judds",0
+1987-07-25,"The Weekend","Steve Wariner",0
+1987-08-01,"Snap Your Fingers","Ronnie Milsap",0
+1987-08-08,"One Promise Too Late","Reba McEntire",0
+1987-08-15,"A Long Line Of Love","Michael Martin Murphey",0
+1987-08-22,"Why Does It Have To Be (Wrong Or Right)","Restless Heart",0
 1987-08-29,"Born To Boogie","Hank Williams Jr.",0
-1987-11-07,"Greatest Hits, Vol. 2","George Strait",0
-1987-11-14,"Always & Forever","Randy Travis",0
-1987-11-21,"Just Us","Alabama",0
-1988-02-27,"80 s Ladies","K.T. Oslin",0
-1988-03-05,"Wild Eyed Dream","Ricky Van Shelton",0
-1988-04-23,"If You Ain't Lovin' You Ain't Livin'","George Strait",0
-1988-04-30,"If You Ain t Lovin You Ain t Livin","George Strait",0
-1988-06-11,"Reba","Reba McEntire",0
-1988-08-06,"Alabama Live","Alabama",0
-1988-08-13,"Wild Streak","Hank Williams Jr.",0
-1988-08-27,"Old 8 x 10","Randy Travis",0
-1988-10-22,"Buenas Noches From A Lonely Room","Dwight Yoakam",0
-1988-11-05,"Loving Proof","Ricky Van Shelton",0
-1989-03-11,"Southern Star","Alabama",0
-1989-04-01,"Greatest Hits III","Hank Williams Jr.",0
-1989-04-29,"Beyond The Blue Neon","George Strait",0
-1989-06-24,"Sweet Sixteen","Reba McEntire",0
-1989-09-23,"Killin Time","Clint Black",0
-1989-11-04,"No Holdin Back","Randy Travis",0
-1989-12-16,"No Holdin' Back","Randy Travis",0
-1990-03-03,"RVS III","Ricky Van Shelton",0
-1990-07-14,"Livin It Up","George Strait",0
-1990-10-13,"No Fences","Garth Brooks",0
-1990-11-24,"Heroes And Friends","Randy Travis",0
-1990-12-22,"Put Yourself In My Shoes","Clint Black",0
-1991-05-18,"Eagle When She Flies","Dolly Parton",0
-1991-09-28,"Ropin The Wind","Garth Brooks",0
-1992-04-18,"Wynonna","Wynonna",0
-1992-06-06,"Some Gave All","Billy Ray Cyrus",0
-1992-10-10,"The Chase","Garth Brooks",0
-1993-05-22,"It s Your Call","Reba McEntire",0
-1993-05-29,"Tell Me Why","Wynonna",0
-1993-07-03,"Pure Country (Soundtrack)","George Strait",0
-1993-07-10,"It Won t Be The Last","Billy Ray Cyrus",0
-1993-08-14,"A Lot About Livin (And A Little Bout Love)","Alan Jackson",0
-1993-09-18,"In Pieces","Garth Brooks",0
-1993-11-06,"Common Thread: The Songs Of The Eagles","Various Artists",0
-1994-01-22,"Greatest Hits Volume Two","Reba McEntire",0
-1994-02-12,"Kickin It Up","John Michael Montgomery",0
-1994-03-26,"Rhythm Country","Various Artists",0
-1994-04-09,"Not A Moment Too Soon","Tim McGraw",0
-1994-07-23,"Who I Am","Alan Jackson",0
-1994-10-15,"Waitin On Sundown","Brooks",0
-1994-10-22,"Stones In The Road","Mary Chapin Carpenter",0
-1994-11-26,"Lead On","George Strait",0
-1994-12-31,"The Hits","Garth Brooks",0
-1995-04-15,"John Michael Montgomery","John Michael Montgomery",0
-1995-07-22,"The Woman In Me","Shania Twain",0
-1995-10-07,"All I Want","Tim McGraw",0
-1995-10-21,"Starting Over","Reba McEntire",0
-1995-11-11,"The Greatest Hits Collection","Alan Jackson",0
-1995-12-09,"Fresh Horses","Garth Brooks",0
-1996-05-04,"Borderline","Brooks & Dunn",0
-1996-05-11,"Blue Clear Sky","George Strait",0
-1996-07-27,"Blue","LeAnn Rimes",0
-1996-11-16,"Everything I Love","Alan Jackson",0
-1996-11-30,"What If It's You","Reba McEntire",0
-1997-03-01,"Unchained Melody/The Early Years","LeAnn Rimes",0
-1997-05-10,"Carrying Your Love With Me","George Strait",0
-1997-06-28,"Everywhere","Tim McGraw",0
-1997-09-13,"(Songbook) A Collection Of Hits","Trisha Yearwood",0
-1997-09-27,"You Light Up My Life -- Inspirational Songs","LeAnn Rimes",0
-1997-11-22,"Come On Over","Shania Twain",0
-1997-12-13,"Sevens","Garth Brooks",0
-1998-05-09,"One Step At A Time","George Strait",0
-1998-05-23,"The Limited Series","Garth Brooks",0
-1998-06-20,"Hope Floats","Soundtrack",0
-1998-08-29,"The Key","Vince Gill",0
-1998-09-19,"High Mileage","Alan Jackson",0
-1998-12-05,"Double Live","Garth Brooks",0
-1999-01-30,"Wide Open Spaces","Dixie Chicks",0
-1999-05-22,"A Place In The Sun","Tim McGraw",0
-1999-09-18,"Fly","Dixie Chicks",0
-1999-11-13,"LeAnn Rimes","LeAnn Rimes",0
-1999-11-27,"Breathe","Faith Hill",0
-1999-12-18,"The Magic Of Christmas","Garth Brooks",0
-2000-03-25,"Latest Greatest Straitest Hits","George Strait",0
-2000-06-10,"I Hope You Dance","Lee Ann Womack",0
-2000-08-19,"Burn","Jo Dee Messina",0
-2000-08-26,"Coyote Ugly","Soundtrack",0
-2000-10-07,"George Strait","George Strait",0
-2000-11-25,"When Somebody Loves You","Alan Jackson",0
-2001-02-17,"I Need You","LeAnn Rimes",0
-2001-02-24,"O Brother, Where Art Thou?","Soundtrack",1051
-2001-05-05,"Steers & Stripes","Brooks & Dunn",0
-2001-05-12,"Set This Circus Down","Tim McGraw",0
-2001-06-23,"Inside Out","Trisha Yearwood",0
-2001-07-14,"I'm Already There","Lonestar",0
-2001-09-15,"Pull My Chain","Toby Keith",0
-2001-11-10,"Greatest Hits Volume III -- I'm A Survivor","Reba McEntire",0
-2001-11-24,"The Road Less Traveled","George Strait",0
-2001-12-01,"Scarecrow","Garth Brooks",0
-2002-02-02,"Drive","Alan Jackson",0
-2002-05-11,"No Shoes, No Shirt, No Problems","Kenny Chesney",0
-2002-08-03,"I Miss My Friend","Darryl Worley",0
-2002-08-10,"Unleashed","Toby Keith",0
-2002-09-14,"Home","Dixie Chicks",0
-2002-10-12,"Elv1s: 30 #1 Hits","Elvis Presley",0
-2002-11-02,"Cry","Faith Hill",0
-2002-11-16,"Melt","Rascal Flatts",0
-2002-12-07,"Up!","Shania Twain",0
-2003-04-19,"Chris Cagle","Chris Cagle",0
-2003-05-03,"Have You Forgotten?","Darryl Worley",0
-2003-06-21,"From There To Here: Greatest Hits","Lonestar",0
-2003-06-28,"Honkytonkville","George Strait",0
-2003-07-19,"Buddy Jewell","Buddy Jewell",0
-2003-07-26,"Greatest Hits Collection, Volume I","Trace Adkins",0
+1987-09-05,"She s Too Good To Be True","Exile",0
+1987-09-12,"Make No Mistake, She s Mine","Kenny Rogers",0
+1987-09-19,"This Crazy Love","The Oak Ridge Boys",0
+1987-09-26,"Three Time Loser","Dan Seals",0
+1987-10-03,"You Again","The Forester Sisters",0
+1987-10-10,"The Way We Make A Broken Heart","Rosanne Cash",0
+1987-10-17,"Fishin' In The Dark","The Nitty Gritty Dirt Band",0
+1987-10-24,"Shine, Shine, Shine","Eddy Raven",0
+1987-10-31,"Right From The Start","Earl Thomas Conley",0
+1987-11-07,"Am I Blue","George Strait",0
+1987-11-14,"Maybe Your Baby s Got The Blues","The Judds",0
+1987-11-21,"I Won t Need You Anymore (Always And Forever)","Randy Travis",0
+1987-11-28,"Lynda","Steve Wariner",0
+1987-12-05,"Somebody Lied","Ricky Van Shelton",0
+1987-12-12,"The Last One To Know","Reba McEntire",0
+1987-12-19,"Do Ya","K.T. Oslin",0
+1987-12-26,"Somewhere Tonight","Highway 101",0
+1988-01-09,"I Can t Get Close Enough","Exile",0
+1988-01-16,"One Friend","Dan Seals",0
+1988-01-23,"Where Do The Nights Go","Ronnie Milsap",0
+1988-01-30,"Goin Gone","Kathy Mattea",0
+1988-02-06,"Wheels","Restless Heart",0
+1988-02-13,"Tennessee Flat Top Box","Rosanne Cash",0
+1988-02-20,"Twinkle, Twinkle Lucky Star","Merle Haggard",0
+1988-02-27,"I Won t Take Less Than Your Love","Tanya Tucker With Paul Davis",0
+1988-03-05,"Face To Face","Alabama",0
+1988-03-12,"Too Gone Too Long","Randy Travis",0
+1988-03-19,"Life Turned Her That Way","Ricky Van Shelton",0
+1988-03-26,"Turn It Loose","The Judds",0
+1988-04-02,"Love Will Find Its Way To You","Reba McEntire",0
+1988-04-09,"Famous Last Words Of A Fool","George Strait",0
+1988-04-16,"I Wanna Dance With You","Eddie Rabbitt",0
+1988-04-23,"I ll Always Come Back","K.T. Oslin",0
+1988-04-30,"It s Such A Small World","Rodney Crowell And Rosanne Cash",0
+1988-05-07,"Cry, Cry, Cry","Highway 101",0
+1988-05-14,"I'm Gonna Get You","Eddy Raven",0
+1988-05-21,"Eighteen Wheels And A Dozen Roses","Kathy Mattea",0
+1988-06-04,"What She Is (Is A Woman In Love)","Earl Thomas Conley",0
+1988-06-11,"I Told You So","Randy Travis",0
+1988-06-25,"He s Back And I m Blue","The Desert Rose Band",0
+1988-07-02,"If It Don t Come Easy","Tanya Tucker",0
+1988-07-09,"Fallin Again","Alabama",0
+1988-07-16,"If You Change Your Mind","Rosanne Cash",0
+1988-07-23,"Set 'Em Up Joe","Vern Gosdin",0
+1988-07-30,"Don't We All Have The Right","Ricky Van Shelton",0
+1988-08-06,"Baby Blue","George Strait",0
+1988-08-13,"Don t Close Your Eyes","Keith Whitley",0
+1988-08-20,"Bluest Eyes In Texas","Restless Heart",0
+1988-08-27,"The Wanderer","Eddie Rabbitt",0
+1988-09-03,"I Couldn t Leave You If I Tried","Rodney Crowell",0
+1988-09-10,"(Do You Love Me) Just Say Yes","Highway 101",0
+1988-09-17,"Joe Knows How To Live","Eddy Raven",0
+1988-09-24,"Addicted","Dan Seals",0
+1988-10-01,"We Believe In Happy Endings","Earl Thomas Conley With Emmylou Harris",0
+1988-10-08,"Honky Tonk Moon","Randy Travis",0
+1988-10-15,"Streets Of Bakersfield","Dwight Yoakam",0
+1988-10-22,"Strong Enough To Bend","Tanya Tucker",0
+1988-10-29,"Gonna Take A Lot Of River","The Oak Ridge Boys",0
+1988-11-05,"Darlene","T. Graham Brown",0
+1988-11-12,"Runaway Train","Rosanne Cash",0
+1988-11-19,"I ll Leave This World Loving You","Ricky Van Shelton",0
+1988-12-03,"I Know How He Feels","Reba McEntire",0
+1988-12-10,"If You Ain t Lovin (You Ain t Livin )","George Strait",0
+1988-12-17,"A Tender Lie","Restless Heart",0
+1988-12-24,"When You Say Nothing At All","Keith Whitley",0
+1989-01-07,"Hold Me","K.T. Oslin",0
+1989-01-14,"Change Of Heart","The Judds",0
+1989-01-21,"She s Crazy For Leaving","Rodney Crowell",0
+1989-01-28,"Deeper Than The Holler","Randy Travis",0
+1989-02-04,"What I d Say","Earl Thomas Conley",0
+1989-02-11,"Song Of The South","Alabama",0
+1989-02-18,"Big Wheels In The Moonlight","Dan Seals",0
+1989-02-25,"I Sang Dixie","Dwight Yoakam",0
+1989-03-04,"I Still Believe In You","The Desert Rose Band",0
+1989-03-11,"Don t You Ever Get Tired (Of Hurting Me)","Ronnie Milsap",0
+1989-03-18,"From A Jack To A King","Ricky Van Shelton",0
+1989-03-25,"New Fool At An Old Game","Reba McEntire",0
+1989-04-01,"Baby s Gotten Good At Goodbye","George Strait",0
+1989-04-08,"I m No Stranger To The Rain","Keith Whitley",0
+1989-04-22,"The Church On Cumberland Road","Shenandoah",0
+1989-05-06,"Young Love (Strong Love)","The Judds",0
+1989-05-13,"Is It Still Over","Randy Travis",0
+1989-05-20,"If I Had You","Alabama",0
+1989-05-27,"After All This Time","Rodney Crowell",0
+1989-06-03,"Where Did I Go Wrong","Steve Wariner",0
+1989-06-10,"Better Man","Clint Black",0
+1989-06-17,"Love Out Loud","Earl Thomas Conley",0
+1989-06-24,"I Don t Want To Spoil The Party","Rosanne Cash",0
+1989-07-01,"Come From The Heart","Kathy Mattea",0
+1989-07-08,"Lovin Only Me","Ricky Skaggs",0
+1989-07-15,"In A Letter To You","Eddy Raven",0
+1989-07-22,"What s Going On In Your World","George Strait",0
+1989-07-29,"Cathy s Clown","Reba McEntire",0
+1989-08-05,"Why d You Come In Here Lookin Like That","Dolly Parton",0
+1989-08-12,"Timber I m Falling In Love","Patty Loveless",0
+1989-08-19,"Sunday In The South","Shenandoah",0
+1989-08-26,"Are You Ever Gonna Love Me","Holly Dunn",0
+1989-09-02,"I m Still Crazy","Vern Gosdin",0
+1989-09-09,"I Wonder Do You Think Of Me","Keith Whitley",0
+1989-09-16,"Nothing I Can Do About It Now","Willie Nelson",0
+1989-09-23,"Above And Beyond","Rodney Crowell",0
+1989-09-30,"Let Me Tell You About Love","The Judds",0
+1989-10-07,"I Got Dreams","Steve Wariner",0
+1989-10-14,"Killin Time","Clint Black",0
+1989-10-21,"Living Proof","Ricky Van Shelton",0
+1989-10-28,"High Cotton","Alabama",0
+1989-11-04,"Ace In The Hole","George Strait",0
+1989-11-11,"Burnin Old Memories","Kathy Mattea",0
+1989-11-18,"Bayou Boys","Eddy Raven",0
+1989-11-25,"Yellow Roses","Dolly Parton",0
+1989-12-02,"It s Just A Matter Of Time","Randy Travis",0
+1989-12-09,"If Tomorrow Never Comes","Garth Brooks",0
+1989-12-16,"Two Dozen Roses","Shenandoah",0
+1989-12-23,"A Woman In Love","Ronnie Milsap",0
+1989-12-30,"Who s Lonely Now","Highway 101",0
+1990-01-13,"It Ain t Nothin","Keith Whitley",0
+1990-01-20,"Nobody s Home","Clint Black",0
+1990-02-10,"Southern Star","Alabama",0
+1990-02-17,"On Second Thought","Eddie Rabbitt",0
+1990-03-03,"No Matter How High","The Oak Ridge Boys",0
+1990-03-10,"Chains","Patty Loveless",0
+1990-03-17,"Hard Rock Bottom Of Your Heart","Randy Travis",0
+1990-04-14,"Five Minutes","Lorrie Morgan",0
+1990-04-21,"Love On Arrival","Dan Seals",0
+1990-05-12,"Help Me Hold On","Travis Tritt",0
+1990-05-19,"Walkin Away","Clint Black",0
+1990-06-02,"I ve Cried My Last Tear For You","Ricky Van Shelton",0
+1990-06-09,"Love Without End, Amen","George Strait",0
+1990-07-14,"The Dance","Garth Brooks",0
+1990-08-04,"Good Times","Dan Seals",0
+1990-08-18,"Next To You, Next To Me","Shenandoah",0
+1990-09-08,"Jukebox In My Mind","Alabama",0
+1990-10-06,"Friends In Low Places","Garth Brooks",0
+1990-11-03,"You Lie","Reba McEntire",0
+1990-11-10,"Home","Joe Diffie",0
+1990-11-17,"You Really Had Me Going","Holly Dunn",0
+1990-11-24,"Come Next Monday","K.T. Oslin",0
+1990-12-08,"I ve Come To Expect It From You","George Strait",0
+1991-01-12,"Unanswered Prayers","Garth Brooks",0
+1991-01-26,"Forever s As Far As I ll Go","Alabama",0
+1991-02-02,"Daddy s Come Around","Paul Overstreet",0
+1991-02-09,"Brother Jukebox","Mark Chesnutt",0
+1991-02-23,"Walk On Faith","Mike Reid",0
+1991-03-09,"I d Love You All Over Again","Alan Jackson",0
+1991-03-23,"Loving Blind","Clint Black",0
+1991-04-06,"Two Of A Kind, Workin On A Full House","Garth Brooks",0
+1991-04-13,"Down Home","Alabama",0
+1991-05-04,"Rockin Years","Dolly Parton With Ricky Van Shelton",0
+1991-05-11,"If I Know Me","George Strait",0
+1991-05-25,"In A Different Light","Doug Stone",0
+1991-06-01,"Meet In The Middle","Diamond Rio",0
+1991-06-15,"If The Devil Danced (In Empty Pockets)","Joe Diffie",0
+1991-06-22,"The Thunder Rolls","Garth Brooks",0
+1991-07-06,"Don t Rock The Jukebox","Alan Jackson",0
+1991-07-27,"I Am A Simple Man","Ricky Van Shelton",0
+1991-08-03,"She s In Love With The Boy","Trisha Yearwood",0
+1991-08-17,"You Know Me Better Than That","George Strait",0
+1991-09-07,"Brand New Man","Brooks",0
+1991-09-21,"Leap Of Faith","Lionel Cartwright",0
+1991-09-28,"Where Are You Now","Clint Black",0
+1991-10-12,"Keep It Between The Lines","Ricky Van Shelton",0
+1991-10-26,"Anymore","Travis Tritt",0
+1991-11-09,"Someday","Alan Jackson",0
+1991-11-16,"Shameless","Garth Brooks",0
+1991-11-30,"Forever Together","Randy Travis",0
+1991-12-07,"For My Broken Heart","Reba McEntire",0
+1991-12-21,"My Next Broken Heart","Brooks",0
+1992-01-04,"Love, Me","Collin Raye",0
+1992-01-25,"Sticks And Stones","Tracy Lawrence",0
+1992-02-01,"A Jukebox With A Country Song","Doug Stone",0
+1992-02-15,"What She s Doing Now","Garth Brooks",0
+1992-03-14,"Straight Tequila Night","John Anderson",0
+1992-03-21,"Dallas","Alan Jackson",0
+1992-03-28,"Is There Life Out There","Reba McEntire",0
+1992-04-11,"She Is His Only Need","Wynonna",0
+1992-04-18,"There Ain t Nothin Wrong With The Radio","Aaron Tippin",0
+1992-05-09,"Neon Moon","Brooks",0
+1992-05-23,"Some Girls Do","Sawyer Brown",0
+1992-05-30,"Achy Breaky Heart","Billy Ray Cyrus",0
+1992-07-04,"I Saw The Light","Wynonna",0
+1992-07-25,"The River","Garth Brooks",0
+1992-08-01,"Boot Scootin Boogie","Brooks",0
+1992-08-29,"I ll Think Of Something","Mark Chesnutt",0
+1992-09-19,"Love s Got A Hold On You","Alan Jackson",0
+1992-10-03,"In This Life","Collin Raye",0
+1992-10-17,"If I Didn t Have You","Randy Travis",0
+1992-10-24,"No One Else On Earth","Wynonna",0
+1992-11-21,"I m In A Hurry (And Don t Know Why)","Alabama",0
+1992-12-05,"I Cross My Heart","George Strait",0
+1992-12-19,"She s Got The Rhythm (And I Got The Blues)","Alan Jackson",0
+1992-12-26,"Don t Let Our Love Start Slippin Away","Vince Gill",0
+1993-01-16,"Somewhere Other Than The Night","Garth Brooks",0
+1993-01-23,"Look Heart, No Hands","Randy Travis",0
+1993-02-06,"Too Busy Being In Love","Doug Stone",0
+1993-02-13,"Can I Trust You With My Heart","Travis Tritt",0
+1993-02-27,"What Part Of No","Lorrie Morgan",0
+1993-03-20,"Heartland","George Strait",0
+1993-03-27,"When My Ship Comes In","Clint Black",0
+1993-04-10,"The Heart Won t Lie","Reba McEntire",0
+1993-04-24,"She Don t Know She s Beautiful","Sammy Kershaw",0
+1993-05-01,"Alibis","Tracy Lawrence",0
+1993-05-15,"I Love The Way You Love Me","John Michael Montgomery",0
+1993-06-05,"Should ve Been A Cowboy","Toby Keith",0
+1993-06-19,"Blame It On Your Heart","Patty Loveless",0
+1993-07-03,"That Summer","Garth Brooks",0
+1993-07-10,"Money In The Bank","John Anderson",0
+1993-07-17,"Chattahoochee","Alan Jackson",0
+1993-08-14,"It Sure Is Monday","Mark Chesnutt",0
+1993-08-21,"Why Didn t I Think Of That","Doug Stone",0
+1993-08-28,"Can t Break It To My Heart","Tracy Lawrence",0
+1993-09-04,"Thank God For You","Sawyer Brown",0
+1993-09-18,"Ain t Going Down (Til The Sun Comes Up)","Garth Brooks",0
+1993-09-25,"Holdin Heaven","Tracy Byrd",0
+1993-10-09,"One More Last Chance","Vince Gill",0
+1993-10-16,"What s It To You","Clay Walker",0
+1993-10-23,"Easy Come, Easy Go","George Strait",0
+1993-11-06,"Does He Love You","Reba McEntire With Linda Davis",0
+1993-11-13,"She Used To Be Mine","Brooks",0
+1993-11-20,"Almost Goodbye","Mark Chesnutt",0
+1993-11-27,"Reckless","Alabama",0
+1993-12-04,"American Honky-Tonk Bar Association","Garth Brooks",0
+1993-12-11,"My Second Home","Tracy Lawrence",0
+1993-12-18,"I Don't Call Him Daddy","Doug Supernaw",0
+1994-01-01,"Wild One","Faith Hill",0
+1994-01-29,"Live Until I Die","Clay Walker",0
+1994-02-05,"I Swear","John Michael Montgomery",0
+1994-03-05,"I Just Wanted You To Know","Mark Chesnutt",0
+1994-03-12,"Tryin To Get Over You","Vince Gill",0
+1994-03-19,"No Doubt About It","Neal McCoy",0
+1994-04-02,"My Love","Little Texas",0
+1994-04-16,"If The Good Die Young","Tracy Lawrence",0
+1994-04-30,"Piece Of My Heart","Faith Hill",0
+1994-05-07,"A Good Run Of Bad Luck","Clint Black",0
+1994-05-14,"If Bubba Can Dance (I Can Too)","Shenandoah",0
+1994-05-21,"Your Love Amazes Me","John Berry",0
+1994-05-28,"Don t Take The Girl","Tim McGraw",0
+1994-06-11,"That Ain t No Way To Go","Brooks",0
+1994-06-18,"Wink","Neal McCoy",0
+1994-07-16,"Foolish Pride","Travis Tritt",0
+1994-07-23,"Summertime Blues","Alan Jackson",0
+1994-08-13,"Be My Baby Tonight","John Michael Montgomery",0
+1994-08-27,"Dreaming With My Eyes Open","Clay Walker",0
+1994-09-03,"Whisper My Name","Randy Travis",0
+1994-09-10,"Xxx s And Ooo s (An American Girl)","Trisha Yearwood",0
+1994-09-24,"Third Rock From The Sun","Joe Diffie",0
+1994-10-08,"Who s That Man","Toby Keith",0
+1994-10-15,"She s Not The Cheatin Kind","Brooks",0
+1994-10-29,"Livin On Love","Alan Jackson",0
+1994-11-19,"Shut Up And Kiss Me","Mary Chapin Carpenter",0
+1994-11-26,"If I Could Make A Living","Clay Walker",0
+1994-12-03,"The Big One","George Strait",0
+1994-12-10,"If You ve Got Love","John Michael Montgomery",0
+1994-12-17,"Pickup Man","Joe Diffie",0
+1995-01-14,"Not A Moment Too Soon","Tim McGraw",0
+1995-01-28,"Gone Country","Alan Jackson",0
+1995-02-04,"Mi Vida Loca (My Crazy Life)","Pam Tillis",0
+1995-02-18,"My Kind Of Girl","Collin Raye",0
+1995-02-25,"Old Enough To Know Better","Wade Hayes",0
+1995-03-11,"You Can't Make A Heart Love Somebody","George Strait",0
+1995-03-18,"This Woman And This Man","Clay Walker",0
+1995-04-01,"Thinkin' About You","Trisha Yearwood",0
+1995-04-15,"The Heart Is A Lonely Hunter","Reba McEntire",0
+1995-04-22,"I Can Love You Like That","John Michael Montgomery",0
+1995-04-29,"Little Miss Honky Tonk","Brooks & Dunn",0
+1995-05-20,"Gonna Get A Life","Mark Chesnutt",0
+1995-05-27,"What Mattered Most","Ty Herndon",0
+1995-06-03,"Summer's Comin'","Clint Black",0
+1995-06-24,"Texas Tornado","Tracy Lawrence",0
+1995-07-01,"Sold (The Grundy County Auction Incident)","John Michael Montgomery",0
+1995-07-22,"Any Man Of Mine","Shania Twain",0
+1995-08-05,"I Don't Even Know Your Name","Alan Jackson",0
+1995-08-12,"I Didn't Know My Own Strength","Lorrie Morgan",0
+1995-08-19,"You're Gonna Miss Me When I'm Gone","Brooks & Dunn",0
+1995-09-02,"Not On Your Love","Jeff Carson",0
+1995-09-09,"Someone Else's Star","Bryan White",0
+1995-09-16,"I Like It, I Love It","Tim McGraw",0
+1995-10-21,"She's Every Woman","Garth Brooks",0
+1995-10-28,"Dust On The Bottle","David Lee Murphy",0
+1995-11-11,"Check Yes Or No","George Strait",0
+1995-12-09,"Tall, Tall Trees","Alan Jackson",0
+1995-12-23,"That's As Close As I'll Get To Loving You","Aaron Tippin",0
+1996-01-06,"Rebecca Lynn","Bryan White",0
+1996-01-13,"It Matters To Me","Faith Hill",0
+1996-02-03,"(If You're Not In It For Love) I'm Outta Here!","Shania Twain",0
+1996-02-17,"Bigger Than The Beatles","Joe Diffie",0
+1996-03-02,"Wild Angels","Martina McBride",0
+1996-03-09,"I'll Try","Alan Jackson",0
+1996-03-16,"The Beaches Of Cheyenne","Garth Brooks",0
+1996-03-23,"You Can Feel Bad","Patty Loveless",0
+1996-04-06,"To Be Loved By You","Wynonna",0
+1996-04-13,"No News","Lonestar",0
+1996-05-04,"You Win My Love","Shania Twain",0
+1996-05-18,"My Maria","Brooks & Dunn",0
+1996-06-08,"Blue Clear Sky","George Strait",0
+1996-06-22,"Time Marches On","Tracy Lawrence",0
+1996-07-13,"No One Needs To Know","Shania Twain",0
+1996-07-20,"Daddy's Money","Ricochet",0
+1996-08-03,"Don't Get Me Started","Rhett Akins",0
+1996-08-10,"Carried Away","George Strait",0
+1996-08-31,"She Never Lets It Go To Her Heart","Tim McGraw",0
+1996-09-14,"Guys Do It All The Time","Mindy McCready",0
+1996-09-21,"So Much For Pretending","Bryan White",0
+1996-10-05,"Living In A Moment","Ty Herndon",0
+1996-10-12,"Believe Me Baby (I Lied)","Trisha Yearwood",0
+1996-10-26,"Like The Rain","Clint Black",0
+1996-11-16,"Lonely Too Long","Patty Loveless",0
+1996-11-23,"Strawberry Wine","Deana Carter",0
+1996-12-07,"Little Bitty","Alan Jackson",0
+1996-12-28,"One Way Ticket (Because I Can)","LeAnn Rimes",0
+1997-01-11,"Nobody Knows","Kevin Sharp",0
+1997-02-08,"It s A Little Too Late","Mark Chesnutt",0
+1997-02-22,"A Man This Lonely","Brooks",0
+1997-03-01,"Running Out Of Reasons To Run","Rick Trevino",0
+1997-03-08,"Me Too","Toby Keith",0
+1997-03-15,"We Danced Anyway","Deana Carter",0
+1997-03-29,"How Was I To Know","Reba McEntire",0
+1997-04-05,"(This Ain't) No Thinkin' Thing","Trace Adkins",0
+1997-04-12,"Rumor Has It","Clay Walker",0
+1997-04-26,"One Night At A Time","George Strait",0
+1997-05-31,"Sittin' On Go","Bryan White",0
+1997-06-07,"It's Your Love","Tim McGraw With Faith Hill",0
+1997-06-28,"It s Your Love","Tim McGraw With Faith Hill",0
+1997-07-19,"Carrying Your Love With Me","George Strait",0
+1997-08-16,"Come Cryin' To Me","Lonestar",0
+1997-08-30,"She's Got It All","Kenny Chesney",0
+1997-09-20,"There Goes","Alan Jackson",0
+1997-09-27,"How Your Love Makes Me Feel","Diamond Rio",0
+1997-10-18,"How Do I Get There","Deana Carter",0
+1997-10-25,"Everywhere","Tim McGraw",0
+1997-11-08,"Love Gets Me Every Time","Shania Twain",0
+1997-12-13,"From Here To Eternity","Michael Peterson",0
+1997-12-20,"Longneck Bottle","Garth Brooks",0
+1998-01-10,"A Broken Wing","Martina McBride",0
+1998-01-17,"Just To See You Smile","Tim McGraw",0
+1998-02-28,"What If I Said","Anita Cochran (Duet With Steve Wariner)",0
+1998-03-07,"Round About Way","George Strait",0
+1998-03-21,"Nothin' But The Taillights","Clint Black",0
+1998-04-04,"Perfect Love","Trisha Yearwood",0
+1998-04-18,"Bye Bye","Jo Dee Messina",0
+1998-05-02,"You re Still The One","Shania Twain",520
+1998-05-09,"Two Pina Coladas","Garth Brooks",0
+1998-05-16,"This Kiss","Faith Hill",0
+1998-06-06,"I Just Want To Dance With You","George Strait",0
+1998-06-27,"If You See Him/If You See Her","Reba/Brooks",0
+1998-07-11,"The Shoes You re Wearing","Clint Black",0
+1998-07-18,"I Can Still Feel You","Collin Raye",0
+1998-08-01,"To Make You Feel My Love","Garth Brooks",0
+1998-08-08,"There s Your Trouble","Dixie Chicks",0
+1998-08-22,"I m Alright","Jo Dee Messina",0
+1998-09-12,"How Long Gone","Brooks & Dunn",0
+1998-10-03,"Where The Green Grass Grows","Tim McGraw",0
+1998-10-31,"Honey, I m Home","Shania Twain",0
+1998-11-07,"Wide Open Spaces","Dixie Chicks",0
+1998-12-05,"It Must Be Love","Ty Herndon",0
+1998-12-12,"Let Me Let Go","Faith Hill",0
+1998-12-19,"Husbands And Wives","Brooks",0
+1998-12-26,"You re Easy On The Eyes","Terri Clark",0
+1999-01-16,"Right On The Money","Alan Jackson",0
+1999-01-23,"Wrong Again","Martina McBride",0
+1999-01-30,"Stand Beside Me","Jo Dee Messina",0
+1999-02-20,"I Don t Want To Miss A Thing","Mark Chesnutt",0
+1999-03-06,"No Place That Far","Sara Evans",0
+1999-03-13,"You Were Mine","Dixie Chicks",0
+1999-03-27,"How Forever Feels","Kenny Chesney",0
+1999-05-08,"Wish You Were Here","Mark Wills",0
+1999-05-15,"Please Remember Me","Tim McGraw",0
+1999-06-19,"Write This Down","George Strait",0
+1999-07-17,"Amazed","Lonestar",0
+1999-09-11,"Single White Female","Chely Wright",0
+1999-09-18,"You Had Me From Hello","Kenny Chesney",0
+1999-09-25,"Something Like That","Tim McGraw",0
+1999-10-30,"I Love You","Martina McBride",0
+1999-12-04,"When I Said I Do","Clint Black",0
+1999-12-11,"He Didn t Have To Be","Brad Paisley",0
+1999-12-25,"Breathe","Faith Hill",0
+2000-02-05,"Cowboy Take Me Away","Dixie Chicks",0
+2000-02-26,"My Best Friend","Tim McGraw",0
+2000-03-11,"Smile","Lonestar",0
+2000-03-18,"How Do You Like Me Now?!","Toby Keith",0
+2000-04-22,"The Best Day","George Strait",0
+2000-05-13,"Buy Me A Rose","Kenny Rogers With Alison Krauss",0
+2000-05-20,"The Way You Love Me","Faith Hill",0
+2000-06-17,"Yes!","Chad Brock",0
+2000-07-08,"I Hope You Dance","Lee Ann Womack With Sons Of The Desert",0
+2000-08-12,"What About Now","Lonestar",0
+2000-09-16,"That s The Way","Jo Dee Messina",0
+2000-10-14,"Kiss This","Aaron Tippin",0
+2000-10-28,"The Little Girl","John Michael Montgomery",0
+2000-11-18,"Best Of Intentions","Travis Tritt",0
+2000-11-25,"Just Another Day In Paradise","Phil Vassar",0
+2000-12-02,"We Danced","Brad Paisley",0
+2000-12-16,"My Next Thirty Years","Tim McGraw",0
+2001-01-20,"Born To Fly","Sara Evans",0
+2001-01-27,"Without You","Dixie Chicks",0
+2001-02-03,"Tell Her","Lonestar",0
+2001-02-17,"There Is No Arizona","Jamie O'Neal",0
+2001-02-24,"But For The Grace Of God","Keith Urban",0
+2001-03-03,"You Shouldn't Kiss Me Like This","Toby Keith",0
+2001-03-10,"One More Day","Diamond Rio",0
+2001-04-07,"Who I Am","Jessica Andrews",0
+2001-04-28,"Ain't Nothing `Bout You","Brooks & Dunn",0
+2001-06-09,"Don't Happen Twice","Kenny Chesney",0
+2001-06-16,"Grown Men Don't Cry","Tim McGraw",0
+2001-06-23,"I'm Already There","Lonestar",0
+2001-08-04,"When I Think About Angels","Jamie O'Neal",0
+2001-08-11,"Austin","Blake Shelton",0
+2001-09-15,"I'm Just Talkin' About Tonight","Toby Keith",0
+2001-09-22,"What I Really Meant To Say","Cyndi Thomson",0
+2001-10-13,"Where I Come From","Alan Jackson",0
+2001-10-27,"Only In America","Brooks & Dunn",0
+2001-11-10,"Angry All The Time","Tim McGraw",0
+2001-11-24,"I Wanna Talk About Me","Toby Keith",0
+2001-12-29,"Where Were You (When The World Stopped Turning)","Alan Jackson",0
+2002-02-02,"Good Morning Beautiful","Steve Holy",0
+2002-03-09,"Bring On The Rain","Jo Dee Messina With Tim McGraw",0
+2002-03-16,"The Cowboy In Me","Tim McGraw",0
+2002-03-23,"The Long Goodbye","Brooks & Dunn",0
+2002-03-30,"Blessed","Martina McBride",0
+2002-04-13,"I Breathe In, I Breathe Out","Chris Cagle",0
+2002-04-20,"My List","Toby Keith",0
+2002-05-25,"Drive (For Daddy Gene)","Alan Jackson",0
+2002-06-22,"Living And Living Well","George Strait",0
+2002-07-06,"I'm Gonna Miss Her (The Fishin' Song)","Brad Paisley",0
+2002-07-20,"Courtesy Of The Red, White And Blue (The Angry American)","Toby Keith",0
+2002-07-27,"The Good Stuff","Kenny Chesney",0
+2002-09-14,"Unbroken","Tim McGraw",0
+2002-09-21,"I Miss My Friend","Darryl Worley",0
+2002-09-28,"Beautiful Mess","Diamond Rio",0
+2002-10-05,"Ten Rounds With Jose Cuervo","Tracy Byrd",0
+2002-10-19,"Somebody Like You","Keith Urban",0
+2002-11-30,"These Days","Rascal Flatts",0
+2002-12-21,"Who's Your Daddy?","Toby Keith",0
+2002-12-28,"She'll Leave You With A Smile","George Strait",0
+2003-01-11,"19 Somethin'","Mark Wills",0
+2003-02-22,"The Baby","Blake Shelton",0
+2003-03-15,"Man To Man","Gary Allan",0
+2003-03-22,"Travelin' Soldier","Dixie Chicks",0
+2003-03-29,"Brokenheartsville","Joe Nichols",0
+2003-04-05,"Have You Forgotten?","Darryl Worley",0
+2003-05-24,"Three Wooden Crosses","Randy Travis",0
+2003-05-31,"I Believe","Diamond Rio",0
+2003-06-14,"Beer For My Horses","Toby Keith Duet With Willie Nelson",0
+2003-07-26,"My Front Porch Looking In","Lonestar",0
 2003-08-02,"Red Dirt Road","Brooks & Dunn",0
-2003-08-09,"Mud On The Tires","Brad Paisley",0
-2003-08-23,"What The World Needs Now Is Love","Wynonna",0
-2003-08-30,"Greatest Hits Volume II And Some Other Stuff","Alan Jackson",0
-2003-10-18,"Martina","Martina McBride",0
-2003-11-22,"Shock'n Y'all","Toby Keith",0
-2004-02-21,"When The Sun Goes Down","Kenny Chesney",0
-2004-05-29,"Here For The Party","Gretchen Wilson",0
-2004-07-31,"License To Chill","Jimmy Buffett",0
-2004-09-04,"Horse Of A Different Color","Big & Rich",1191
-2004-09-11,"Live Like You Were Dying","Tim McGraw",0
-2004-09-25,"What I Do","Alan Jackson",0
-2004-10-09,"Be Here","Keith Urban",0
-2004-10-16,"Feels Like Today","Rascal Flatts",0
-2004-10-23,"50 Number Ones","George Strait",0
-2005-02-12,"Be As You Are: Songs From An Old Blue Chair","Kenny Chesney",0
-2005-02-26,"Totally Country Vol. 4","Various Artists",0
-2005-04-02,"Kerosene","Miranda Lambert",0
-2005-04-09,"Songs About Me","Trace Adkins",0
-2005-04-16,"The Right To Bare Arms","Larry The Cable Guy",0
-2005-05-14,"Delicious Surprise","Jo Dee Messina",0
-2005-05-28,"Modern Day Drifter","Dierks Bentley",0
-2005-06-04,"Honkytonk University","Toby Keith",0
-2005-07-16,"Somewhere Down In Texas","George Strait",0
-2005-08-20,"Fireflies","Faith Hill",0
-2005-09-03,"Time Well Wasted","Brad Paisley",0
-2005-10-01,"Jasper County","Trisha Yearwood",0
-2005-10-15,"All Jacked Up","Gretchen Wilson",0
-2005-10-22,"Real Fine Place","Sara Evans",0
-2005-10-29,"Tough All Over","Gary Allan",0
-2005-11-05,"Timeless","Martina McBride",0
-2005-11-26,"The Road And The Radio","Kenny Chesney",0
-2005-12-03,"Some Hearts","Carrie Underwood",0
-2006-02-11,"Your Man","Josh Turner",0
-2006-03-18,"Precious Memories","Alan Jackson",0
-2006-04-15,"Greatest Hits Vol 2: Reflected","Tim McGraw",0
-2006-04-22,"Me And My Gang","Rascal Flatts",0
-2006-06-10,"Taking The Long Way","Dixie Chicks",1252
-2006-07-22,"American V: A Hundred Highways","Johnny Cash",0
-2006-08-05,"If You're Going Through Hell","Rodney Atkins",0
-2006-09-02,"Dangerous Man","Trace Adkins",0
-2006-10-07,"LIVE: Live Those Songs Again","Kenny Chesney",0
-2006-10-14,"Like Red On A Rose","Alan Jackson",0
-2006-10-21,"It Just Comes Natural","George Strait",0
-2006-10-28,"Take The Weather With You","Jimmy Buffett",0
-2006-11-04,"Long Trip Alone","Dierks Bentley",0
-2006-11-11,"Songs Of Inspiration","Alabama",0
-2006-11-18,"Small Town Girl","Kellie Pickler",0
-2006-11-25,"Love, Pain & The Whole Crazy Thing","Keith Urban",0
-2007-02-17,"Totally Country 6","Various Artists",0
-2007-02-24,"Waitin' In The Country","Jason Michael Carroll",0
-2007-04-14,"Let It Go","Tim McGraw",0
-2007-05-05,"Bucky Covington","Bucky Covington",0
-2007-05-19,"Crazy Ex-Girlfriend","Miranda Lambert",1287
-2007-06-02,"One Of The Boys","Gretchen Wilson",0
-2007-06-16,"Relentless","Jason Aldean",0
-2007-06-23,"Between Raising Hell And Amazing Grace","Big & Rich",0
-2007-06-30,"Big Dog Daddy","Toby Keith",0
-2007-07-07,"5th Gear","Brad Paisley",0
-2007-08-04,"Taylor Swift","Taylor Swift",0
-2007-09-29,"Just Who I Am: Poets & Pirates","Kenny Chesney",0
-2007-10-06,"Reba Duets","Reba McEntire",0
-2007-10-13,"Still Feels Good","Rascal Flatts",0
-2007-11-10,"Carnival Ride","Carrie Underwood",0
-2007-11-17,"Long Road Out Of Eden","Eagles",0
-2007-12-01,"The Ultimate Hits","Garth Brooks",0
-2008-03-08,"My Life's Been A Country Song","Chris Cagle",0
-2008-03-22,"Good Time","Alan Jackson",0
-2008-04-19,"Troubadour","George Strait",0
-2008-05-03,"Lady Antebellum","Lady Antebellum",0
-2008-05-17,"Greatest Hits: Limited Edition","Tim McGraw",0
-2008-05-24,"35 Biggest Hits","Toby Keith",0
-2008-06-07,"Julianne Hough","Julianne Hough",0
-2008-06-21,"Perfectly Clear","Jewel",0
-2008-08-02,"Beautiful Eyes (EP)","Taylor Swift",0
-2008-08-09,"Love On The Inside: Deluxe Fan Edition","Sugarland",0
-2008-08-16,"Love On The Inside","Sugarland",0
-2008-09-13,"NOW That's What I Call Country","Various Artists",0
-2008-09-27,"Do You Know","Jessica Simpson",0
-2008-10-04,"Learn To Live","Darius Rucker",0
-2008-10-18,"Kellie Pickler","Kellie Pickler",0
-2008-10-25,"Greatest Hits 3","Tim McGraw",0
-2008-11-01,"Lucky Old Sun","Kenny Chesney",0
-2008-11-15,"That Don't Make Me A Bad Guy","Toby Keith",0
-2008-11-22,"Play","Brad Paisley",0
-2008-11-29,"Fearless","Taylor Swift",0
+2003-08-09,"It's Five O'Clock Somewhere","Alan Jackson & Jimmy Buffett",0
+2003-09-27,"What Was I Thinkin'","Dierks Bentley",0
+2003-10-11,"Real Good Man","Tim McGraw",0
+2003-10-25,"Tough Little Boys","Gary Allan",0
+2003-11-08,"Who Wouldn't Wanna Be Me","Keith Urban",0
+2003-11-15,"I Love This Bar","Toby Keith",0
+2003-12-20,"There Goes My Life","Kenny Chesney",0
+2004-02-07,"Remember When","Alan Jackson",0
+2004-02-21,"American Soldier","Toby Keith",0
+2004-03-20,"Watch The Wind Blow By","Tim McGraw",0
+2004-04-03,"When The Sun Goes Down","Kenny Chesney & Uncle Kracker",0
+2004-05-08,"You'll Think Of Me","Keith Urban",0
+2004-05-22,"Mayberry","Rascal Flatts",0
+2004-05-29,"Redneck Woman","Gretchen Wilson",728
+2004-07-03,"If You Ever Stop Loving Me","Montgomery Gentry",0
+2004-07-10,"Whiskey Girl","Toby Keith",0
+2004-07-17,"Live Like You Were Dying","Tim McGraw",0
+2004-08-07,"Somebody","Reba McEntire",0
+2004-09-11,"Girls Lie Too","Terri Clark",0
+2004-09-18,"Days Go By","Keith Urban",0
+2004-10-16,"Suds In The Bucket","Sara Evans",0
+2004-10-23,"I Hate Everything","George Strait",0
+2004-11-06,"In A Real Love","Phil Vassar",0
+2004-11-20,"Mr. Mom","Lonestar",0
+2004-12-04,"Nothing On But The Radio","Gary Allan",0
+2004-12-18,"Back When","Tim McGraw",0
+2004-12-25,"Some Beach","Blake Shelton",0
+2005-01-22,"Awful, Beautiful Life","Darryl Worley",0
+2005-02-05,"Mud On The Tires","Brad Paisley",0
+2005-02-12,"Bless The Broken Road","Rascal Flatts",0
+2005-03-19,"Nothin' To Lose","Josh Gracin",0
+2005-03-26,"That's What I Love About Sunday","Craig Morgan",0
+2005-04-23,"Anything But Mine","Kenny Chesney",0
+2005-05-07,"It's Getting Better All The Time","Brooks & Dunn",0
+2005-05-14,"My Give A Damn's Busted","Jo Dee Messina",0
+2005-05-28,"Making Memories Of Us","Keith Urban",0
+2005-07-02,"Fast Cars And Freedom","Rascal Flatts",0
+2005-07-23,"As Good As I Once Was","Toby Keith",0
+2005-09-03,"Mississippi Girl","Faith Hill",0
+2005-09-17,"Play Something Country","Brooks & Dunn",0
+2005-09-24,"A Real Fine Place To Start","Sara Evans",0
+2005-10-08,"Something To Be Proud Of","Montgomery Gentry",0
+2005-10-22,"Better Life","Keith Urban",0
+2005-12-03,"Come A Little Closer","Dierks Bentley",0
+2005-12-17,"Tequila Makes Her Clothes Fall Off","Joe Nichols",0
+2005-12-31,"Must Be Doin' Somethin' Right","Billy Currington",0
+2006-01-14,"She Let Herself Go","George Strait",0
+2006-01-21,"Jesus, Take The Wheel","Carrie Underwood",0
+2006-03-04,"When I Get Where I'm Going","Brad Paisley Featuring Dolly Parton",0
+2006-03-11,"Your Man","Josh Turner",0
+2006-03-18,"Living In Fast Forward","Kenny Chesney",0
+2006-04-08,"What Hurts The Most","Rascal Flatts",0
+2006-05-06,"Who Says You Can't Go Home","Bon Jovi Duet With Jennifer Nettles",0
+2006-05-20,"Wherever You Are","Jack Ingram",0
+2006-05-27,"Why","Jason Aldean",0
+2006-06-03,"Settle For A Slowdown","Dierks Bentley",0
+2006-06-17,"Summertime","Kenny Chesney",0
+2006-07-22,"The World","Brad Paisley",0
+2006-08-12,"If You're Going Through Hell (Before The Devil Even Knows)","Rodney Atkins",0
+2006-09-09,"Leave The Pieces","The Wreckers",0
+2006-09-23,"Brand New Girlfriend","Steve Holy",0
+2006-09-30,"Give It Away","George Strait",0
+2006-10-14,"Would You Go With Me","Josh Turner",0
+2006-10-28,"I Loved Her First","Heartland",0
+2006-11-04,"Every Mile A Memory","Dierks Bentley",0
+2006-11-11,"Before He Cheats","Carrie Underwood",0
+2006-12-16,"My Wish","Rascal Flatts",0
+2006-12-23,"Want To","Sugarland",0
+2007-01-06,"She's Everything","Brad Paisley",0
+2007-01-27,"Watching You","Rodney Atkins",0
+2007-02-24,"It Just Comes Natural","George Strait",0
+2007-03-10,"Ladies Love Country Boys","Trace Adkins",0
+2007-03-24,"Beer In Mexico","Kenny Chesney",0
+2007-04-14,"Last Dollar (Fly Away)","Tim McGraw",0
+2007-04-21,"Wasted","Carrie Underwood",0
+2007-05-12,"Stand","Rascal Flatts",0
+2007-05-19,"Settlin'","Sugarland",0
+2007-05-26,"Good Directions","Billy Currington",0
+2007-06-16,"Moments","Emerson Drive",0
+2007-06-23,"Find Out Who Your Friends Are","Tracy Lawrence",0
+2007-06-30,"Ticks","Brad Paisley",0
+2007-07-07,"Lucky Man","Montgomery Gentry",0
+2007-07-21,"Lost In This Moment","Big & Rich",0
+2007-08-04,"Never Wanted Nothing More","Kenny Chesney",0
+2007-09-08,"These Are My People","Rodney Atkins",0
+2007-09-15,"More Than A Memory","Garth Brooks",0
+2007-09-22,"Take Me There","Rascal Flatts",0
+2007-10-13,"Online","Brad Paisley",0
+2007-10-20,"Love Me If You Can","Toby Keith",0
+2007-10-27,"Don't Blink","Kenny Chesney",0
+2007-11-24,"Free And Easy (Down The Road I Go)","Dierks Bentley",0
+2007-12-01,"So Small","Carrie Underwood",0
+2007-12-22,"Our Song","Taylor Swift",0
+2008-02-02,"Letter To Me","Brad Paisley",0
+2008-03-01,"Cleaning This Gun (Come On In Boy)","Rodney Atkins",0
+2008-03-15,"All-American Girl","Carrie Underwood",0
+2008-03-29,"Small Town Southern Man","Alan Jackson",0
+2008-04-12,"You're Gonna Miss This","Trace Adkins",0
+2008-05-03,"I Saw God Today","George Strait",0
+2008-05-17,"Just Got Started Lovin' You","James Otto",0
+2008-05-31,"I'm Still A Guy","Brad Paisley",0
+2008-06-21,"Last Name","Carrie Underwood",0
+2008-06-28,"Better As A Memory","Kenny Chesney",0
+2008-07-12,"Back When I Knew It All","Montgomery Gentry",0
+2008-08-02,"Good Time","Alan Jackson",0
+2008-08-16,"All I Want To Do","Sugarland",0
+2008-08-23,"Should've Said No","Taylor Swift",0
+2008-09-06,"You Look Good In My Shirt","Keith Urban",0
+2008-09-13,"Do You Believe Me Now","Jimmy Wayne",0
+2008-09-20,"Waitin' On A Woman","Brad Paisley",0
+2008-10-04,"Don't Think I Don't Think About It","Darius Rucker",0
+2008-10-18,"Everybody Wants To Go To Heaven","Kenny Chesney",0
+2008-11-01,"She Never Cried In Front Of Me","Toby Keith",0
+2008-11-08,"Just A Dream","Carrie Underwood",0
+2008-11-22,"Love Story","Taylor Swift",0
+2008-12-06,"Chicken Fried","Zac Brown Band",0
+2008-12-20,"Roll With Me","Montgomery Gentry",0
+2009-01-03,"Here","Rascal Flatts",0
+2009-01-17,"Already Gone","Sugarland",0
+2009-01-24,"Start A Band","Brad Paisley Duet With Keith Urban",0
+2009-02-07,"She Wouldn't Be Gone","Blake Shelton",0
 2009-02-21,"Feel That Fire","Dierks Bentley",0
-2009-04-11,"Shine","Martina McBride",0
-2009-04-18,"Defying Gravity","Keith Urban",0
-2009-04-25,"Unstoppable","Rascal Flatts",0
-2009-05-09,"Hannah Montana: The Movie","Soundtrack",0
-2009-06-06,"Greatest Hits II","Kenny Chesney",0
-2009-07-18,"American Saturday Night","Brad Paisley",1385
-2009-08-22,"LIVE On The Inside","Sugarland",0
-2009-08-29,"Twang","George Strait",0
-2009-09-05,"Keep On Loving You","Reba",0
-2009-09-26,"#1s ... And Then Some","Brooks & Dunn",0
-2009-10-17,"Revolution","Miranda Lambert",1377
-2009-10-24,"American Ride","Toby Keith",0
-2009-11-07,"Southern Voice","Tim McGraw",0
-2009-11-21,"Play On","Carrie Underwood",0
-2010-02-13,"Need You Now","Lady Antebellum",0
-2010-07-31,"Judge Jerrod & The Hung Jury","Jerrod Niemann",0
-2010-08-28,"All About Tonight (EP)","Blake Shelton",0
-2010-09-04,"Cowboy's Back In Town","Trace Adkins",0
-2010-09-11,"The Reason Why","Little Big Town",0
-2010-10-02,"The Guitar Song","Jamey Johnson",1412
-2010-10-09,"You Get What You Give","Zac Brown Band",0
-2010-10-16,"Hemingway's Whiskey","Kenny Chesney",0
-2010-10-23,"Bullets In The Gun","Toby Keith",0
-2010-10-30,"Charleston, SC 1966","Darius Rucker",0
-2010-11-06,"The Incredible Machine","Sugarland",0
-2010-11-13,"Speak Now","Taylor Swift",1418
-2010-12-04,"Nothing Like This","Rascal Flatts",0
-2011-02-19,"My Kinda Party","Jason Aldean",0
-2011-03-19,"Town Line (EP)","Aaron Lewis",0
-2011-03-26,"Stronger","Sara Evans",0
-2011-04-30,"Paper Airplane","Alison Krauss & Union Station",0
-2011-06-11,"This Is Country Music","Brad Paisley",0
-2011-06-25,"Ronnie Dunn","Ronnie Dunn",0
-2011-07-09,"Outlaws Like Me","Justin Moore",0
-2011-07-30,"Red River Blue","Blake Shelton",0
-2011-08-13,"Chief","Eric Church",0
-2011-08-27,"Tailgates & Tanlines","Luke Bryan",0
-2011-09-10,"Hell On Heels","Pistol Annies",1455
+2009-02-28,"Down The Road","Kenny Chesney With Mac McAnally",0
+2009-03-07,"God Love Her","Toby Keith",0
+2009-03-14,"Sweet Thing","Keith Urban",0
+2009-03-28,"It Won't Be Like This For Long","Darius Rucker",0
+2009-04-18,"River Of Love","George Strait",0
+2009-04-25,"Here Comes Goodbye","Rascal Flatts",0
+2009-05-02,"It's America","Rodney Atkins",0
+2009-05-16,"She's Country","Jason Aldean",0
+2009-05-23,"It Happens","Sugarland",0
+2009-06-06,"Then","Brad Paisley",0
+2009-06-27,"Out Last Night","Kenny Chesney",0
+2009-07-11,"Sideways","Dierks Bentley",0
+2009-07-25,"I Run To You","Lady Antebellum",0
+2009-08-01,"People Are Crazy","Billy Currington",0
+2009-08-15,"Alright","Darius Rucker",0
+2009-08-22,"You Belong With Me","Taylor Swift",925
+2009-09-05,"Big Green Tractor","Jason Aldean",0
+2009-10-03,"Small Town USA","Justin Moore",0
+2009-10-10,"American Ride","Toby Keith",0
+2009-10-24,"Gettin' You Home (The Black Dress Song)","Chris Young",0
+2009-10-31,"Only You Can Love Me This Way","Keith Urban",0
+2009-11-07,"Toes","Zac Brown Band",0
+2009-11-21,"Cowboy Casanova","Carrie Underwood",0
+2009-11-28,"Need You Now","Lady Antebellum",0
+2010-01-02,"Consider Me Gone","Reba",0
+2010-01-30,"Southern Voice","Tim McGraw",0
+2010-02-06,"The Truth","Jason Aldean",0
+2010-02-20,"Why Don't We Just Dance","Josh Turner",0
+2010-03-20,"That's How Country Boys Roll","Billy Currington",0
+2010-03-27,"Hillbilly Bone","Blake Shelton Featuring Trace Adkins",0
+2010-04-03,"A Little More Country Than That","Easton Corbin",0
+2010-04-10,"Temporary Home","Carrie Underwood",0
+2010-04-17,"Highway 20 Ride","Zac Brown Band",0
+2010-04-24,"American Honey","Lady Antebellum",0
+2010-05-08,"Gimmie That Girl","Joe Nichols",0
+2010-05-22,"The Man I Want To Be","Chris Young",0
+2010-06-12,"The House That Built Me","Miranda Lambert",0
+2010-07-10,"Water","Brad Paisley",0
+2010-07-24,"Rain Is A Good Thing","Luke Bryan",0
+2010-08-07,"Undo It","Carrie Underwood",0
+2010-08-14,"Lover, Lover","Jerrod Niemann",0
+2010-08-21,"Free","Zac Brown Band",0
+2010-08-28,"All About Tonight","Blake Shelton",0
+2010-09-18,"Pretty Good At Drinkin' Beer","Billy Currington",0
+2010-09-25,"Our Kind Of Love","Lady Antebellum",0
+2010-10-09,"The Boys of Fall","Kenny Chesney",0
+2010-10-23,"All Over Me","Josh Turner",0
+2010-10-30,"Roll With It","Easton Corbin",0
+2010-11-06,"Come Back Song","Darius Rucker",0
+2010-11-20,"As She's Walking Away","Zac Brown Band Featuring Alan Jackson",0
+2010-12-04,"Anything Like Me","Brad Paisley",0
+2010-12-11,"If I Die Young","The Band Perry",0
+2010-12-18,"Why Wait","Rascal Flatts",0
+2011-01-01,"Turn On The Radio","Reba",0
+2011-01-08,"Felt Good On My Lips","Tim McGraw",0
+2011-01-29,"Somewhere With You","Kenny Chesney",0
+2011-02-19,"Voices","Chris Young",0
+2011-02-26,"Someone Else Calling You Baby","Luke Bryan",0
+2011-03-05,"Who Are You When I'm Not Looking","Blake Shelton",0
+2011-03-12,"Don't You Wanna Stay","Jason Aldean With Kelly Clarkson",0
+2011-04-02,"Let Me Down Easy","Billy Currington",0
+2011-04-09,"Are You Gonna Kiss Me Or Not","Thompson Square",0
+2011-04-16,"Colder Weather","Zac Brown Band",0
+2011-04-30,"This","Darius Rucker",0
+2011-05-07,"Live A Little","Kenny Chesney",0
+2011-05-14,"A Little Bit Stronger","Sara Evans",0
+2011-05-28,"Heart Like Mine","Miranda Lambert",0
+2011-06-04,"Old Alabama","Brad Paisley Featuring Alabama",0
+2011-06-25,"Honey Bee","Blake Shelton",0
+2011-07-23,"If Heaven Wasn't So Far Away","Justin Moore",0
+2011-07-30,"Dirt Road Anthem","Jason Aldean",0
+2011-08-06,"Tomorrow","Chris Young",0
+2011-08-13,"Knee Deep","Zac Brown Band Featuring Jimmy Buffett",0
+2011-08-20,"Just A Kiss","Lady Antebellum",0
+2011-09-03,"Am I The Only One","Dierks Bentley",0
+2011-09-10,"Remind Me","Brad Paisley Duet With Carrie Underwood",0
 2011-09-17,"Barefoot Blue Jean Night","Jake Owen",0
-2011-09-24,"Here For A Good Time","George Strait",0
-2011-10-01,"Own The Night","Lady Antebellum",0
-2011-10-22,"Clear As Day","Scotty McCreery",0
-2011-11-12,"Clancy's Tavern","Toby Keith",0
-2011-11-19,"Four The Record","Miranda Lambert",0
-2012-02-11,"Emotional Traffic","Tim McGraw",0
-2012-04-14,"Tuskegee","Lionel Richie",0
-2012-04-21,"Changed","Rascal Flatts",0
-2012-05-19,"Blown Away","Carrie Underwood",0
-2012-06-23,"Thirty Miles West","Alan Jackson",0
-2012-06-30,"Punching Bag","Josh Turner",0
-2012-07-07,"Welcome To The Fishbowl","Kenny Chesney",0
-2012-07-28,"Uncaged","Zac Brown Band",0
-2012-08-25,"Declaration Of Independence","Colt Ford",0
-2012-09-08,"Dustin Lynch","Dustin Lynch",0
-2012-09-29,"Tornado","Little Big Town",0
-2012-11-03,"Night Train","Jason Aldean",0
-2012-11-10,"Red","Taylor Swift",1489
-2013-02-09,"Set You Free","Gary Allan",0
-2013-02-23,"Two Lanes Of Freedom","Tim McGraw",0
-2013-03-23,"Spring Break... Here To Party","Luke Bryan",0
-2013-04-06,"Same Trailer Different Park","Kacey Musgraves",1522
-2013-04-13,"Based On A True Story ...","Blake Shelton",0
-2013-04-20,"Pioneer","The Band Perry",0
-2013-04-27,"Wheelhouse","Brad Paisley",0
-2013-05-18,"Life On A Rock","Kenny Chesney",0
-2013-05-25,"Golden","Lady Antebellum",0
-2013-06-01,"Love Is Everything","George Strait",0
-2013-06-08,"True Believers","Darius Rucker",0
-2013-06-29,"Here's To The Good Times","Florida Georgia Line",0
-2013-07-06,"Hunter Hayes","Hunter Hayes",0
-2013-08-31,"Crash My Party","Luke Bryan",0
-2013-09-28,"Fuse","Keith Urban",0
-2013-10-05,"Off The Beaten Path","Justin Moore",0
-2013-10-26,"Frame By Frame","Cassadee Pope",0
-2013-11-02,"See You Tonight","Scotty McCreery",0
-2013-11-16,"Duck The Halls: A Robertson Family Christmas","The Robertsons",0
-2013-12-14,"Blame It All On My Roots: Five Decades Of Influences","Garth Brooks",0
-2014-02-01,"That Girl","Jennifer Nettles",0
-2014-03-01,"The Outsiders","Eric Church",0
-2014-03-15,"Riser","Dierks Bentley",0
-2014-03-22,"10,000 Towns","Eli Young Band",0
-2014-03-29,"Spring Break 6 ...Like We Ain't Ever (EP)","Luke Bryan",0
-2014-04-12,"Out Among The Stars","Johnny Cash",0
-2014-04-19,"Where It All Began","Dan + Shay",0
-2014-04-26,"Everlasting","Martina McBride",0
-2014-05-24,"Storyline","Hunter Hayes",0
-2014-05-31,"Rewind","Rascal Flatts",0
-2014-06-07,"Just As I Am","Brantley Gilbert",0
-2014-06-21,"Platinum","Miranda Lambert",1564
-2014-07-05,"Band Of Brothers","Willie Nelson",0
-2014-09-06,"Ignite The Night","Chase Rice",0
-2014-09-13,"Moonshine In The Trunk","Brad Paisley",0
-2014-09-27,"I Dont Dance","Lee Brice",0
-2014-10-04,"Sundown Heaven Town","Tim McGraw",0
-2014-10-11,"The Big Revival","Kenny Chesney",0
-2014-10-18,"BRINGING BACK THE SUNSHINE","Blake Shelton",0
-2014-10-25,"Old Boots, New Dirt","Jason Aldean",0
-2014-11-15,"Montevallo","Sam Hunt",0
-2014-11-29,"Man Against Machine","Garth Brooks",0
-2014-12-27,"Greatest Hits: Decade #1","Carrie Underwood",0
-2015-02-28,"Holding All The Roses","Blackberry Smoke",0
-2015-03-07,"The Underdog","Aaron Watson",0
-2015-03-28,"Spring Break... Checkin' Out","Luke Bryan",0
-2015-04-18,"Southern Style","Darius Rucker",0
-2015-05-02,"Love Somebody","Reba",0
-2015-05-16,"JEKYLL + HYDE","Zac Brown Band",0
-2015-06-20,"Django And Jimmie","Willie Nelson / Merle Haggard",0
-2015-06-27,"NOW That's What I Call Country, Volume 8","Various Artists",0
-2015-07-11,"Pageant Material","Kacey Musgraves",0
-2015-07-18,"About To Get Real","Easton Corbin",0
-2015-08-08,"Something More Than Free","Jason Isbell",0
-2015-08-15,"Angels And Alcohol","Alan Jackson",0
-2015-08-29,"Kill The Lights","Luke Bryan",0
+2011-10-01,"Take A Back Road","Rodney Atkins",0
+2011-10-15,"Made In America","Toby Keith",0
+2011-10-22,"Long Hot Summer","Keith Urban",0
+2011-10-29,"God Gave Me You","Blake Shelton",0
+2011-11-19,"Crazy Girl","Eli Young Band",0
+2011-11-26,"Sparks Fly","Taylor Swift",0
+2011-12-03,"Country Must Be Country Wide","Brantley Gilbert",0
+2011-12-10,"We Owned The Night","Lady Antebellum",0
+2011-12-24,"Keep Me In Mind","Zac Brown Band",0
+2012-01-21,"Let It Rain","David Nail Featuring Sarah Buxton",0
+2012-01-28,"Drink In My Hand","Eric Church",0
+2012-02-04,"I Don't Want This Night To End","Luke Bryan",0
+2012-02-11,"You","Chris Young",0
+2012-02-18,"All Your Life","The Band Perry",0
+2012-03-03,"You Gonna Fly","Keith Urban",0
+2012-03-17,"Reality","Kenny Chesney",0
+2012-03-31,"Ours","Taylor Swift",0
+2012-04-07,"Alone With You","Jake Owen",0
+2012-04-21,"A Woman Like You","Lee Brice",0
+2012-04-28,"Drink On It","Blake Shelton",0
+2012-05-12,"Banjo","Rascal Flatts",0
+2012-05-19,"Over You","Miranda Lambert",0
+2012-05-26,"Fly Over States","Jason Aldean",0
+2012-06-02,"Somethin' 'Bout A Truck","Kip Moore",0
+2012-06-16,"Good Girl","Carrie Underwood",0
+2012-06-23,"Springsteen","Eric Church",0
+2012-07-07,"Drunk On You","Luke Bryan",0
+2012-07-21,"You Don't Know Her Like I Do","Brantley Gilbert",0
+2012-07-28,"Even If It Breaks Your Heart","Eli Young Band",0
+2012-08-04,"5-1-5-0","Dierks Bentley",0
+2012-08-11,"Come Over","Kenny Chesney",0
+2012-08-25,"Angel Eyes","Love And Theft",0
+2012-09-01,"Over","Blake Shelton",0
+2012-09-15,"Pontoon","Little Big Town",0
+2012-09-29,"Wanted","Hunter Hayes",0
+2012-10-06,"Take A Little Ride","Jason Aldean",0
+2012-10-20,"We Are Never Ever Getting Back Together","Taylor Swift",1040
+2012-12-22,"Cruise","Florida Georgia Line",0
+2013-02-02,"Better Dig Two","The Band Perry",0
+2013-02-09,"Every Storm (Runs Out Of Rain)","Gary Allan",0
+2013-03-09,"Sure Be Cool If You Did","Blake Shelton",0
+2013-04-13,"Wagon Wheel","Darius Rucker",0
+2013-08-31,"That's My Kind Of Night","Luke Bryan",0
+2013-11-23,"We Were Us","Keith Urban And Miranda Lambert",0
+2013-12-14,"Stay","Florida Georgia Line",0
+2014-01-25,"Drink A Beer","Luke Bryan",0
+2014-03-01,"Chillin' It","Cole Swindell",0
+2014-03-15,"Bottoms Up","Brantley Gilbert",0
+2014-03-29,"This Is How We Roll","Florida Georgia Line Featuring Luke Bryan",0
+2014-04-26,"Play It Again","Luke Bryan",0
+2014-07-12,"Somethin' Bad","Miranda Lambert Duet With Carrie Underwood",0
+2014-07-19,"Beachin'","Jake Owen",0
+2014-07-26,"Dirt","Florida Georgia Line",0
+2014-08-09,"Burnin' It Down","Jason Aldean",0
+2014-11-15,"Leave The Night On","Sam Hunt",0
+2014-11-22,"Something In The Water","Carrie Underwood",0
+2014-12-13,"Shotgun Rider","Tim McGraw",0
+2015-01-03,"My Baby's Got A Smile On Her Face","Craig Wayne Boyd",0
+2015-02-07,"I See You","Luke Bryan",0
+2015-02-21,"Take Your Time","Sam Hunt",0
+2015-05-09,"Girl Crush","Little Big Town",0
+2015-08-08,"Kick The Dust Up","Luke Bryan",0
+2015-08-22,"House Party","Sam Hunt",0
