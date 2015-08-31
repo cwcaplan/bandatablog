@@ -48,13 +48,15 @@ for (i in 1:nrow(cosM)) {
                       pjsM$year==as.character(as.numeric(substring(cosM[i,1], 1, 4))-1), ]
     #matching, but only lower case
     hotsong <- tolower(unlist(strsplit(cosM[i,2], " \\("))[1])
-    hotsong <- gsub("'", " ", hotsong)
+    hotsong <- gsub("[`'-]", " ", hotsong)
+    hotsong <- gsub("  +", " ", hotsong)
     hotsong <- gsub("&", "and", hotsong)
     if (nrow(pjPick)>0) {
         for (j in 1:nrow(pjPick)) {
             song <- tolower(unlist(strsplit(pjPick[j,3], " \\("))[1])
             song <- unlist(strsplit(song, "/"))
-            song <- gsub("'", " ", song)
+            song <- gsub("[`'-]", " ", song)
+            song <- gsub("  +", " ", song)
             song <- gsub("&", "and", song)
             if(length(song)==1) {
                 if(hotsong==song) {
@@ -75,6 +77,6 @@ cosMnd <- cosM[!duplicated(cosM$song),]
 
 #setwd("C:/Users/Seth/Documents/bandatablog/data")
 #write.csv(cosM, "country singles weekly number ones.csv", row.names=F)
-#write.csv(cosMnd, "country no duplicates.csv", row.names=F)
+#write.csv(cosMnd, "country singles no duplicates.csv", row.names=F)
 
 

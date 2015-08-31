@@ -1,17 +1,17 @@
-setwd("C:/Users/Seth/Documents/bandatablog/Billboard Hot 100/weekly top songs")
+setwd("C:/Users/Seth/Documents/bandatablog/Billboard Rock/weekly top songs")
 
 ## got data from
-## http://www.billboard.com/archive/charts/1983/hot-100
+## http://www.billboard.com/archive/charts/1985/rock-songs
 
 # builds weekly number ones list
 wno <- list()
-h1M <- data.frame()
-year <- "1982"
-for (i in 1:33) {
+mrsM <- data.frame()
+year <- "1984"
+for (i in 1:31) {
     #set year
     year <- as.character(as.numeric(year)+1)
     #load data
-    wno[[i]] <- read.delim(paste("hot100-", year, ".txt", sep=""), 
+    wno[[i]] <- read.delim(paste("rock songs ", year, ".txt", sep=""), 
                            header=F, stringsAsFactors=F)
     #add year to date and convert to date format
     wno[[i]][,1] <- paste(wno[[i]][,1], year)
@@ -23,31 +23,30 @@ for (i in 1:33) {
             wno[[i]][j+1,3] <- wno[[i]][j,3]
         }
     }
-    h1M <- rbind(h1M, wno[[i]])
+    mrsM <- rbind(mrsM, wno[[i]])
 }
-#write.csv(h1M, "weekly number ones.csv", row.names=F)
-names(h1M) <- c("date", "song", "artist")
+names(mrsM) <- c("date", "song", "artist")
 
-weeksSong <- data.frame(table(h1M[,2]), stringsAsFactors=F)
+weeksSong <- data.frame(table(mrsM[,2]), stringsAsFactors=F)
 weeksSong <- weeksSong[order(weeksSong$Freq, decreasing=T),]
 weeksSong$Var1 <- as.character(weeksSong$Var1)
 
-weeksArtist <- data.frame(table(h1M[,3]), stringsAsFactors=F)
+weeksArtist <- data.frame(table(mrsM[,3]), stringsAsFactors=F)
 weeksArtist <- weeksArtist[order(weeksArtist$Freq, decreasing=T),]
 weeksArtist$Var1 <- as.character(weeksArtist$Var1)
 
 #adding album index to match pjM
-h1M$index <- rep(0, nrow(h1M))
+mrsM$index <- rep(0, nrow(mrsM))
 
 #a start but misses a lot from spelling, etc. 
 #for instance (FutureSex):
-#View(h1M[grep("Timberlake", h1M$artist),])
+#View(mrsM[grep("Timberlake", mrsM$artist),])
 #View(pjM[grep("Timberlake", pjM$artist),])
-for (i in 1:nrow(h1M)) {
-    pjPick <- pjsM[pjsM$year==substring(h1M[i,1], 1, 4) |
-                      pjsM$year==as.character(as.numeric(substring(h1M[i,1], 1, 4))-1), ]
+for (i in 1:nrow(mrsM)) {
+    pjPick <- pjsM[pjsM$year==substring(mrsM[i,1], 1, 4) |
+                       pjsM$year==as.character(as.numeric(substring(mrsM[i,1], 1, 4))-1), ]
     #matching, but only lower case
-    hotsong <- tolower(unlist(strsplit(h1M[i,2], " \\("))[1])
+    hotsong <- tolower(unlist(strsplit(mrsM[i,2], " \\("))[1])
     hotsong <- gsub("[`'-]", " ", hotsong)
     hotsong <- gsub("  +", " ", hotsong)
     hotsong <- gsub("&", "and", hotsong)
@@ -60,11 +59,11 @@ for (i in 1:nrow(h1M)) {
             song <- gsub("&", "and", song)
             if(length(song)==1) {
                 if(hotsong==song) {
-                    h1M[i,4] <- pjPick[j,7]
+                    mrsM[i,4] <- pjPick[j,7]
                 }
             } else if (length(song)==2) {
                 if(hotsong==song[1]|hotsong==song[2]) {
-                    h1M[i,4] <- pjPick[j,7]
+                    mrsM[i,4] <- pjPick[j,7]
                 }
             }
             
@@ -73,10 +72,9 @@ for (i in 1:nrow(h1M)) {
 }
 
 #looking at all the albums (no duplicates for mulitple weeks on chart)
-h1Mnd <- h1M[!duplicated(h1M$song),]
+mrsMnd <- mrsM[!duplicated(mrsM$song),]
 
 #setwd("C:/Users/Seth/Documents/bandatablog/data")
-#write.csv(h1M, "hot 100 weekly number ones.csv", row.names=F)
-#write.csv(h1Mnd, "hot 100 no duplicates.csv", row.names=F)
-
+#write.csv(mrsM, "rock singles weekly number ones.csv", row.names=F)
+#write.csv(mrsMnd, "rock singles no duplicates.csv", row.names=F)
 

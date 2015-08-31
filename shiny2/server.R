@@ -5,6 +5,64 @@ pickAYear <- function(year) {
     pickedYear
 }
 
+weeksAvg <- function(year, chart) {
+    if(chart==1) {
+        chart <- yearStats
+    } else if (chart==2) {
+        chart <- h1YearStats
+    } else if (chart==3) {
+        chart <- coYearStats
+    } else if (chart==4) {
+        chart <- cosYearStats
+    } else if (chart==5) {
+        chart <- rbYearStats
+    } else if (chart==6) {
+        chart <- rbsYearStats
+    } else if (chart==7) {
+        chart <- mrsYearStats
+    }
+    chart <- chart[chart$year==year,]
+    avg <- chart$avgWeeks
+    as.character(avg)
+}
+
+weeksTop5 <- function(year, chart) {
+    if(chart==1) {
+        chart <- wnoM
+        chartnd <- wnoMnd
+    } else if (chart==2) {
+        chart <- h1M
+        chartnd <- h1Mnd
+    } else if (chart==3) {
+        chart <- coM
+        chartnd <- coMnd
+    } else if (chart==4) {
+        chart <- cosM
+        chartnd <- cosMnd
+    } else if (chart==5) {
+        chart <- rbM
+        chartnd <- rbMnd
+    } else if (chart==6) {
+        chart <- rbsM
+        chartnd <- rbsMnd
+    } else if (chart==7) {
+        chart <- mrsM
+        chartnd <- mrsMnd
+    }
+    ya <- chartnd[substring(chartnd$date, 1, 4)==year,]
+    weeks <- rep(0, nrow(ya))
+    ya <- cbind(ya, weeks)
+    for (j in 1:nrow(ya)) {
+        ya[j,5] <- nrow(chart[ya[j,2]==chart[,2] & ya[j,3]==chart[,3],])
+    }
+    ya <- ya[order(ya$weeks, decreasing=T),]
+    top5 <- character()
+    for (i in 1:5) {
+        top5[i] <- paste(ya[i,5], " weeks:", "\n   ", ya[i,2], "\n   \t- ", ya[i,3], "\n", sep="")
+    }
+    top5
+}
+
 yearBoth <- function(year, chart) {
     if(chart==1) {
         chart <- wnoMnd
@@ -53,56 +111,58 @@ yearBB <- function(year, chart) {
     albums
 }
 
-weeksTop5 <- function(year, chart) {
+lookAtChart <- function(year, chart) {
     if(chart==1) {
         chart <- wnoM
-        chartnd <- wnoMnd
     } else if (chart==2) {
         chart <- h1M
-        chartnd <- h1Mnd
     } else if (chart==3) {
         chart <- coM
-        chartnd <- coMnd
     } else if (chart==4) {
         chart <- cosM
-        chartnd <- cosMnd
     } else if (chart==5) {
         chart <- rbM
-        chartnd <- rbMnd
     } else if (chart==6) {
         chart <- rbsM
-        chartnd <- rbsMnd
     } else if (chart==7) {
         chart <- mrsM
-        chartnd <- mrsMnd
     }
-    ya <- chartnd[substring(chartnd$date, 1, 4)==year,]
-    weeks <- rep(0, nrow(ya))
-    ya <- cbind(ya, weeks)
-    for (j in 1:nrow(ya)) {
-        ya[j,5] <- nrow(chart[ya[j,2]==chart[,2] & ya[j,3]==chart[,3],])
+    yc <- chart[substr(chart$date,1,4)==year,]
+    ycprint <- character()
+    for (i in 1:nrow(yc)) {
+        ycprint[i] <- paste(format(yc[i,1], format="%b %d"), "<br/>-- ", 
+                         yc[i,3], ": ", 
+                         yc[i,2], if(yc[i,4]>0){"*"}, "<br/>", sep="")
     }
-    ya <- ya[order(ya$weeks, decreasing=T),]
-    top5 <- character()
-    for (i in 1:5) {
-        top5[i] <- paste(ya[i,5], " weeks:", "\n   ", ya[i,2], "\n   \t- ", ya[i,3], "\n", sep="")
-    }
-    top5
+    ycprint <- c("<br/>", "* indicates Critic's Pick<br/>", ycprint)
+    ycprint
 }
 
-weeksAvg <- function(year, chart) {
-    if(chart==1) {
-        chart <- yearStats
-    } else if (chart==2) {
-        chart <- coYearStats
-    } else if (chart==3) {
-        chart <- rbYearStats
-    }
-    chart <- chart[chart$year==year,]
-    avg <- chart$avgWeeks
-    as.character(avg)
+lookAtPJ <- function(year, chart) {
+    if(chart==1|chart==3|chart==5) {
+        chart <- pjM
+        yc <- chart[chart$year==year,]
+        ycprint <- character()
+        for (i in 1:nrow(yc)) {
+            ycprint[i] <- paste(yc[i,1], ". ", 
+                                yc[i,2], ": ", 
+                                yc[i,3], "<br/>", sep="")
+        }
+        ycprint <- c("<br/>", "Pazz & Jop ", year, " Albums List ", "<br/><br/>", ycprint)
+        ycprint
+    } else if (chart==2|chart==4|chart==6|chart==7) {
+        chart <- pjsM
+        yc <- chart[chart$year==year,]
+        ycprint <- character()
+        for (i in 1:nrow(yc)) {
+            ycprint[i] <- paste(yc[i,1], ". ", 
+                                yc[i,2], ": ", 
+                                yc[i,3], "<br/>", sep="")
+        }
+        ycprint <- c("<br/>", "Pazz & Jop ", year, " Singles List ", "<br/><br/>", ycprint)
+        ycprint
+    } 
 }
-
 
 shinyServer(
     function(input, output) {
@@ -110,14 +170,25 @@ shinyServer(
         #output$albums <- renderDataTable({
         #    pickedYear()[,2:3]
         #    })
+        pickList <- reactive({input$pickList})
         avg <- reactive({weeksAvg(input$year, input$top5ChartPick)})
-        output$avg <- renderText({paste("Avg Weeks At #1:", avg())})
+        output$avg <- renderText({if(pickList()==1|pickList()==2){
+            paste("Avg Weeks At #1:", avg())
+            }})
         top5 <- reactive({weeksTop5(input$year, input$top5ChartPick)})
         output$top5 <- renderText({top5()})
         winners <- reactive({yearBoth(input$year, input$top5ChartPick)})
         output$winners <- renderText({winners()})
         losers <- reactive({yearBB(input$year, input$top5ChartPick)})
         output$losers <- renderText({losers()})
+        bbList <- reactive({lookAtChart(input$year, input$top5ChartPick)})
+        output$bbList <- renderUI({
+            HTML(if(pickList()==2){paste(bbList(), collapse = '')})
+            })
+        pjList <- reactive({lookAtPJ(input$year, input$top5ChartPick)})
+        output$bbList <- renderUI({
+            HTML(if(pickList()==3){paste(pjList(), collapse = '')})
+        })
         chartChoice <- reactive({input$chartChoice})
         output$chartChoice <- renderText({chartChoice()})
         albSing <- reactive({input$albSing})
@@ -146,7 +217,7 @@ shinyServer(
             par(lwd=2, cex=1.05)
             plot(h1YearStats$year, h1YearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
-                 xlab="Year", ylab="", ylim=c(0,.62), yaxt="n")
+                 xlab="Year", ylab="", ylim=c(0,.68), yaxt="n")
             axis(2, at=c(.1, .2, .3, .4, .5, .6), lab=c("10%", "20%", "30%", "40%", "50%", "60%"))
             if(any(chartChoice()==1)){
                 lines(h1YearStats$year, h1YearStats$percentage, col="gray70")
@@ -159,6 +230,10 @@ shinyServer(
             if(any(chartChoice()==3)){
                 lines(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid3")
                 points(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid4")
+            }
+            if(any(chartChoice()==4)){
+                lines(mrsYearStats$year, mrsYearStats$percentage, col="firebrick3")
+                points(mrsYearStats$year, mrsYearStats$percentage, col="firebrick4")
             }
         } else if (albSing()=="Both") {
             par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,7,2))
@@ -194,6 +269,10 @@ shinyServer(
                 lines(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid3")
                 points(rbsYearStats$year, rbsYearStats$percentage, col="darkorchid4")
             }
+            if(any(chartChoice()==4)){
+                lines(mrsYearStats$year, mrsYearStats$percentage, col="firebrick3")
+                points(mrsYearStats$year, mrsYearStats$percentage, col="firebrick4")
+            }
             title("Percentage of Chart-Toppers on Critic's List", outer = T, 
                   line = -2, cex = 1.5)
         }
@@ -220,7 +299,7 @@ shinyServer(
                 par(lwd=2, cex=1.05)
                 plot(h1YearStats$year, h1YearStats$critPicks, 
                      type="n", main="Number of Chart-Toppers on Critic's List",
-                     xlab="", ylab="Number of Singles", ylim=c(0,8))
+                     xlab="", ylab="Number of Singles", ylim=c(0,9))
                 if(any(chartChoice()==1)){
                     lines(h1YearStats$year, h1YearStats$critPicks, col="gray70")
                     points(h1YearStats$year, h1YearStats$critPicks, col="midnightblue")
@@ -232,6 +311,10 @@ shinyServer(
                 if(any(chartChoice()==3)){
                     lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
+                }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick4")
                 }
             } else if (albSing()=="Both") {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,7,2))
@@ -265,6 +348,10 @@ shinyServer(
                     lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
                 }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick4")
+                }
                 title("Number of Chart-Toppers on Critic's List", outer = T, 
                       line = -2, cex = 1.5)
             }
@@ -297,10 +384,17 @@ shinyServer(
                 }
             } else if (albSing()=="Singles") {
                 par(lwd=2, cex=1.05)
-                plot(yearStats$year, yearStats$total,
-                     type="n", main="Number of Chart-Topping Singles in a Given Year", ylim=c(0,43),
-                     xlab="Year", ylab="Number of Chart-Toppers")
-                legend("topleft", lty=c(2,1), col="midnightblue",
+                if(any(chartChoice()==2)) {
+                    plot(yearStats$year, yearStats$total,
+                         type="n", main="Number of Chart-Topping Singles in a Given Year",
+                         xlab="Year", ylab="Number of Chart-Toppers", ylim=c(0,50))
+                } else {
+                    plot(yearStats$year, yearStats$total,
+                         type="n", main="Number of Chart-Topping Singles in a Given Year", ylim=c(0,43),
+                         xlab="Year", ylab="Number of Chart-Toppers")
+                }
+                
+                legend("topright", lty=c(2,1), col="midnightblue",
                        legend=c("Total", "on Critic's List"))
                 if(any(chartChoice()==1)){
                     lines(h1YearStats$year, h1YearStats$total, col="gray70", lty=2)
@@ -319,6 +413,12 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$total, col="darkorchid4")
                     lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
+                }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$total, col="firebrick3", lty=2)
+                    points(mrsYearStats$year, mrsYearStats$total, col="firebrick4")
+                    lines(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick4")
                 }
             } else if (albSing()=="Both") {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
@@ -368,6 +468,12 @@ shinyServer(
                     lines(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$critPicks, col="darkorchid4")
                 }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$total, col="firebrick3", lty=2)
+                    points(mrsYearStats$year, mrsYearStats$total, col="firebrick4")
+                    lines(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick4")
+                }
                 title("Number of Chart-Toppers in a Given Year", outer = T, 
                       line = -2, cex = 1.5)
             }
@@ -398,15 +504,9 @@ shinyServer(
                 }
             } else if (albSing()=="Singles") {
                 par(lwd=2, cex=1.05)
-                if(any(chartChoice()==2)) {
-                    plot(h1YearStats$year, h1YearStats$avgWeeks, 
-                         type="n", main="Average Weeks At Number One",
-                         xlab="Year", ylab="Weeks", ylim=c(0,19))
-                } else {
-                    plot(h1YearStats$year, h1YearStats$avgWeeks, 
-                         type="n", main="Average Weeks At Number One",
-                         xlab="Year", ylab="Weeks", ylim=c(0,11))
-                }
+                plot(h1YearStats$year, h1YearStats$avgWeeks, 
+                     type="n", main="Average Weeks At Number One",
+                     xlab="Year", ylab="Weeks", ylim=c(0,12))
                 if(any(chartChoice()==1)){
                     lines(h1YearStats$year, h1YearStats$avgWeeks, col="gray70")
                     points(h1YearStats$year, h1YearStats$avgWeeks, col="midnightblue")
@@ -418,6 +518,10 @@ shinyServer(
                 if(any(chartChoice()==3)){
                     lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick4")
                 }
             } else if (albSing()=="Both") {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
@@ -463,6 +567,10 @@ shinyServer(
                     lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
                 }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick4")
+                }
                 title("Average Weeks At Number One", outer = T, 
                       line = -2, cex = 1.5)
             }
@@ -500,14 +608,8 @@ shinyServer(
                 }
             } else if (albSing()=="Singles") {
                 par(lwd=2, cex=1.05)
-                if(any(chartChoice()==2)) {
-                    plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,50), 
-                         main="Weeks At Number One", xlab="Year", ylab="Weeks")
-                } else {
-                    plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,30), 
-                         main="Weeks At Number One", xlab="Year", ylab="Weeks")
-                }
-                
+                plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,30), 
+                     main="Weeks At Number One", xlab="Year", ylab="Weeks")
                 legend("topright", lty=c(2,1), col=c("gray70", "gray70"), 
                        legend=c("Yearly High", "Average"))
                 if(any(chartChoice()==1)){
@@ -527,6 +629,12 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$mostWeeks, col="darkorchid4")
                     lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$mostWeeks, col="firebrick3", lty=2)
+                    points(mrsYearStats$year, mrsYearStats$mostWeeks, col="firebrick4")
+                    lines(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick4")
                 }
             } else if (albSing()=="Both") {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
@@ -584,6 +692,12 @@ shinyServer(
                     points(rbsYearStats$year, rbsYearStats$mostWeeks, col="darkorchid4")
                     lines(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid3")
                     points(rbsYearStats$year, rbsYearStats$avgWeeks, col="darkorchid4")
+                }
+                if(any(chartChoice()==4)){
+                    lines(mrsYearStats$year, mrsYearStats$mostWeeks, col="firebrick3", lty=2)
+                    points(mrsYearStats$year, mrsYearStats$mostWeeks, col="firebrick4")
+                    lines(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick3")
+                    points(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick4")
                 }
                 title("Weeks At Number One", outer = T, 
                       line = -2, cex = 1.5)

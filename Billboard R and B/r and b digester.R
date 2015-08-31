@@ -116,5 +116,7 @@ rbLookAtEm <- checkOpts(rbMout)
 #   sample:
 #   rbM[rbM$album==unlist(strsplit(rbLookAtEm[108,2], ": "))[2],4] <- 436
 
-
+#setwd("C:/Users/Seth/Documents/bandatablog/data")
+#write.csv(rbM, "r and b weekly number ones.csv", row.names=F)
+#write.csv(rbMnd, "r and b no duplicates.csv", row.names=F)
 

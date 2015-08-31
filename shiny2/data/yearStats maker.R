@@ -128,7 +128,7 @@ names(h1YearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", 
 #write.csv(h1YearStats, "data/h1YearStats.csv", row.names=F)
 
 # COUNTRY SINGLES
-year <- "1985"
+year <- "1983"
 cosYearStats <- data.frame()
 for (i in 1:31) {
     year <- (as.character(as.numeric(year)+1))
@@ -153,11 +153,12 @@ for (i in 1:31) {
     yaD <- cosM[substring(cosM$date, 1, 4)==year,]
     cosYearStats[i, 7] <- length(yaD$index[yaD$index>0])/length(yaD$index)
 }
+cosYearStats[1,2:7] <- NA
 names(cosYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
 #write.csv(cosYearStats, "data/cosYearStats.csv", row.names=F)
 
 #R AND B SINGLES
-year <- "1985"
+year <- "1983"
 rbsYearStats <- data.frame()
 for (i in 1:31) {
     year <- (as.character(as.numeric(year)+1))
@@ -182,11 +183,12 @@ for (i in 1:31) {
     yaD <- rbsM[substring(rbsM$date, 1, 4)==year,]
     rbsYearStats[i, 7] <- length(yaD$index[yaD$index>0])/length(yaD$index)
 }
+rbsYearStats[1,2:7] <- NA
 names(rbsYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
 #write.csv(rbsYearStats, "data/rbsYearStats.csv", row.names=F)
 
 # MAINSTREAM ROCK SINGLES
-year <- "1985"
+year <- "1983"
 mrsYearStats <- data.frame()
 for (i in 1:31) {
     year <- (as.character(as.numeric(year)+1))
@@ -211,5 +213,6 @@ for (i in 1:31) {
     yaD <- mrsM[substring(mrsM$date, 1, 4)==year,]
     mrsYearStats[i, 7] <- length(yaD$index[yaD$index>0])/length(yaD$index)
 }
+mrsYearStats[1,2:7] <- NA
 names(mrsYearStats) <- c("year", "percentage", "critPicks", "total", "avgWeeks", "mostWeeks", "percWeeks")
 #write.csv(mrsYearStats, "data/mrsYearStats.csv", row.names=F)

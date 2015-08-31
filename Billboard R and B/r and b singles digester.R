@@ -25,8 +25,11 @@ for (i in 1:31) {
     }
     rbsM <- rbind(rbsM, wno[[i]])
 }
-#write.csv(rbsM, "weekly number ones.csv", row.names=F)
 names(rbsM) <- c("date", "song", "artist")
+
+# fix censorship
+rbsM$song <- gsub("Ni\\*\\*as", "Niggas", rbsM$song)
+rbsM$song <- gsub("F\\*\\*k", "Fuck", rbsM$song)
 
 weeksSong <- data.frame(table(rbsM[,2]), stringsAsFactors=F)
 weeksSong <- weeksSong[order(weeksSong$Freq, decreasing=T),]
@@ -77,6 +80,6 @@ rbsMnd <- rbsM[!duplicated(rbsM$song),]
 
 #setwd("C:/Users/Seth/Documents/bandatablog/data")
 #write.csv(rbsM, "r and b singles weekly number ones.csv", row.names=F)
-#write.csv(rbsMnd, "r and b no duplicates.csv", row.names=F)
+#write.csv(rbsMnd, "r and b singles no duplicates.csv", row.names=F)
 
 

@@ -1,497 +1,687 @@
-"date","song","artist","index"
-1985-01-05,"Operator","Midnight Star",0
-1985-01-26,"Gotta Get You Home Tonight","Eugene Wilde",0
-1985-02-02,"Mr. Telephone Man","New Edition",0
-1985-02-23,"Missing You","Diana Ross",155
-1985-03-16,"Nightshift","Commodores",178
-1985-04-13,"Back In Stride","Maze Featuring Frankie Beverly",0
-1985-04-27,"Rhythm Of the Night","Debarge",0
-1985-05-04,"We Are The World","USA For Africa",174
-1985-05-18,"Fresh","Kool",0
-1985-05-25,"You Give Good Love","Whitney Houston",0
-1985-06-01,"Rock Me Tonight","Freddie Jackson",0
-1985-07-13,"Hangin On A String","Loose Ends",0
-1985-07-20,"Save Your Love (For #1)","Rene",0
-1985-08-03,"Freeway Of Love","Aretha Franklin",157
-1985-09-07,"Saving All My Love For You","Whitney Houston",0
-1985-09-14,"Cherish","Kool",0
-1985-09-21,"Oh Sheila","Ready For The World",0
-1985-10-05,"You Are My Lady","Freddie Jackson",0
-1985-10-19,"Part-Time Lover","Stevie Wonder",0
-1985-11-30,"Caravan of Love","Isley/Jasper/Isley",0
-1985-12-21,"Don t Say No Tonight","Eugene Wilde",0
-1986-01-11,"Say You, Say Me","Lionel Richie",0
-1986-01-25,"That s What Friends Are For","Dionne",0
-1986-02-15,"Do Me Baby","Meli sa Morgan",0
-1986-03-08,"How Will I Know","Whitney Houston",0
-1986-03-15,"Your Smile","Rene",0
-1986-03-22,"What Have You Done For Me Lately","Janet Jackson",0
-1986-04-05,"Kiss","Prince And The Revolution",185
-1986-05-03,"I Have Learned To Respect The Power Of Love","Stephanie Mills",0
-1986-05-17,"On My Own","Patti LaBelle",0
-1986-06-14,"Nasty","Janet Jackson",193
-1986-06-28,"There ll Be Sad Songs (To Make You Cry)","Billy Ocean",0
-1986-07-12,"Who s Johnny (Short Circuit Theme)","El DeBarge",0
-1986-07-19,"Rumors","Timex Social Club",0
-1986-08-02,"Closer Than Close","Jean Carne",0
-1986-08-16,"Do You Get Enough Love","Shirley Jones",0
-1986-08-30,"Love Zone","Billy Ocean",0
-1986-09-06,"Ain t Nothin Goin On But The Rent","Gwen Guthrie",0
-1986-09-13,"(Pop Pop Pop Pop) Goes My Mind","Levert",0
-1986-09-20,"The Rain","Oran Juice Jones",0
-1986-10-04,"Word Up","Cameo",184
-1986-10-25,"Shake You Down","Gregory Abbott",0
-1986-11-08,"A Little Bit More","Melba Moore (Duet With Freddie Jackson)",0
-1986-11-15,"Tasty Love","Freddie Jackson",0
-1986-12-13,"Love You Down","Ready For The World",0
-1986-12-27,"Girlfriend","Bobby Brown",0
-1987-01-10,"Control","Janet Jackson",0
-1987-01-17,"Stop To Love","Luther Vandross",0
-1987-01-31,"Candy","Cameo",0
-1987-02-14,"Falling","Melba Moore",0
-1987-02-21,"Have You Ever Loved Somebody","Freddie Jackson",0
-1987-03-07,"Slow Down","Loose Ends",0
-1987-03-14,"Let s Wait Awhile","Janet Jackson",0
-1987-03-21,"Looking For A New Love","Jody Watley",0
-1987-04-11,"Sign O The Times","The Artist",208
-1987-05-02,"Don t Disturb This Groove","The System",0
-1987-05-09,"There s Nothing Better Than Love","Luther Vandross with Gregory Hines",0
-1987-05-16,"Always","Atlantic Starr",0
-1987-05-30,"Head To Toe","Lisa Lisa",0
-1987-06-13,"Rock Steady","The Whispers",0
-1987-06-20,"Diamonds","Herb Alpert Featuring Janet Jackson",0
-1987-07-04,"I Feel Good All Over","Stephanie Mills",0
-1987-07-25,"Fake","Alexander O Neal",233
-1987-08-08,"The Pleasure Principle","Janet Jackson",0
-1987-08-15,"Jam Tonight","Freddie Jackson",0
-1987-08-22,"Casanova","Levert",222
-1987-09-05,"Love Is A House","Force M.D. s",0
-1987-09-19,"I Just Can t Stop Loving You","Michael Jackson With Siedah Garrett",0
-1987-09-26,"I Need Love","LL Cool J",0
-1987-10-03,"Lost In Emotion","Lisa Lisa",0
-1987-10-10,"(You're Puttin') A Rush On Me","Stephanie Mills",0
-1987-10-17,"Bad","Michael Jackson",0
-1987-11-07,"Lovin You","The O Jays",0
-1987-11-14,"Angel","Angela Winbush",0
-1987-11-28,"Skeletons","Stevie Wonder",220
-1987-12-12,"System of Survival","Earth, Wind",0
-1987-12-19,"I Want To Be Your Man","Roger",0
-1987-12-26,"The Way You Make Me Feel","Michael Jackson",231
-1988-01-23,"Love Overboard","Gladys Knight",0
-1988-01-30,"I Want Her","Keith Sweat",257
-1988-03-05,"You Will Know","Stevie Wonder",0
-1988-03-12,"Fishnet","Morris Day",0
-1988-03-26,"Man In The Mirror","Michael Jackson",254
-1988-04-02,"Wishing Well","Terence Trent D'Arby",245
-1988-04-16,"Get Outta My Dreams, Get Into My Car","Billy Ocean",0
-1988-04-23,"Da Butt (From The Film School Daze)","E.U.",247
-1988-04-30,"Nite And Day","Al B. Sure!",0
-1988-05-21,"Mercedes Boy","Pebbles",0
-1988-05-28,"Just Got Paid","Johnny Kemp",0
-1988-06-11,"Little Walter","Tony Toni Tone",0
-1988-06-25,"Joy","Teddy Pendergrass",0
-1988-07-09,"Paradise","Sade",0
-1988-07-16,"Roses Are Red","The Mac Band Featuring The McCampbell Brothers",0
-1988-07-23,"Don't Be Cruel","Bobby Brown",0
-1988-08-06,"Off On Your Own (Girl)","Al B. Sure!",0
-1988-08-20,"Loosey s Rap","Rick James Featuring Roxanne Shante",0
-1988-08-27,"Nice N Slow","Freddie Jackson",0
-1988-09-17,"Another Part Of Me","Michael Jackson",0
-1988-09-24,"She s On The Left","Jeffrey Osborne",0
-1988-10-01,"Addicted To You","Levert",0
-1988-10-15,"My Prerogative","Bobby Brown",241
-1988-10-29,"The Way You Love Me","Karyn White",0
-1988-11-05,"Any Love","Luther Vandross",0
-1988-11-12,"Giving You The Best That I Got","Anita Baker",0
-1988-11-26,"Thanks For My Child","Cheryl Pepsii Riley",0
-1988-12-03,"Hey Lover","Freddie Jackson",0
-1988-12-10,"Dial My Heart","The Boys",0
-1988-12-17,"Everything I Miss At Home","Cherrelle",0
-1988-12-24,"Tumblin Down","Ziggy Marley",0
-1989-01-07,"Oasis","Roberta Flack",0
-1989-01-14,"Superwoman","Karyn White",0
-1989-02-04,"Can You Stand The Rain","New Edition",0
-1989-02-18,"Dreamin","Vanessa Williams",0
-1989-03-04,"Just Because","Anita Baker",0
-1989-03-11,"Just Coolin","LeVert Feat. Heavy D",0
-1989-03-18,"Closer Than Friends","Surface",0
-1989-04-01,"Lucky Charm","The Boys",0
-1989-04-08,"Girl I Got My Eyes On You","Today",0
-1989-04-15,"Every Little Step","Bobby Brown",0
-1989-04-22,"Love Saw It","Karyn White",0
-1989-05-06,"Real Love","Jody Watley",0
-1989-05-13,"Start Of A Romance","Skyy",0
-1989-05-27,"My First Love","Atlantic Starr",0
-1989-06-03,"Miss You Like Crazy","Natalie Cole",0
-1989-06-10,"Me Myself And I","De La Soul",278
-1989-06-17,"Have You Had Your Love Today","The O Jays",0
-1989-07-01,"Show","Peabo Bryson",0
-1989-07-08,"Keep On Movin","Soul II Soul (Featuring Caron Wheeler)",0
-1989-07-22,"Turned Away","Chuckii Booker",0
-1989-07-29,"Shower Me With Your Love","Surface",0
-1989-08-05,"On Our Own (From Ghostbusters II)","Bobby Brown",0
-1989-08-12,"Batdance (From Batman)","The Artist",272
-1989-08-19,"Something In The Way (You Make Me Feel)","Stephanie Mills",0
-1989-08-26,"It s No Crime","Babyface",0
-1989-09-09,"My Fantasy (From Do The Right Thing)","Teddy Riley Featuring Guy",0
-1989-09-16,"Remember (The First Time)","Eric Gable",0
-1989-09-23,"Can t Get Over You","Maze Featuring Frankie Beverly",0
-1989-10-07,"Back To Life","Soul II Soul",275
-1989-10-14,"Miss You Much","Janet Jackson",0
-1989-10-28,"Baby Come To Me","Regina Belle",0
-1989-11-04,"You Are My Everything","Surface",0
-1989-11-18,"Don t Take It Personal","Jermaine Jackson",0
-1989-11-25,"Home","Stephanie Mills",0
-1989-12-02,"Here And Now","Luther Vandross",0
-1989-12-16,"Ain t Nuthin In The World","Miki Howard",0
-1989-12-23,"All Of My Love","Gap Band",0
-1989-12-30,"Tender Lover","Babyface",0
-1990-01-13,"Rhythm Nation","Janet Jackson",0
-1990-01-20,"I ll Be Good To You","Quincy Jones Featuring Ray Charles",0
-1990-02-03,"Make It Like It Was","Regina Belle",0
-1990-02-17,"It s Gonna Be Alright","Ruby Turner",0
-1990-02-24,"Where Do We Go From Here","Stacy Lattisaw With Johnny Gill",0
-1990-03-10,"Escapade","Janet Jackson",0
-1990-03-17,"The Secret Garden","Quincy Jones",0
-1990-03-24,"All Around The World","Lisa Stansfield",289
-1990-04-07,"Spread My Wings","Troop",0
-1990-04-21,"Ready Or Not","After 7",0
-1990-05-05,"Poison","Bell Biv Devoe",304
-1990-05-19,"Rub You The Right Way","Johnny Gill",0
-1990-05-26,"Hold On","En Vogue",297
-1990-06-09,"The Blues","Tony Toni Tone",0
-1990-06-16,"Tomorrow (A Better You, Better Me)","Quincy Jones With Tevin Campbell",0
-1990-06-23,"U Can t Touch This","M.C. Hammer",0
-1990-06-30,"All I Do Is Think Of You","Troop",0
-1990-07-07,"You Can t Deny It","Lisa Stansfield",0
-1990-07-14,"My, My, My","Johnny Gill",0
-1990-07-28,"Make You Sweat","Keith Sweat",0
-1990-08-04,"Can t Stop","After 7",0
-1990-08-11,"Vision Of Love","Mariah Carey",0
-1990-08-25,"Jerk Out","The Time",0
-1990-09-01,"Feels Good","Tony Toni Tone",0
-1990-09-15,"Lies","En Vogue",0
-1990-09-22,"Crazy","The Boys",0
-1990-09-29,"Thieves In The Temple","The Artist",0
-1990-10-06,"Giving You The Benefit","Pebbles",0
-1990-10-27,"So You Like What You See","Samuelle",0
-1990-11-10,"Love Takes Time","Mariah Carey",0
-1990-11-17,"B.B.D. (I Thought It Was Me)?","Bell Biv Devoe",0
-1990-11-24,"Missunderstanding","Al B. Sure!",0
-1990-12-01,"I m Your Baby Tonight","Whitney Houston",0
-1990-12-15,"Sensitivity","Ralph Tresvant",0
-1990-12-22,"It Never Rains (In Southern California)","Tony Toni Tone",0
-1991-01-05,"Love Me Down","Freddie Jackson",0
-1991-01-19,"The First Time","Surface",0
-1991-01-26,"Love Makes Things Happen","Pebbles",0
-1991-02-09,"You Don t Have To Worry","En Vogue",0
-1991-02-16,"I ll Give All My Love To You","Keith Sweat",0
-1991-02-23,"Gonna Make You Sweat","C+C Music Factory",305
-1991-03-02,"All The Man That I Need","Whitney Houston",0
-1991-03-16,"Written All Over Your Face","The Rude Boys",0
-1991-03-23,"I Like The Way (The Kissing Game)","Hi-Five",0
-1991-04-06,"Do Me Again","Freddie Jackson",0
-1991-04-13,"Wrap My Body Tight","Johnny Gill",0
-1991-04-20,"Whatever You Want","Tony Toni Tone",0
-1991-05-04,"I m Dreamin (From New Jack City)","Christopher Williams",0
-1991-05-11,"Call Me","Phil Perry",0
-1991-05-18,"It Should ve Been You","Teddy Pendergrass",0
-1991-05-25,"Kissing You","Keith Washington",0
-1991-06-01,"I Wanna Sex You Up (From New Jack City)","Color Me Badd",334
-1991-06-15,"Power Of Love/Love Power","Luther Vandross",0
-1991-06-29,"How Can I Ease The Pain","Lisa Fischer",0
-1991-07-13,"Exclusivity","Damian Dame",0
-1991-07-27,"Baby I m Ready","Levert",0
-1991-08-03,"Summertime","D.J. Jazzy Jeff",0
-1991-08-10,"I Can t Wait Another Minute","Hi-Five",0
-1991-08-17,"Can You Stop The Rain","Peabo Bryson",0
-1991-08-31,"Addictive Love","BeBe",0
-1991-09-14,"Let The Beat Hit Em","Lisa Lisa",0
-1991-09-21,"Don t Wanna Change The World","Phyllis Hyman",0
-1991-09-28,"I Adore Mi Amor","Color Me Badd",0
-1991-10-05,"Running Back To You","Vanessa Williams",0
-1991-10-19,"Romantic","Karyn White",0
-1991-10-26,"It s So Hard To Say Goodbye To Yesterday","Boyz II Men",0
-1991-11-02,"Emotions","Mariah Carey",0
-1991-11-09,"Forever My Lady","Jodeci",0
-1991-11-30,"Are You Lonely For Me","The Rude Boys",0
-1991-12-07,"I'll Take You There","BeBe & CeCe Winans",0
-1991-12-14,"Private Line","Gerald Levert",0
-1991-12-21,"I Love Your Smile","Shanice",0
-1992-01-18,"Tell Me What You Want Me To Do","Tevin Campbell",0
-1992-01-25,"Keep It Comin","Keith Sweat",0
-1992-02-08,"Stay","Jodeci",0
-1992-02-22,"Uhh Ahh","Boyz II Men",0
-1992-02-29,"Baby Hold On To Me","Gerald Levert (Duet With Eddie Levert)",0
-1992-03-07,"Remember The Time","Michael Jackson",0
-1992-03-21,"Diamonds And Pearls","Prince And The N.P.G.",0
-1992-03-28,"Save The Best For Last","Vanessa Williams",0
-1992-04-18,"Here I Go Again","Glenn Jones",0
-1992-04-25,"Don t Be Afraid (From Juice)","Aaron Hall",0
-1992-05-09,"All Woman","Lisa Stansfield",0
-1992-05-16,"My Lovin (You re Never Gonna Get It)","En Vogue",0
-1992-05-30,"Come","Jodeci",0
-1992-06-13,"Honey Love","R. Kelly",0
-1992-06-27,"In The Closet","Michael Jackson",0
-1992-07-04,"Do It To Me","Lionel Richie",0
-1992-07-11,"Tennessee","Arrested Development",338
-1992-07-18,"The Best Things In Life Are Free","Luther Vandross And Janet Jackson",0
-1992-07-25,"You Remind Me (From Strictly Business)","Mary J. Blige",0
-1992-08-01,"Giving Him Something He Can Feel","En Vogue",0
-1992-08-08,"Baby-Baby-Baby","TLC",0
-1992-08-22,"End Of The Road (From Boomerang)","Boyz II Men",0
-1992-09-19,"Humpin Around","Bobby Brown",0
-1992-10-03,"Slow Dance (Hey Mr. DJ)","R. Kelly",0
-1992-10-10,"Alone With You","Tevin Campbell",0
-1992-10-31,"Right Now","Al B. Sure!",0
-1992-11-07,"Sweet November","Troop",0
-1992-11-14,"Ain t Nobody Like You","Miki Howard",0
-1992-11-21,"Games","Chuckii Booker",0
-1992-11-28,"If I Ever Fall In Love","Shai",0
-1992-12-05,"I Will Always Love You (From The Bodyguard)","Whitney Houston",0
-1993-02-20,"Hip Hop Hooray","Naughty By Nature",379
-1993-02-27,"Nuthin But A G Thang","Dr. Dre",369
-1993-03-13,"Freak Me","Silk",0
-1993-05-08,"That s The Way Love Goes","Janet Jackson",378
-1993-06-05,"Knockin Da Boots","H-Town",0
-1993-07-03,"Weak","SWV",0
-1993-07-17,"Whoomp! (There It Is)","Tag Team",0
-1993-07-24,"Lately","Jodeci",0
-1993-08-07,"Check Yo Self","Ice Cube Featuring Das EFX",375
-1993-08-28,"Right Here (Human Nature)/Downtown","SWV",0
-1993-10-16,"Just Kickin It","Xscape",0
-1993-11-13,"Gangsta Lean","DRS",0
-1993-12-25,"Can We Talk","Tevin Campbell",0
-1994-01-15,"Cry For You","Jodeci",0
-1994-02-12,"Understanding","Xscape",0
-1994-02-26,"Bump N Grind","R. Kelly",0
-1994-05-21,"Back","Aaliyah",0
-1994-06-11,"Any Time, Any Place/And On And On","Janet Jackson",0
-1994-08-20,"I ll Make Love To You","Boyz II Men",0
-1994-10-22,"I Wanna Be Down","Brandy",0
-1994-11-19,"Practice What You Preach","Barry White",0
-1994-12-10,"Creep","TLC",371
-1995-02-11,"Baby","Brandy",0
-1995-03-11,"Candy Rain","Soul For Real",0
-1995-04-01,"This Is How We Do It","Montell Jordan",0
-1995-05-20,"I'll Be There For You/You're All I Need To Get By","Method Man Featuring Mary J. Blige",0
-1995-06-10,"Don't Take It Personal (Just One Of Dem Days)","Monica",0
-1995-06-24,"One More Chance/Stay With Me","The Notorious B.I.G.",0
-1995-08-26,"Boombastic/In The Summertime","Shaggy",0
-1995-09-02,"You Are Not Alone","Michael Jackson",0
-1995-09-30,"Fantasy","Mariah Carey",0
-1995-11-11,"Who Can I Run To","Xscape",0
-1995-11-18,"You Remind Me Of Something","R. Kelly",0
-1995-11-25,"Exhale (Shoop Shoop) (From Waiting To Exhale)","Whitney Houston",0
-1996-01-20,"Before You Walk Out Of My Life/Like This And Like That","Monica",0
-1996-02-03,"Not Gon' Cry (From Waiting To Exhale)","Mary J. Blige",0
-1996-03-09,"Down Low (Nobody Has To Know)","R. Kelly Featuring Ronald Isley",0
-1996-04-27,"You're The One","SWV",0
-1996-05-04,"Always Be My Baby","Mariah Carey",0
-1996-05-11,"Tha Crossroads","Bone Thugs-N-Harmony",0
-1996-06-29,"You're Makin' Me High/Let It Flow","Toni Braxton",0
-1996-07-06,"How Do U Want It/California Love","2Pac Featuring KC And JoJo",0
-1996-08-03,"I Can't Sleep Baby (If I)","R. Kelly",0
-1996-08-17,"Twisted","Keith Sweat",0
-1996-08-31,"Hit Me Off","New Edition",0
-1996-09-28,"If Your Girl Only Knew","Aaliyah",0
-1996-10-12,"Last Night (From The Nutty Professor)","Az Yet",0
-1996-10-19,"No Diggity","BLACKstreet (Featuring Dr. Dre)",453
-1996-11-16,"Pony","Ginuwine",0
-1996-11-30,"Nobody","Keith Sweat Featuring Athena Cage",0
-1996-12-21,"I Believe I Can Fly (From Space Jam)","R. Kelly",0
-1997-01-25,"Don t Let Go (Love) (From Set It Off)","En Vogue",0
-1997-02-08,"On","Erykah Badu",0
-1997-02-22,"In My Bed","Dru Hill",0
-1997-03-08,"Can't Nobody Hold Me Down","Puff Daddy (Featuring Mase)",0
-1997-04-26,"Hypnotize","The Notorious B.I.G.",484
-1997-05-17,"G.H.E.T.T.O.U.T.","Changing Faces",0
-1997-06-14,"I'll Be Missing You","Puff Daddy & Faith Evans Featuring 112",0
-1997-06-28,"I ll Be Missing You","Puff Daddy",0
-1997-08-09,"Never Make A Promise","Dru Hill",0
-1997-09-06,"You Make Me Wanna...","Usher",0
-1997-11-22,"My Body","LSG",0
-1997-12-27,"A Song For Mama","Boyz II Men",0
-1998-01-24,"Nice & Slow","Usher",0
-1998-03-21,"No, No, No","Destiny's Child",0
-1998-03-28,"Let's Ride","Montell Jordan Feat. Master P & Silkk The Shocker",0
-1998-04-04,"All My Life/Don't Rush (Take Love Slowly)","K-Ci & JoJo",0
-1998-04-18,"Let s Ride","Montell Jordan Feat. Master P",0
-1998-05-02,"Too Close","Next",0
-1998-05-23,"I Get Lonely","Janet Featuring BLACKstreet",0
-1998-06-06,"The Boy Is Mine","Brandy",512
-1998-08-01,"Friend Of Mine","Kelly Price",0
-1998-09-05,"The First Night","Monica",0
-1998-10-17,"How Deep Is Your Love","Dru Hill Featuring Redman",0
-1998-11-07,"Nobody s Supposed To Be Here","Deborah Cox",0
-1998-11-14,"Nobody's Supposed To Be Here","Deborah Cox",0
-1999-02-13,"Heartbreak Hotel","Whitney Houston Feat. Faith Evans",0
-1999-04-03,"What s It Gonna Be?!","Busta Rhymes Featuring Janet",0
-1999-04-10,"No Scrubs","TLC",524
-1999-05-15,"Fortunate","Maxwell",0
-1999-07-10,"Bills, Bills, Bills","Destiny s Child",0
-1999-09-11,"Never Gonna Let You Go","Faith Evans",0
-1999-09-18,"Spend My Life With You","Eric Benet Featuring Tamia",0
-1999-10-02,"We Can t Be Friends","Deborah Cox With R.L.",0
-1999-10-09,"Heartbreaker","Mariah Carey Featuring Jay-Z",0
-1999-10-30,"Satisfy You","Puff Daddy Featuring R. Kelly",0
-1999-11-13,"U Know What s Up","Donell Jones",0
-1999-12-18,"U Know What's Up","Donell Jones",0
-2000-01-08,"Hot Boyz","Missy Misdemeanor Elliott Featuring NAS, EVE",0
-2000-02-05,"Get It On Tonite","Montell Jordan",0
-2000-02-26,"Thank God I Found You","Mariah Carey Featuring Joe",0
-2000-03-18,"Say My Name","Destiny s Child",558
-2000-04-08,"Maria Maria","Santana Featuring The Product G",0
-2000-04-29,"He Wasn t Man Enough","Toni Braxton",0
-2000-05-27,"I Wish","Carl Thomas",588
-2000-07-08,"Separated","Avant",0
-2000-07-15,"Let s Get Married","Jagged Edge",0
-2000-08-05,"Incomplete","Sisqo",0
-2000-09-02,"No More","Ruff Endz",0
-2000-09-09,"Wifey","Next",0
-2000-09-16,"Bounce With Me","Lil Bow Wow Featuring Xscape",0
-2000-09-30,"Liar","Profyle",0
-2000-10-07,"Bag Lady","Erykah Badu",567
-2000-12-09,"I Just Wanna Love U (Give It 2 Me)","Jay-Z",569
-2000-12-16,"Ms. Jackson","OutKast",550
-2000-12-23,"Independent Women Part I","Destiny's Child",0
-2001-01-27,"Danger (Been So Long)","Mystikal Featuring Nivea",0
-2001-02-10,"Stutter","Joe Featuring Mystikal",0
-2001-03-17,"It's Over Now","112",0
-2001-03-31,"Promise","Jagged Edge",0
-2001-04-14,"All For You","Janet",0
-2001-05-26,"My Baby","Lil' Romeo",0
-2001-06-02,"Fiesta","R. Kelly Featuring Jay-Z",0
-2001-07-07,"U Remind Me","Usher",0
-2001-08-04,"Loverboy","Mariah Carey Featuring Da Brat & Ludacris",0
-2001-08-18,"Fallin'","Alicia Keys",595
-2001-09-15,"Where The Party At","Jagged Edge With Nelly",0
-2001-10-06,"Differences","Ginuwine",0
-2001-11-03,"Family Affair","Mary J. Blige",599
-2001-11-17,"U Got It Bad","Usher",0
-2002-01-05,"Always On Time","Ja Rule Featuring Ashanti",0
-2002-03-02,"Lights, Camera, Action!","Mr. Cheeks",0
-2002-03-09,"Oops (Oh My)","Tweet",641
-2002-03-30,"Foolish","Ashanti",0
-2002-06-08,"Oh Boy","Cam'ron Featuring Juelz Santana",666
-2002-07-13,"Hot In Herre","Nelly",634
-2002-08-24,"Dilemma","Nelly Featuring Kelly Rowland",0
-2002-10-26,"Luv U Better","LL Cool J",0
-2002-11-23,"Work It","Missy Misdemeanor Elliott",632
-2002-12-28,"Love Of My Life (An Ode To Hip Hop)","Erykah Badu Featuring Common",0
-2003-01-25,"Miss You","Aaliyah",0
-2003-02-15,"In Da Club","50 Cent",677
-2003-04-19,"Excuse Me Miss","Jay-Z",0
-2003-04-26,"Get Busy","Sean Paul",692
-2003-05-03,"21 Questions","50 Cent Featuring Nate Dogg",0
-2003-06-21,"So Gone","Monica",0
-2003-07-26,"Crazy In Love","Beyonce Featuring Jay-Z",674
-2003-08-16,"Frontin'","Pharrell Featuring Jay-Z",694
-2003-09-27,"Baby Boy","Beyonce Featuring Sean Paul",0
-2003-11-01,"Stand Up","Ludacris Featuring Shawnna",702
-2003-12-06,"Step In The Name Of Love","R. Kelly",711
-2003-12-20,"You Don't Know My Name","Alicia Keys",703
-2004-02-21,"Slow Jamz","Twista Featuring Kanye West & Jamie Foxx",742
-2004-03-06,"Yeah!","Usher Featuring Lil Jon & Ludacris",715
-2004-05-01,"If I Ain't Got You","Alicia Keys",747
-2004-06-05,"Burn","Usher",0
-2004-07-10,"Confessions Part II","Usher",0
-2004-07-24,"Lean Back","Terror Squad",731
-2004-09-11,"Goodies","Ciara Featuring Petey Pablo",745
-2004-10-23,"My Boo","Usher And Alicia Keys",0
-2004-11-13,"Drop It Like It's Hot","Snoop Dogg Featuring Pharrell",719
-2005-01-01,"Let Me Love You","Mario",0
-2005-03-19,"Candy Shop","50 Cent Featuring Olivia",0
-2005-04-16,"Hate It Or Love It","The Game Featuring 50 Cent",765
-2005-04-30,"1 Thing","Amerie",756
-2005-06-04,"We Belong Together","Mariah Carey",773
-2005-09-10,"Like You","Bow Wow Featuring Ciara",0
-2005-09-24,"Gold Digger","Kanye West Featuring Jamie Foxx",755
-2005-10-22,"Soul Survivor","Young Jeezy Featuring Akon",0
-2005-11-19,"Run It!","Chris Brown",0
-2005-12-03,"I Think They Like Me","Dem Franchize Boyz Featuring Jermaine Dupri, Da Brat & Bow Wow",0
-2005-12-24,"Don't Forget About Us","Mariah Carey",0
-2006-01-07,"Be Without You","Mary J. Blige",831
-2006-04-22,"What You Know","T.I.",796
-2006-06-03,"It's Goin' Down","Yung Joc",0
-2006-07-29,"Snap Yo Fingers","Lil Jon Featuring E-40 & Sean Paul Of The YoungBloodZ",0
-2006-08-05,"Me & U","Cassie",817
-2006-08-12,"Shoulder Lean","Young Dro Featuring T.I.",0
-2006-09-02,"Deja Vu","Beyonce Featuring Jay-Z",0
-2006-09-16,"Pullin' Me Back","Chingy Featuring Tyrese",0
-2006-09-23,"Call On Me","Janet & Nelly",0
-2006-10-14,"Say Goodbye","Chris Brown",0
-2006-10-28,"Money Maker","Ludacris Featuring Pharrell",0
-2006-12-02,"Irreplaceable","Beyonce",812
-2007-02-17,"You","Lloyd Featuring Lil' Wayne",0
-2007-02-24,"Lost Without U","Robin Thicke",0
-2007-05-12,"Buy U A Drank (Shawty Snappin')","T-Pain Featuring Yung Joc",0
-2007-07-07,"When I See U","Fantasia",0
-2007-09-01,"Let It Go","Keyshia Cole Featuring Missy Elliott & Lil Kim",0
-2007-09-22,"Bed","J. Holiday",0
-2007-10-27,"No One","Alicia Keys",858
-2008-01-05,"Like You'll Never See Me Again","Alicia Keys",0
-2008-02-23,"I Remember","Keyshia Cole",0
-2008-04-12,"Love In This Club","Usher Featuring Young Jeezy",0
-2008-05-10,"Lollipop","Lil Wayne Featuring Static Major",907
-2008-06-21,"Heaven Sent","Keyshia Cole",0
-2008-08-23,"A Milli","Lil Wayne",879
-2008-08-30,"Take A Bow","Rihanna",0
-2008-09-06,"Need U Bad","Jazmine Sullivan",0
-2008-10-04,"Whatever You Like","T.I.",890
-2008-10-25,"Spotlight","Jennifer Hudson",0
-2008-11-08,"Miss Independent","Ne-Yo",0
-2008-11-29,"Single Ladies (Put A Ring On It)","Beyonce",877
-2009-02-21,"Blame It","Jamie Foxx Featuring T-Pain",0
-2009-05-30,"Birthday Sex","Jeremih",0
-2009-06-13,"Knock You Down","Keri Hilson Featuring Kanye West & Ne-Yo",0
-2009-06-27,"Best I Ever Had","Drake",942
-2009-08-15,"Pretty Wings","Maxwell",931
-2009-11-21,"Empire State Of Mind","Jay-Z + Alicia Keys",916
-2009-12-12,"Papers","Usher",0
-2009-12-26,"I Invented Sex","Trey Songz Featuring Drake",0
-2010-01-09,"It Kills Me","Melanie Fiona",0
-2010-03-13,"Sex Therapy","Robin Thicke",0
-2010-03-27,"Say Something","Timbaland Featuring Drake",0
-2010-04-03,"Everything To Me","Monica",0
-2010-05-22,"Un-Thinkable (I'm Ready)","Alicia Keys",0
-2010-08-14,"There Goes My Baby","Usher",0
-2010-09-11,"Deuces","Chris Brown Featuring Tyga & Kevin McCall",0
-2010-11-13,"Can't Be Friends","Trey Songz",0
-2011-02-12,"Fall For Your Type","Jamie Foxx Featuring Drake",0
-2011-02-26,"Moment 4 Life","Nicki Minaj Featuring Drake",0
-2011-04-02,"Look At Me Now","Chris Brown Featuring Lil Wayne & Busta Rhymes",0
-2011-05-28,"Sure Thing","Miguel",0
-2011-06-04,"Motivation","Kelly Rowland Featuring Lil Wayne",0
-2011-07-16,"I'm On One","DJ Khaled Featuring Drake, Rick Ross & Lil Wayne",0
-2011-10-08,"Marvin & Chardonnay","Big Sean Featuring Kanye West & Roscoe Dash",0
-2011-10-15,"She Will","Lil Wayne Featuring Drake",0
-2011-11-12,"Ni**as in Paris","Jay Z Kanye West",0
-2011-12-31,"Lotus Flower Bomb","Wale Featuring Miguel",0
-2012-02-04,"Make Me Proud","Drake Featuring Nicki Minaj",0
-2012-02-25,"The Motto","Drake Featuring Lil Wayne",0
-2012-03-10,"Love On Top","Beyonce",0
-2012-04-28,"Climax","Usher",1037
-2012-07-07,"Mercy","Kanye West, Big Sean, Pusha T, 2 Chainz",0
-2012-08-18,"No Lie","2 Chainz Featuring Drake",0
-2012-09-22,"Adorn","Miguel",1036
-2013-01-26,"Thrift Shop","Macklemore & Ryan Lewis Featuring Wanz",0
-2013-05-04,"Can't Hold Us","Macklemore & Ryan Lewis Featuring Ray Dalton",0
-2013-06-22,"Blurred Lines","Robin Thicke Featuring T.I. + Pharrell",1079
-2013-10-12,"Hold On, We're Going Home","Drake Featuring Majid Jordan",1080
-2013-11-16,"The Monster","Eminem Featuring Rihanna",0
-2014-02-15,"Drunk In Love","Beyonce Featuring Jay Z",1135
-2014-02-22,"Happy","Pharrell Williams",1127
-2014-05-17,"All Of Me","John Legend",0
-2014-06-07,"Fancy","Iggy Azalea Featuring Charli XCX",1143
-2014-09-06,"Anaconda","Nicki Minaj",0
-2014-10-18,"Black Widow","Iggy Azalea Featuring Rita Ora",0
-2014-11-22,"Hot Boy","Bobby Shmurda",0
-2014-12-06,"I Don't F**k With You","Big Sean Featuring E-40",0
-2014-12-20,"7/11","Beyonce",0
-2014-12-27,"Only","Nicki Minaj Featuring Drake, Lil Wayne & Chris Brown",0
-2015-02-14,"I Don't Mind","Usher Featuring Juicy J",0
-2015-02-21,"FourFiveSeconds","Rihanna & Kanye West & Paul McCartney",0
-2015-04-11,"Earned It (Fifty Shades Of Grey)","The Weeknd",0
-2015-04-25,"See You Again","Wiz Khalifa Featuring Charlie Puth",0
-2015-08-01,"Can't Feel My Face","The Weeknd",0
+"date","album","artist","index"
+1985-01-05,"New Edition","New Edition",0
+1985-02-09,"Solid","Ashford",0
+1985-03-09,"Gap Band VI","Gap Band",0
+1985-03-23,"Private Dancer","Tina Turner",357
+1985-04-06,"Nightshift","Commodores",0
+1985-04-27,"Can t Stop The Love","Maze Featuring Frankie Beverly",0
+1985-05-04,"The Night I Fell In Love","Luther Vandross",422
+1985-06-22,"Whitney Houston","Whitney Houston",0
+1985-06-29,"Rock Me Tonight","Freddie Jackson",0
+1985-11-09,"In Square Circle","Stevie Wonder",0
+1986-02-01,"Promise","Sade",0
+1986-04-19,"Control","Janet Jackson",443
+1986-06-14,"Winner In You","Patti LaBelle",0
+1986-08-09,"Love Zone","Billy Ocean",0
+1986-08-16,"Raising Hell","Run-D.M.C.",437
+1986-10-25,"Word Up","Cameo",0
+1986-11-29,"Give Me The Reason","Luther Vandross",0
+1986-12-06,"Just Like The First Time","Freddie Jackson",0
+1987-06-06,"Jody Watley","Jody Watley",0
+1987-07-04,"One Heartbeat","Smokey Robinson",0
+1987-07-11,"Bigger","LL Cool J",0
+1987-09-05,"If I Were Your Woman","Stephanie Mills",0
+1987-10-03,"Bad","Michael Jackson",0
+1987-12-19,"Characters","Stevie Wonder",490
+1988-02-27,"All Our Love","Gladys Knight",0
+1988-03-19,"Make It Last Forever","Keith Sweat",0
+1988-04-30,"The Hardline According To Terence Trent D Arby","Terence Trent D Arby",0
+1988-05-07,"The Hardline According To Terence Trent D'Arby","Terence Trent D'Arby",0
+1988-05-21,"Faith","George Michael",504
+1988-07-02,"In Effect Mode","Al B. Sure!",0
+1988-08-20,"Strictly Business","EPMD",0
+1988-09-10,"Don't Be Cruel","Bobby Brown",0
+1988-09-17,"Don t Be Cruel","Bobby Brown",0
+1988-09-24,"It Takes A Nation Of Millions To Hold Us Back","Public Enemy",513
+1988-10-15,"Don t Let Love Slip Away","Freddie Jackson",0
+1988-11-19,"Giving You The Best That I Got","Anita Baker",0
+1988-11-26,"Any Love","Luther Vandross",0
+1989-01-28,"Karyn White","Karyn White",0
+1989-02-25,"Heart Break","New Edition",0
+1989-04-08,"Let's Get It Started","M.C. Hammer",0
+1989-04-15,"Guy","Guy",0
+1989-05-13,"The Great Adventures Of Slick Rick","Slick Rick",0
+1989-05-27,"3 Feet High And Rising","De La Soul",553
+1989-07-22,"Walking With A Panther","LL Cool J",0
+1989-08-26,"Big Tyme","Heavy D",0
+1989-09-02,"Keep On Movin","Soul II Soul",0
+1989-09-16,"Unfinished Business","EPMD",0
+1989-09-30,"No One Can Do It Better","The D.O.C.",0
+1989-10-14,"Tender Lover","Babyface",0
+1989-11-11,"Silky Soul","Maze Featuring Frankie Beverly",0
+1989-11-18,"Janet Jackson s Rhythm Nation 1814","Janet Jackson",0
+1989-12-02,"Stay With Me","Regina Belle",0
+1990-01-27,"Back On The Block","Quincy Jones",590
+1990-04-28,"Please Hammer Don t Hurt Em","M.C. Hammer",0
+1990-06-02,"Poison","Bell Biv Devoe",0
+1990-06-30,"Johnny Gill","Johnny Gill",0
+1990-08-25,"I ll Give All My Love To You","Keith Sweat",0
+1990-12-22,"I m Your Baby Tonight","Whitney Houston",0
+1991-02-02,"The Future","Guy",626
+1991-02-23,"Do Me Again","Freddie Jackson",0
+1991-03-23,"Business As Usual","EPMD",0
+1991-04-06,"Ralph Tresvant","Ralph Tresvant",0
+1991-04-20,"Hi-Five","Hi-Five",0
+1991-04-27,"New Jack City","Soundtrack",0
+1991-06-22,"Power Of Love","Luther Vandross",0
+1991-07-06,"Make Time For Love","Keith Washington",0
+1991-08-03,"Music From Jungle Fever","Stevie Wonder",0
+1991-08-24,"Cooleyhighharmony","Boyz II Men",0
+1991-09-07,"Boyz N The Hood","Soundtrack",0
+1991-10-05,"Can You Stop The Rain","Peabo Bryson",0
+1991-10-19,"Good Woman","Gladys Knight",0
+1991-10-26,"Different Lifestyles","BeBe",0
+1991-11-09,"As Raw As Ever","Shabba Ranks",0
+1991-11-16,"Forever My Lady","Jodeci",0
+1991-11-23,"Apocalypse 91. . .The Enemy Strikes Black","Public Enemy",0
+1991-12-07,"Diamonds","Prince And The N.P.G.",0
+1991-12-14,"Death Certificate","Ice Cube",648
+1992-01-04,"Dangerous","Michael Jackson",0
+1992-02-01,"Keep It Comin","Keith Sweat",0
+1992-04-18,"Private Line","Gerald Levert",0
+1992-05-02,"The Comfort Zone","Vanessa Williams",0
+1992-05-09,"Funky Divas","En Vogue",693
+1992-05-23,"Totally Krossed Out","Kris Kross",0
+1992-06-20,"Dead Serious","Das EFX",0
+1992-08-08,"Boomerang","Soundtrack",0
+1992-10-03,"What s The 411?","Mary J. Blige",0
+1992-11-07,"Bobby","Bobby Brown",0
+1992-12-05,"The Predator","Ice Cube",712
+1992-12-12,"The Bodyguard","Whitney Houston",0
+1993-02-06,"The Chronic","Dr. Dre",718
+1993-03-13,"19 Naughty III","Naughty By Nature",0
+1993-03-27,"Till Death Do Us Part","Geto Boys",0
+1993-04-10,"Lose Control","Silk",0
+1993-04-17,"14 Shots To The Dome","LL Cool J",0
+1993-05-22,"Down With The King","Run-D.M.C.",0
+1993-05-29,"Fever For Da Flavor","H-Town",0
+1993-06-05,"janet.","Janet Jackson",0
+1993-06-26,"Menace II Society","Soundtrack",0
+1993-08-07,"Black Sunday","Cypress Hill",741
+1993-09-04,"The World Is Yours","Scarface",0
+1993-09-18,"Music Box","Mariah Carey",0
+1993-10-02,"Toni Braxton","Toni Braxton",0
+1993-10-16,"187 He Wrote","Spice 1",0
+1993-11-06,"It s On (Dr. Dre 187um) Killa (EP)","Eazy-E",0
+1993-11-13,"Get In Where You Fit In","Too Short",0
+1993-11-27,"Midnight Marauders","A Tribe Called Quest",733
+1993-12-04,"Shock Of The Hour","MC Ren",0
+1993-12-11,"Doggy Style","Snoop Doggy Dogg",0
+1993-12-25,"Lethal Injection","Ice Cube",0
+1994-01-22,"Diary Of A Mad Band","Jodeci",0
+1994-02-05,"12 Play","R. Kelly",0
+1994-04-09,"Above The Rim","Soundtrack",0
+1994-06-11,"Nuttin But Love","Heavy D",0
+1994-06-25,"Regulate...G Funk Era","Warren G",0
+1994-07-16,"Get Up On It","Keith Sweat",0
+1994-07-30,"Funkdafied","Da Brat",0
+1994-08-06,"We Come Strapped","MC Eiht Featuring CMW",0
+1994-09-10,"Changing Faces","Changing Faces",0
+1994-09-17,"II","Boyz II Men",0
+1994-10-01,"Rhythm Of Love","Anita Baker",0
+1994-10-29,"Jason s Lyric","Soundtrack",0
+1994-11-05,"Murder Was The Case","Soundtrack",0
+1994-11-26,"The Icon Is Love","Barry White",0
+1994-12-03,"Tical","Method Man",0
+1994-12-10,"Dare Iz A Darkside","Redman",0
+1994-12-17,"My Life","Mary J. Blige",770
+1994-12-24,"Miracles -- The Holiday Album","Kenny G",0
+1995-02-11,"Cocktails","Too Short",0
+1995-03-11,"Safe + Sound","DJ Quik",0
+1995-04-01,"Me Against The World","2Pac",0
+1995-04-29,"Friday","Soundtrack",0
+1995-06-10,"Tales From The Hood","Soundtrack",0
+1995-06-17,"Poverty s Paradise","Naughty By Nature",0
+1995-07-08,"HIStory: Past, Present And Future Book 1","Michael Jackson",0
+1995-07-22,"Operation Stackola","Luniz",0
+1995-08-05,"The Show, The After Party, The Hotel","Jodeci",0
+1995-08-12,"E. 1999 Eternal","Bone Thugs-N-Harmony",0
+1995-09-02,"The Show","Soundtrack",0
+1995-10-14,"4,5,6","Kool G Rap",0
+1995-10-21,"Daydream","Mariah Carey",0
+1995-10-28,"Doe Or Die","AZ",0
+1995-11-04,"Dead Presidents","Soundtrack",0
+1995-11-18,"Dogg Food","Tha Dogg Pound",0
+1995-12-02,"R. Kelly","R. Kelly",0
+1995-12-16,"Waiting To Exhale","Soundtrack",0
+1996-02-17,"Str8 Off Tha Streetz Of Muthaphu**in Compton","Eazy-E",0
+1996-03-02,"All Eyez On Me","2Pac",0
+1996-03-23,"The Score","Fugees",834
+1996-04-13,"The Coming","Busta Rhymes",0
+1996-04-20,"The Resurrection","Geto Boys",0
+1996-05-11,"Sunset Park","Soundtrack",0
+1996-06-08,"Gettin It (Album Number Ten)","Too Short",0
+1996-06-15,"Gettin' It (Album Number Ten)","Too Short",0
+1996-06-22,"Legal Drug Money","Lost Boyz",0
+1996-06-29,"The Nutty Professor","Soundtrack",0
+1996-07-06,"Secrets","Toni Braxton",0
+1996-07-13,"Keith Sweat","Keith Sweat",0
+1996-07-20,"It Was Written","Nas",0
+1996-08-17,"Beats, Rhymes And Life","A Tribe Called Quest",0
+1996-09-14,"ATLiens","OutKast",0
+1996-09-28,"Home Again","New Edition",0
+1996-10-05,"Another Level","BLACKstreet",0
+1996-11-09,"Bow Down","Westside Connection",0
+1996-11-16,"Ironman","Ghostface Killah",0
+1996-11-23,"The Don Killuminati: The 7 Day Theory","Makaveli",0
+1996-11-30,"Tha Doggfather","Snoop Dogg",0
+1996-12-07,"Hell On Earth","Mobb Deep",0
+1996-12-28,"Muddy Waters","Redman",0
+1997-01-04,"The Preacher s Wife","Soundtrack",0
+1997-02-01,"Rhyme","Soundtrack",0
+1997-02-15,"Gridlock d","Soundtrack",0
+1997-03-01,"Baduizm","Erykah Badu",879
+1997-03-29,"The Untouchable","Scarface",0
+1997-04-12,"Life After Death","The Notorious B.I.G.",885
+1997-05-10,"Share My World","Mary J. Blige",0
+1997-06-07,"I m Bout It","Soundtrack",0
+1997-06-14,"God s Property","God s Property From Kirk Franklin s Nu Nation",0
+1997-06-28,"Wu-Tang Forever","Wu-Tang Clan",898
+1997-08-02,"Supa Dupa Fly","Missy Misdemeanor Elliott",878
+1997-08-09,"No Way Out","Puff Daddy",0
+1997-08-16,"The Art Of War","Bone Thugs-N-Harmony",0
+1997-09-20,"Ghetto D","Master P",0
+1997-10-04,"When Disaster Strikes...","Busta Rhymes",0
+1997-10-11,"Evolution","Boyz II Men",0
+1997-10-18,"Soul Food","Soundtrack",0
+1997-10-25,"Gang Related -- The Soundtrack","Soundtrack",0
+1997-11-08,"The Firm -- The Album","NAS Escobar, Foxy Brown, AZ And Nature",0
+1997-11-15,"Harlem World","Mase",0
+1997-11-22,"The 18th Letter","Rakim",0
+1997-11-29,"Unpredictable","Mystikal",0
+1997-12-06,"Live","Erykah Badu",0
+1997-12-13,"R U Still Down? [Remember Me]","2Pac",0
+1998-01-10,"My Way","Usher",0
+1998-01-31,"Money, Power","The Lox",0
+1998-02-07,"All I Have In This World, Are... My Balls And My Word","Young Bleed",0
+1998-02-14,"Anytime","Brian McKnight",0
+1998-03-07,"Charge It 2 Da Game","Silkk The Shocker",0
+1998-03-21,"My Homies","Scarface",0
+1998-04-04,"Life Or Death","C-Murder",0
+1998-04-11,"The Pillage","Cappadonna",0
+1998-04-18,"Moment Of Truth","Gang Starr",941
+1998-04-25,"I Got The Hook-Up!","Soundtrack",0
+1998-05-16,"Capital Punishment","Big Punisher",0
+1998-05-23,"There s One In Every Family","Fiend",0
+1998-06-06,"It s Dark And Hell Is Hot","DMX",0
+1998-06-20,"MP Da Last Don","Master P",0
+1998-07-18,"El Nino","Def Squad",0
+1998-07-25,"Am I My Brothers Keeper","Kane",0
+1998-08-01,"N.O.R.E.","Noreaga",0
+1998-08-08,"Jermaine Dupri Presents -- Life In 1472 The Original Soundtrack","Jermaine Dupri",0
+1998-08-22,"Da Game Is To Be Sold, Not To Be Told","Snoop Dogg",0
+1998-09-12,"The Miseducation Of Lauryn Hill","Lauryn Hill",914
+1998-10-17,"Vol. 2... Hard Knock Life","Jay-Z",0
+1998-11-28,"R.","R. Kelly",0
+1998-12-05,"Tical 2000: Judgement Day","Method Man",0
+1998-12-12,"Greatest Hits","2Pac",0
+1998-12-26,"Doc s Da Name 2000","Redman",0
+1999-01-02,"Ghetto Fabulous","Mystikal",0
+1999-01-09,"Flesh Of My Flesh Blood Of My Blood","DMX",0
+1999-02-06,"Made Man","Silkk The Shocker",0
+1999-02-13,"Chyna Doll","Foxy Brown",0
+1999-03-06,"Da Next Level","Mr. Serv-on",0
+1999-03-13,"Fanmail","TLC",983
+1999-03-27,"Bossalinie","C-Murder",0
+1999-04-10,"The Slim Shady LP","Eminem",978
+1999-04-24,"I Am...","NAS",0
+1999-05-15,"Ruff Ryders: Ryde Or Die Vol. 1","Various Artists",0
+1999-05-29,"No Limit Top Dogg","Snoop Dogg",0
+1999-06-05,"In Our Lifetime","Eightball",0
+1999-06-12,"The Art Of Storytelling","Slick Rick",0
+1999-06-19,"Venni Vetti Vecci","Ja Rule",0
+1999-07-10,"Da Real World","Missy Misdemeanor Elliott",0
+1999-07-17,"Beneath The Surface","GZA/Genius",0
+1999-07-24,"Street Life","Fiend",0
+1999-07-31,"Can t Stay Away","Too Short",0
+1999-08-14,"Guerrilla Warfare","Hot Boys",0
+1999-08-21,"Coming Of Age","Memphis Bleek",0
+1999-08-28,"Violator The Album","Various Artists",0
+1999-09-04,"Mary","Mary J. Blige",973
+1999-09-11,"Forever","Puff Daddy",0
+1999-10-02,"Let There Be... EVE--Ruff Ryders First Lady","Eve",0
+1999-10-16,"Blackout!","Method Man/Redman",0
+1999-11-13,"Only God Can Judge Me","Master P",0
+1999-11-20,"Tha Block Is Hot","Lil Wayne",0
+1999-12-04,"Dr. Dre -- 2001","Dr. Dre",0
+1999-12-25,"Born Again","The Notorious B.I.G.",0
+2000-01-01,"Tha G-Code","Juvenile",0
+2000-01-08,"...And Then There Was X","DMX",0
+2000-01-15,"Vol. 3... Life And Times Of S. Carter","Jay-Z",0
+2000-02-05,"J.E. Heartbreak","Jagged Edge",0
+2000-02-12,"Voodoo","D Angelo",998
+2000-03-18,"BTNHResurrection","Bone Thugs-N-Harmony",0
+2000-03-25,"Life Story","Black Rob",0
+2000-04-08,"War","Ice Cube",0
+2000-04-15,"Romeo Must Die -- The Album","Soundtrack",0
+2000-04-22,"Yeeeah Baby","Big Punisher",0
+2000-04-29,"Unrestricted","Da Brat",0
+2000-05-06,"My Name Is Joe","Joe",0
+2000-05-13,"The Heat","Toni Braxton",0
+2000-05-20,"Goodfellas","504 Boyz",0
+2000-06-03,"I Got That Work","Big Tymers",0
+2000-06-10,"The Marshall Mathers LP","Eminem",996
+2000-07-08,"Anarchy","Busta Rhymes",0
+2000-07-15,"The Notorious KIM","Lil Kim",0
+2000-07-22,"Ryde Or Die Vol. II","Various Artists",0
+2000-07-29,"Nutty Professor II: The Klumps","Soundtrack",0
+2000-08-05,"Country Grammar","Nelly",0
+2000-09-16,"DJ Clue Presents: Backstage -- Mixtape (Music Inspired By The Film)","DJ Clue",0
+2000-09-23,"Trapped In Crime","C-Murder",0
+2000-09-30,"G.O.A.T. Featuring James T. Smith: The Greatest Of All Time","LL Cool J",0
+2000-10-14,"Let s Get Ready","Mystikal",0
+2000-10-28,"Rule 3:36","Ja Rule",0
+2000-11-18,"The Dynasty Roc La Familia (2000 -- )","Jay-Z",0
+2000-11-25,"tp-2.com","R. Kelly",0
+2000-12-09,"The W","Wu-Tang Clan",0
+2000-12-23,"The Understanding","Memphis Bleek",0
+2000-12-30,"Restless","Xzibit",0
+2001-01-06,"Tha Last Meal","Snoop Dogg",0
+2001-02-03,"Hotshot","Shaggy",0
+2001-02-10,"J.Lo","Jennifer Lopez",0
+2001-03-17,"DJ Clue? The Professional 2","DJ Clue",0
+2001-03-24,"Scorpion","Eve",0
+2001-03-31,"Force Of Nature","Tank",0
+2001-04-07,"Part III","112",0
+2001-04-14,"Until The End Of Time","2Pac",0
+2001-05-12,"All For You","Janet",0
+2001-05-19,"Survivor","Destiny's Child",0
+2001-06-02,"Miss E...So Addictive","Missy Misdemeanor Elliott",0
+2001-06-09,"Malpractice","Redman",0
+2001-06-23,"Free City","St. Lunatics",0
+2001-07-07,"Devil's Night","D-12",0
+2001-07-14,"Songs In A Minor","Alicia Keys",1050
+2001-08-25,"Eternal","The Isley Brothers Featuring Ronald Isley AKA Mr. Biggs",0
+2001-09-08,"Now","Maxwell",0
+2001-09-15,"No More Drama","Mary J. Blige",1072
+2001-09-29,"The Blueprint","Jay-Z",1039
+2001-10-20,"Pain Is Love","Ja Rule",0
+2001-11-10,"The Great Depression","DMX",0
+2001-11-17,"Invincible","Michael Jackson",0
+2001-12-15,"Word Of Mouf","Ludacris",0
+2001-12-29,"Infamy","Mobb Deep",0
+2002-01-05,"Stillmatic","Nas",0
+2002-02-16,"State Property","Soundtrack",0
+2002-02-23,"J To Tha L-O! The Remixes","Jennifer Lopez",0
+2002-03-09,"The Rebirth Of Kirk Franklin","Kirk Franklin",0
+2002-03-23,"Full Moon","Brandy",0
+2002-03-30,"B2K","B2K",0
+2002-04-06,"The Best Of Both Worlds","R. Kelly & Jay-Z",0
+2002-04-20,"Ashanti","Ashanti",0
+2002-05-18,"Hood Rich","Big Tymers",0
+2002-05-25,"Juslisen (Just Listen)","Musiq",0
+2002-06-01,"Come Home With Me","Cam'ron",0
+2002-06-08,"The Eminem Show","Eminem",1080
+2002-07-13,"Nellyville","Nelly",0
+2002-08-10,"500 Degreez","Lil Wayne",0
+2002-08-24,"The Fix","Scarface",1103
+2002-09-07,"Lord Willin'","Clipse",0
+2002-09-14,"Eve-olution","Eve",0
+2002-10-05,"Ludacris Presents Disturbing Tha Peace: Golden Grain","Various Artists",0
+2002-10-12,"Voyage To India","India.Arie",0
+2002-10-19,"Man vs Machine","Xzibit",0
+2002-11-02,"10","LL Cool J",0
+2002-11-16,"8 Mile","Soundtrack",0
+2002-11-30,"The Blueprint 2: The Gift And The Curse","Jay-Z",0
+2002-12-14,"Better Dayz","2Pac",0
+2002-12-28,"I Care 4 U","Aaliyah",0
+2003-01-04,"God's Son","Nas",0
+2003-02-22,"Get Rich Or Die Tryin'","50 Cent",1127
+2003-03-08,"Chocolate Factory","R. Kelly",0
+2003-04-12,"Diplomatic Immunity","Cam'ron Presents The Diplomats",0
+2003-04-26,"The Senior","Ginuwine",0
+2003-05-03,"The New Breed","50 Cent",0
+2003-05-17,"AttenCHUN!","Bone Crusher",0
+2003-05-24,"Body Kiss","The Isley Brothers Featuring Ronald Isley",0
+2003-06-07,"Mississippi: The Album","David Banner",0
+2003-06-21,"2 Fast 2 Furious","Soundtrack",0
+2003-06-28,"Dance With My Father","Luther Vandross",0
+2003-07-12,"Dangerously In Love","Beyonce",0
+2003-07-19,"Chapter II","Ashanti",0
+2003-08-02,"Bad Boys II","Soundtrack",0
+2003-08-30,"State Property Presents: The Chain Gang Vol. II","Various Artists",0
+2003-09-06,"The Neptunes Present... Clones","Various Artists",0
+2003-09-13,"Love & Life","Mary J. Blige",0
+2003-09-27,"Drankin' Patnaz","YoungBloodZ",0
+2003-10-04,"Grand Champ","DMX",0
+2003-10-11,"Speakerboxxx/The Love Below","OutKast",1113
+2003-10-18,"Too Hot For T.V.","Bad Boy's Da Band",0
+2003-10-25,"Chicken*N*Beer","Ludacris",0
+2003-11-01,"Hard","Jagged Edge",0
+2003-11-15,"Stroke Of Genius","Gerald Levert",0
+2003-11-22,"Blood In My Eye","Ja Rule",0
+2003-11-29,"The Black Album","Jay-Z",1125
+2003-12-20,"The Diary Of Alicia Keys","Alicia Keys",0
+2004-01-31,"Soulful","Ruben Studdard",0
+2004-02-14,"Kamikaze","Twista",0
+2004-02-28,"The College Dropout","Kanye West",1153
+2004-03-13,"Tough Luv","Young Gunz",0
+2004-03-27,"Bad Boy's 10th Anniversary... The Hits","Various Artists",0
+2004-04-03,"Split Personality","Cassidy",0
+2004-04-10,"Confessions","Usher",1187
+2004-05-08,"Hurt No More","Mario Winans",0
+2004-05-15,"D12 World","D12",0
+2004-05-29,"Living Legends","8Ball & MJG",0
+2004-06-05,"Tical 0: The Prequel","Method Man",0
+2004-07-03,"To The 5 Boroughs","Beastie Boys",0
+2004-07-10,"Kiss Of Death","Jadakiss",0
+2004-07-17,"The Hunger For More","Lloyd Banks",0
+2004-08-14,"True Story","Terror Squad",0
+2004-08-28,"Godfather Buried Alive","Shyne",0
+2004-09-04,"The Hard Way","213",0
+2004-09-11,"Happy People/U Saved Me","R. Kelly",0
+2004-09-18,"Beautifully Human: Words And Sounds Vol. 2","Jill Scott",0
+2004-09-25,"My Everything","Anita Baker",0
+2004-10-02,"Suit","Nelly",0
+2004-10-16,"Goodies","Ciara",0
+2004-11-20,"Thug Matrimony: Married To The Streets","Trick Daddy",0
+2004-11-27,"Encore","Eminem",0
+2004-12-11,"Destiny Fulfilled","Destiny's Child",0
+2004-12-18,"Urban Legend","T.I.",0
+2004-12-25,"The Red Light District","Ludacris",0
+2005-01-01,"Loyal To The Game","2Pac",0
+2005-01-15,"Get Lifted","John Legend",1219
+2005-02-05,"The Documentary","The Game",0
+2005-03-12,"O","Omarion",0
+2005-03-19,"The Massacre","50 Cent",0
+2005-04-16,"The B. Coming","Beanie Sigel",0
+2005-04-23,"The First Lady","Faith Evans",0
+2005-04-30,"The Emancipation Of Mimi","Mariah Carey",0
+2005-05-07,"Who Is Mike Jones?","Mike Jones",0
+2005-05-14,"Disturbing Tha Peace Presents Bobby Valentino","Bobby Valentino",0
+2005-06-04,"Album II","Kem",0
+2005-06-11,"Be","Common",1207
+2005-06-25,"Monkey Business","The Black Eyed Peas",0
+2005-07-09,"Boyz N Da Hood","Boyz N Da Hood",0
+2005-07-16,"U.S.A.: United State Of Atlanta","Ying Yang Twins",0
+2005-07-23,"TP.3 Reloaded","R. Kelly",0
+2005-08-06,"Now 19","Various Artists",0
+2005-08-13,"Let's Get It: Thug Motivation 101","Young Jeezy",0
+2005-09-10,"Harlem: Diary Of A Summer","Jim Jones",0
+2005-09-17,"Late Registration","Kanye West",1193
+2005-10-01,"The Peoples Champ","Paul Wall",0
+2005-10-08,"So Amazing: An All-Star Tribute To Luther Vandross","Various Artists",0
+2005-10-15,"Most Known Unknown","Three 6 Mafia",0
+2005-10-22,"The Day After","Twista",0
+2005-10-29,"Unplugged","Alicia Keys",0
+2005-11-05,"Trill","Bun-B",0
+2005-11-12,"#1's","Destiny's Child",0
+2005-12-10,"What The Game's Been Missing!","Juelz Santana",0
+2005-12-17,"Chris Brown","Chris Brown",0
+2005-12-24,"Tha Carter II","Lil' Wayne",0
+2005-12-31,"Disturbing Tha Peace","Ludacris And DTP",0
+2006-01-07,"The Breakthrough","Mary J. Blige",0
+2006-02-18,"In My Mind","Heather Headley",0
+2006-03-04,"Ghetto Classics","Jaheim",0
+2006-03-18,"In My Own Words","Ne-Yo",0
+2006-03-25,"Reality Check","Juvenile",0
+2006-04-01,"My Ghetto Report Card","E-40",0
+2006-04-08,"3121","Prince",0
+2006-04-15,"King","T.I.",1261
+2006-05-13,"Director","Avant",0
+2006-05-20,"Blood Money","Mobb Deep",0
+2006-05-27,"Baby Makin' Music","The Isley Brothers Featuring Ronald Isley",0
+2006-06-03,"Killa Season","Cam'Ron",0
+2006-06-24,"New Joc City","Yung Joc",0
+2006-07-01,"The Big Bang","Busta Rhymes",0
+2006-07-08,"Journey Of A Gemini","Donell Jones",0
+2006-07-15,"Testimony: Vol. 1, Life & Relationship","India.Arie",0
+2006-07-29,"Pimpalation","Pimp C",0
+2006-08-12,"LeToya","LeToya",0
+2006-08-19,"Year Of The Dog...Again","DMX",0
+2006-08-26,"Port Of Miami","Rick Ross",0
+2006-09-02,"The Phoenix","Lyfe Jennings",0
+2006-09-09,"Idlewild (Soundtrack)","OutKast",0
+2006-09-16,"Best Thang Smokin'","Young Dro",0
+2006-09-23,"B'Day","Beyonce",0
+2006-09-30,"FutureSex/LoveSounds","Justin Timberlake",0
+2006-10-14,"20 Y.O.","Janet Jackson",0
+2006-10-21,"The Makings Of Me","Monica",0
+2006-10-28,"Rotten Apple","Lloyd Banks",0
+2006-11-04,"Press Play","Diddy",0
+2006-11-11,"Once Again","John Legend",0
+2006-11-18,"Like Father, Like Son","Birdman & Lil Wayne",0
+2006-11-25,"Hustler's P.O.M.E. (Product Of My Environment)","Jim Jones",0
+2006-12-02,"Doctor's Advocate","The Game",0
+2006-12-09,"Kingdom Come","Jay-Z",0
+2006-12-23,"Ciara: The Evolution","Ciara",0
+2006-12-30,"The Inspiration","Young Jeezy",0
+2007-01-06,"Hip Hop Is Dead","Nas",0
+2007-01-13,"21","Omarion",0
+2007-01-20,"Dreamgirls","Soundtrack",0
+2007-02-10,"Late Night Special","Pretty Ricky",0
+2007-02-17,"The Evolution Of Robin Thicke","Robin Thicke",0
+2007-03-03,"In My Songs","Gerald Levert",0
+2007-03-31,"Luvanmusiq","Musiq Soulchild",0
+2007-04-07,"Veteran","Marques Houston",0
+2007-04-14,"Buck The World","Young Buck",0
+2007-05-12,"Ain't Nothing Like Me","Joe",0
+2007-05-19,"Because Of You","Ne-Yo",0
+2007-05-26,"Special Occasion","Bobby Valentino",0
+2007-06-02,"Sex Love & Pain","Tank",0
+2007-06-09,"Cold Summer: The Authorized Mixtape","Young Jeezy Presents U.S.D.A.",0
+2007-06-16,"Double Up","R. Kelly",0
+2007-06-23,"Epiphany","T-Pain",0
+2007-06-30,"From Nothin' To Somethin'","Fabolous",0
+2007-07-21,"T.I. Vs T.I.P.","T.I.",0
+2007-08-11,"Planet Earth","Prince",0
+2007-08-18,"Finding Forever","Common",0
+2007-08-25,"Underground Kingz","UGK",1311
+2007-09-08,"One Man Band Man","Swizz Beatz",0
+2007-09-15,"Hustlenomics","Yung Joc",0
+2007-09-22,"Hustlenomic$","Yung Joc",0
+2007-09-29,"Graduation","Kanye West",1278
+2007-10-13,"Just Like You","Keyshia Cole",0
+2007-10-20,"Back Of My Lac'","J. Holiday",0
+2007-11-03,"The Art Of Love & War","Angie Stone",0
+2007-11-17,"After Tonight","Will Downing",0
+2007-11-24,"American Gangster","Jay-Z",1290
+2007-12-01,"As I Am","Alicia Keys",0
+2008-01-05,"Growing Pains","Mary J. Blige",0
+2008-02-02,"Love Behind The Melody","Raheem DeVaughn",0
+2008-03-15,"Discipline","Janet",0
+2008-03-29,"Trilla","Rick Ross",0
+2008-04-05,"Welcome To The Dollhouse","Danity Kane",0
+2008-04-12,"DAY26","DAY26",0
+2008-04-19,"Still Da Baddest","Trina",0
+2008-04-26,"All I Feel","Ray J",0
+2008-05-03,"E=MC2","Mariah Carey",0
+2008-05-17,"Lyfe Change","Lyfe Jennings",0
+2008-05-31,"Just Me","Keith Sweat",0
+2008-06-07,"II Trill","Bun-B",0
+2008-06-14,"Here I Stand","Usher",0
+2008-06-28,"Tha Carter III","Lil Wayne",1318
+2008-08-02,"Untitled","Nas",0
+2008-08-23,"Lessons In Love","Lloyd",0
+2008-09-06,"Raw Footage","Ice Cube",0
+2008-09-13,"LAX","The Game",0
+2008-09-20,"The Recession","Young Jeezy",0
+2008-10-04,"Year Of The Gentleman","Ne-Yo",0
+2008-10-11,"Fearless","Jazmine Sullivan",0
+2008-10-18,"Paper Trail","T.I.",1352
+2008-11-15,"Evolver","John Legend",0
+2008-11-29,"Thr33 Ringz","T-Pain",0
+2008-12-06,"I Am...Sasha Fierce","Beyonce",0
+2008-12-13,"808s & Heartbreak","Kanye West",1322
+2008-12-27,"onmyradio","Musiq Soulchild",0
+2009-01-03,"A Different Me","Keyshia Cole",0
+2009-01-31,"Notorious","Soundtrack",0
+2009-02-21,"Intuition","Jamie Foxx",0
+2009-02-28,"The Rebirth","Bobby Valentino",0
+2009-03-07,"Uncle Charlie","Charlie Wilson",0
+2009-03-28,"Love VS Money","The-Dream",0
+2009-04-11,"In A Perfect World...","Keri Hilson",0
+2009-04-18,"Lotus Flow3r/MPLSoUND/Elix3r","Prince/Bria Valente",0
+2009-04-25,"The Last Kiss","Jadakiss",0
+2009-05-02,"Forever In A Day","DAY26",0
+2009-05-09,"Deeper Than Rap","Rick Ross",0
+2009-05-30,"Crime Pays","Cam'Ron",0
+2009-06-06,"Relapse","Eminem",0
+2009-06-27,"The E.N.D.","The Black Eyed Peas",0
+2009-07-11,"A Man's Thoughts","Ginuwine",0
+2009-07-18,"Jeremih","Jeremih",0
+2009-07-25,"BLACKsummers'night","Maxwell",1366
+2009-08-15,"Loso's Way (Soundtrack)","Fabolous",0
+2009-08-22,"I Get Around","K'Jon",0
+2009-09-05,"Turn Me Loose","Ledisi",0
+2009-09-12,"Lady Love","LeToya",0
+2009-09-19,"I Look To You","Whitney Houston",0
+2009-09-26,"The Blueprint 3","Jay-Z",1379
+2009-10-17,"Memoirs Of An Imperfect Angel","Mariah Carey",0
+2009-11-14,"Michael Jackson's This Is It (Soundtrack)","Michael Jackson",0
+2009-12-05,"Before I Self-Destruct","50 Cent",0
+2009-12-12,"Rated R","Rihanna",0
+2009-12-26,"Graffiti","Chris Brown",0
+2010-01-02,"The Element Of Freedom","Alicia Keys",0
+2010-01-09,"Stronger withEach Tear","Mary J. Blige",0
+2010-02-20,"Rebirth","Lil Wayne",0
+2010-02-27,"Soldier Of Love","Sade",0
+2010-03-27,"Battle Of The Sexes","Ludacris",0
+2010-04-03,"Here I Am","Marvin Sapp",0
+2010-04-10,"Still Standing","Monica",0
+2010-04-17,"Raymond V Raymond","Usher",0
+2010-05-15,"B.o.B Presents: The Adventures Of Bobby Ray","B.o.B",0
+2010-05-22,"Pulse","Toni Braxton",0
+2010-06-05,"Distant Relatives","Nas & Damian Marley",0
+2010-06-26,"Goon Affiliated","Plies",0
+2010-07-03,"Thank Me Later","Drake",1416
+2010-07-10,"Recovery","Eminem",0
+2010-09-11,"Back To Me","Fantasia",0
+2010-10-02,"Passion, Pain & Pleasure","Trey Songz",0
+2010-10-16,"I Am Not A Human Being","Lil Wayne",0
+2010-11-20,"Merry Christmas II You","Mariah Carey",0
+2010-11-27,"Man On The Moon II: The Legend Of Mr. Rager","Kid Cudi",0
+2010-12-04,"Loud","Rihanna",0
+2010-12-11,"My Beautiful Dark Twisted Fantasy","Kanye West",1393
+2010-12-25,"No Mercy","T.I.",0
+2011-01-01,"Michael","Michael Jackson",0
+2011-01-22,"Pink Friday","Nicki Minaj",0
+2011-03-19,"Late Nights & Early Mornings","Marsha Ambrosius",0
+2011-03-26,"Lasers","Lupe Fiasco",0
+2011-04-09,"F.A.M.E.","Chris Brown",0
+2011-04-16,"Rolling Papers","Wiz Khalifa",0
+2011-05-21,"Hot Sauce Committee Part Two","Beastie Boys",0
+2011-05-28,"Goblin","Tyler, The Creator",0
+2011-06-11,"Maybach Music Group Presents: Self Made: Vol. I","Various Artists",0
+2011-06-25,"All 6's & 7's","Tech N9ne",0
+2011-07-02,"Hell: The Sequel (EP)","Bad Meets Evil",0
+2011-07-09,"The Light Of The Sun","Jill Scott",0
+2011-07-16,"4","Beyonce",1458
+2011-08-27,"Watch The Throne","Jay Z Kanye West",1435
+2011-09-10,"The R.E.D. Album","Game",0
+2011-09-17,"Tha Carter IV","Lil Wayne",0
+2011-10-15,"Cole World: The Sideline Story","J. Cole",0
+2011-11-19,"Ambition","Wale",0
+2011-11-26,"Blue Slide Park","Mac Miller",0
+2011-12-03,"Take Care","Drake",1440
+2011-12-10,"Talk That Talk","Rihanna",0
+2011-12-24,"Lioness: Hidden Treasures","Amy Winehouse",0
+2012-01-07,"TM:103: Hustlerz Ambition","Young Jeezy",0
+2012-02-11,"Soul 2","Seal",0
+2012-03-10,"Careless World: Rise Of The Last King","Tyga",0
+2012-04-07,"The OF Tape Vol. 2","Odd Future",0
+2012-04-14,"The MF Life","Melanie Fiona",0
+2012-04-21,"Pink Friday: Roman Reloaded","Nicki Minaj",0
+2012-05-19,"Strange Clouds","B.o.B",0
+2012-05-26,"This Is How I Feel","Tank",0
+2012-06-23,"Live From The Underground","Big K.R.I.T.",0
+2012-06-30,"Looking 4 Myself","Usher",0
+2012-07-14,"Maybach Music Group Presents: Self Made 2","Various Artists",0
+2012-07-21,"Fortune","Chris Brown",0
+2012-07-28,"channel ORANGE","Frank Ocean",1473
+2012-08-04,"Life Is Good","Nas",0
+2012-08-18,"God Forgives, I Don't","Rick Ross",0
+2012-09-01,"Based On A T.R.U. Story","2 Chainz",0
+2012-09-08,"Chapter V","Trey Songz",0
+2012-09-15,"Welcome To: Our House","Slaughterhouse",0
+2012-10-06,"Kanye West Presents GOOD Music Cruel Summer","Various Artists",0
+2012-10-13,"Food & Liquor II: The Great American Rap Album Pt. 1","Lupe Fiasco",0
+2012-10-20,"Kaleidoscope Dream","Miguel",1477
+2012-10-27,"The Heist","Macklemore & Ryan Lewis",0
+2012-11-03,"Two Eleven","Brandy",0
+2012-11-10,"good kid, m.A.A.d city","Kendrick Lamar",1474
+2012-11-17,"Dreams And Nightmares","Meek Mill",0
+2012-11-24,"R.E.D","Ne-Yo",0
+2012-12-01,"Trilogy","The Weeknd",0
+2012-12-08,"Unapologetic","Rihanna",0
+2012-12-15,"Girl On Fire","Alicia Keys",0
+2012-12-22,"O.N.I.F.C.","Wiz Khalifa",0
+2012-12-29,"Jesus Piece","The Game",0
+2013-01-05,"Trouble Man: Heavy Is The Head","T.I.",0
+2013-02-02,"Long.Live.A$AP","A$AP Rocky",0
+2013-02-16,"Love, Charlie","Charlie Wilson",0
+2013-02-23,"No Love Lost","Joe Budden",0
+2013-03-30,"All Around The World","Mindless Behavior",0
+2013-04-06,"The 20/20 Experience","Justin Timberlake",0
+2013-05-04,"Indicud","Kid Cudi",0
+2013-05-11,"Side Effects Of You","Fantasia",0
+2013-06-08,"Excuse My French","French Montana",0
+2013-07-06,"Yeezus","Kanye West",1513
+2013-07-13,"The Gifted","Wale",0
+2013-07-20,"Born Sinner","J. Cole",0
+2013-07-27,"Magna Carta... Holy Grail","Jay Z",0
+2013-08-17,"Blurred Lines","Robin Thicke",0
+2013-08-31,"Rebellious Soul","K. Michelle",0
+2013-09-07,"Three Kings","TGT",0
+2013-09-14,"Hall Of Fame","Big Sean",0
+2013-09-21,"Love And War","Tamar Braxton",0
+2013-09-28,"Kiss Land","The Weeknd",0
+2013-10-05,"MMG: Self Made 3","Various Artists",0
+2013-10-12,"Nothing Was The Same","Drake",1530
+2013-10-19,"The 20/20 Experience (2 Of 2)","Justin Timberlake",0
+2013-11-23,"The Marshall Mathers LP 2","Eminem",0
+2013-12-28,"Beyonce","Beyonce",0
+2014-02-22,"Love, Marriage & Divorce","Toni Braxton & Babyface",0
+2014-03-15,"Oxymoron","ScHoolboy Q",0
+2014-03-22,"Mastermind","Rick Ross",0
+2014-04-05,"My Krazy Life","YG",1577
+2014-04-12,"G I R L","Pharrell Williams",0
+2014-05-03,"Testimony","August Alsina",0
+2014-05-10,"Honest","Future",0
+2014-05-17,"The New Classic","Iggy Azalea",0
+2014-05-24,"Strangeulation","Tech N9ne Collabos",0
+2014-05-31,"Xscape","Michael Jackson",0
+2014-06-14,"Me. I Am Mariah... The Elusive Chanteuse","Mariah Carey",0
+2014-06-21,"Animal Ambition: An Untamed Desire To Win","50 Cent",0
+2014-07-05,"A.K.A.","Jennifer Lopez",0
+2014-07-12,"These Things Happen","G-Eazy",0
+2014-07-19,"Trigga","Trey Songz",0
+2014-08-09,"Nobodys Smiling","Common",0
+2014-08-16,"PARTYNEXTDOOR Two","PARTYNEXTDOOR",0
+2014-08-30,"Stronger","Tank",0
+2014-09-06,"Blacc Hollywood","Wiz Khalifa",0
+2014-09-13,"Promise To Love: Album IV","Kem",0
+2014-09-20,"Seen It All: The Autobiography","Jeezy",0
+2014-09-27,"Souled Out","Jhene Aiko",0
+2014-10-04,"X","Chris Brown",0
+2014-10-18,"ART OFFICIAL AGE","Prince",0
+2014-10-25,"Point Of No Return","Keyshia Cole",0
+2014-11-01,"Blood Moon: Year Of The Wolf","The Game",0
+2014-11-08,"Paperwork","T.I.",0
+2014-11-22,"VII","Teyana Taylor",0
+2014-11-29,"Cadillactica","Big K.R.I.T.",0
+2014-12-13,"ShadyXV","Various Artists",0
+2014-12-20,"The London Sessions","Mary J. Blige",0
+2014-12-27,"2014 Forest Hills Drive","J. Cole",0
+2015-01-03,"The Pinkprint","Nicki Minaj",0
+2015-01-24,"SremmLife","Rae Sremmurd",0
+2015-02-07,"B4.Da.$$","Joey Bada$$",0
+2015-02-14,"Non-Fiction","Ne-Yo",0
+2015-02-21,"Full Speed","Kid Ink",0
+2015-02-28,"If You're Reading This It's Too Late","Drake",0
+2015-03-14,"Dark Sky Paradise","Big Sean",0
+2015-03-28,"Empire: Original Soundtrack From Season 1","Soundtrack",0
+2015-04-04,"To Pimp A Butterfly","Kendrick Lamar",0
+2015-04-18,"The Album About Nothing","Wale",0
+2015-04-25,"Furious 7","Soundtrack",0
+2015-05-02,"Cherry Bomb","Tyler, The Creator",0
+2015-05-09,"Love Story","YelaWolf",0
+2015-05-23,"Special Effects","Tech N9ne",0
+2015-05-30,"BUSH","Snoop Dogg",0
+2015-06-06,"Hollywood: A Story Of A Dozen Roses","Jamie Foxx",0
+2015-06-13,"AT.LONG.LAST.A$AP","A$AP Rocky",0
+2015-07-11,"Coming Home","Leon Bridges",0
+2015-07-18,"Dreams Worth More Than Money","Meek Mill",0
+2015-08-01,"Black Rose","Tyrese",0
+2015-08-08,"DS2","Future",0
+2015-08-15,"Woman","Jill Scott",0
