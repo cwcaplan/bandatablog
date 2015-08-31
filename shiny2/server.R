@@ -170,30 +170,40 @@ shinyServer(
         #output$albums <- renderDataTable({
         #    pickedYear()[,2:3]
         #    })
+        albSing <- reactive({input$albSing})
         pickList <- reactive({input$pickList})
-        avg <- reactive({weeksAvg(input$year, input$top5ChartPick)})
+        top5ChartPick <- reactive({
+            if(albSing()==1){
+                input$pick1
+            } else if (albSing()==2) {
+                input$pick2
+            } else if (albSing()==3) {
+                input$pick3
+            }
+            
+        })
+        avg <- reactive({weeksAvg(input$year, top5ChartPick())})
         output$avg <- renderText({if(pickList()==1|pickList()==2){
             paste("Avg Weeks At #1:", avg())
-            }})
-        top5 <- reactive({weeksTop5(input$year, input$top5ChartPick)})
+        }})
+        top5 <- reactive({weeksTop5(input$year, top5ChartPick())})
         output$top5 <- renderText({top5()})
-        winners <- reactive({yearBoth(input$year, input$top5ChartPick)})
+        winners <- reactive({yearBoth(input$year, top5ChartPick())})
         output$winners <- renderText({winners()})
-        losers <- reactive({yearBB(input$year, input$top5ChartPick)})
+        losers <- reactive({yearBB(input$year, top5ChartPick())})
         output$losers <- renderText({losers()})
-        bbList <- reactive({lookAtChart(input$year, input$top5ChartPick)})
+        bbList <- reactive({lookAtChart(input$year, top5ChartPick())})
         output$bbList <- renderUI({
             HTML(if(pickList()==2){paste(bbList(), collapse = '')})
             })
-        pjList <- reactive({lookAtPJ(input$year, input$top5ChartPick)})
+        pjList <- reactive({lookAtPJ(input$year, top5ChartPick())})
         output$bbList <- renderUI({
             HTML(if(pickList()==3){paste(pjList(), collapse = '')})
         })
         chartChoice <- reactive({input$chartChoice})
         output$chartChoice <- renderText({chartChoice()})
-        albSing <- reactive({input$albSing})
         output$percPlot <- renderPlot({
-        if(albSing()=="Albums"){
+        if(albSing()==1){
             par(lwd=2, cex=1.05)
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
@@ -213,7 +223,7 @@ shinyServer(
                 lines(rbYearStats$year, rbYearStats$percentage, col="darkorchid3")
                 points(rbYearStats$year, rbYearStats$percentage, col="darkorchid4")
             }
-        } else if (albSing()=="Singles") {
+        } else if (albSing()==2) {
             par(lwd=2, cex=1.05)
             plot(h1YearStats$year, h1YearStats$percentage, 
                  type="n", main="Percentage of Chart-Toppers on Critic's List",
@@ -235,7 +245,7 @@ shinyServer(
                 lines(mrsYearStats$year, mrsYearStats$percentage, col="firebrick3")
                 points(mrsYearStats$year, mrsYearStats$percentage, col="firebrick4")
             }
-        } else if (albSing()=="Both") {
+        } else if (albSing()==3) {
             par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,7,2))
             plot(yearStats$year, yearStats$percentage, 
                  type="n", main="Albums",
@@ -278,7 +288,7 @@ shinyServer(
         }
         })
         output$numPlotC <- renderPlot({
-            if(albSing()=="Albums"){
+            if(albSing()==1){
                 par(lwd=2, cex=1.05)
                 plot(yearStats$year, yearStats$critPicks, 
                      type="n", main="Number of Chart-Toppers on Critic's List",
@@ -295,7 +305,7 @@ shinyServer(
                     lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
                     points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
                 }
-            } else if (albSing()=="Singles") {
+            } else if (albSing()==2) {
                 par(lwd=2, cex=1.05)
                 plot(h1YearStats$year, h1YearStats$critPicks, 
                      type="n", main="Number of Chart-Toppers on Critic's List",
@@ -316,7 +326,7 @@ shinyServer(
                     lines(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick3")
                     points(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick4")
                 }
-            } else if (albSing()=="Both") {
+            } else if (albSing()==3) {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(4,2,7,2))
                 plot(yearStats$year, yearStats$critPicks, 
                      type="n", main="Albums",
@@ -357,7 +367,7 @@ shinyServer(
             }
         })
         output$numPlotT <- renderPlot({
-            if(albSing()=="Albums") {
+            if(albSing()==1) {
                 par(lwd=2, cex=1.05)
                 plot(yearStats$year, yearStats$total,
                      type="n", main="Number of Chart-Topping Albums in a Given Year", ylim=c(0,43),
@@ -382,7 +392,7 @@ shinyServer(
                     lines(rbYearStats$year, rbYearStats$critPicks, col="darkorchid3")
                     points(rbYearStats$year, rbYearStats$critPicks, col="darkorchid4")
                 }
-            } else if (albSing()=="Singles") {
+            } else if (albSing()==2) {
                 par(lwd=2, cex=1.05)
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$total,
@@ -420,7 +430,7 @@ shinyServer(
                     lines(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick3")
                     points(mrsYearStats$year, mrsYearStats$critPicks, col="firebrick4")
                 }
-            } else if (albSing()=="Both") {
+            } else if (albSing()==3) {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
                 plot(yearStats$year, yearStats$total,
                      type="n", main="Albums", ylim=c(0,43),
@@ -479,7 +489,7 @@ shinyServer(
             }
         })
         output$weeksPlotAvg <- renderPlot({
-            if(albSing()=="Albums") {
+            if(albSing()==1) {
                 par(lwd=2, cex=1.05)
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$avgWeeks, 
@@ -502,7 +512,7 @@ shinyServer(
                     lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
                     points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
                 }
-            } else if (albSing()=="Singles") {
+            } else if (albSing()==2) {
                 par(lwd=2, cex=1.05)
                 plot(h1YearStats$year, h1YearStats$avgWeeks, 
                      type="n", main="Average Weeks At Number One",
@@ -523,7 +533,7 @@ shinyServer(
                     lines(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick3")
                     points(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick4")
                 }
-            } else if (albSing()=="Both") {
+            } else if (albSing()==3) {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$avgWeeks, 
@@ -576,7 +586,7 @@ shinyServer(
             }
         })
         output$weeksPlot <- renderPlot({
-            if(albSing()=="Albums") {
+            if(albSing()==1) {
                 par(lwd=2, cex=1.05)
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,50), 
@@ -606,7 +616,7 @@ shinyServer(
                     lines(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid3")
                     points(rbYearStats$year, rbYearStats$avgWeeks, col="darkorchid4")
                 }
-            } else if (albSing()=="Singles") {
+            } else if (albSing()==2) {
                 par(lwd=2, cex=1.05)
                 plot(h1YearStats$year, h1YearStats$mostWeeks, ylim=c(0,30), 
                      main="Weeks At Number One", xlab="Year", ylab="Weeks")
@@ -636,7 +646,7 @@ shinyServer(
                     lines(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick3")
                     points(mrsYearStats$year, mrsYearStats$avgWeeks, col="firebrick4")
                 }
-            } else if (albSing()=="Both") {
+            } else if (albSing()==3) {
                 par(lwd=2, cex=1.05, mfrow=c(1,2), mar=c(2,2,7,2))
                 if(any(chartChoice()==2)) {
                     plot(yearStats$year, yearStats$mostWeeks, ylim=c(0,50), 
@@ -704,7 +714,7 @@ shinyServer(
             }
         })
         output$RanGarTayPlot <- renderPlot({
-            if(any(chartChoice()==2) & albSing()=="Albums") {
+            if(any(chartChoice()==2) & albSing()==1) {
                 par(lwd=2, cex=1.05)
                 plot(RanGarTayStats$year, RanGarTayStats$Garth,
                      type="n", main="Percentage of the Year that Randy Travis, Garth Brooks, or Taylor Swift were #1",

@@ -3,16 +3,32 @@ shinyUI(pageWithSidebar(
     sidebarPanel(
         #verbatimTextOutput("chartChoice"),
         h4('Look At A Specific Year'),
-        sliderInput('year', '', value = 2000,
-                    min = 1984, max = 2015, step = 1,),
-        selectInput("top5ChartPick", "Pick a Chart:", 
-                    choices=list("Billboard 200"=1, "Billboard Hot 100 Singles"=2,
-                                 "Country"=3, "Country Singles"=4,
-                                 "R&B/Hip-Hop"=5, "R&B/Hip-Hop Singles"=6,
-                                 "Mainstream Rock Singles"=7),
-                    selected=1),
+        sliderInput('year', label='', value = 2000,
+                    min = 1984, max = 2015, step = 1),
+        conditionalPanel(
+            condition = "input.albSing == 1",
+            selectInput("pick1", "Pick a Chart:", 
+                        choices=list("Billboard 200"=1,
+                                     "Country"=3,
+                                     "R&B/Hip-Hop"=5))
+        ),
+        conditionalPanel(
+            condition = "input.albSing == 2",
+            selectInput("pick2", "Pick a Chart:", 
+                        choices=list("Billboard Hot 100 Singles"=2,
+                                     "Country Singles"=4,
+                                     "R&B/Hip-Hop Singles"=6,
+                                     "Mainstream Rock Singles"=7))
+        ),
+        conditionalPanel(
+            condition = "input.albSing == 3",
+            selectInput("pick3", "Pick a Chart:", 
+                        choices=list("Billboard 200"=1, "Billboard Hot 100 Singles"=2,
+                                     "Country"=3, "Country Singles"=4,
+                                     "R&B/Hip-Hop"=5, "R&B/Hip-Hop Singles"=6,
+                                     "Mainstream Rock Singles"=7))
+        ),
         radioButtons('pickList', "", c("Summary"=1, "Sales"=2, "Critics"=3), inline=T),
-        #h5('Avg Weeks at #1:'),
         textOutput("avg"),
         htmlOutput("bbList"),
         htmlOutput("pjList"),
@@ -30,8 +46,9 @@ shinyUI(pageWithSidebar(
             is an aggregated Best Albums of the Year list from several hundred critics.  
             It was started by Robert Christgau in 1971 and has been curated by the 
             Village Voice ever since."),
-        radioButtons('albSing', "", c("Albums"="Albums", "Singles"="Singles", "Both"="Both"), 
+        radioButtons('albSing', "", c("Albums"=1, "Singles"=2, "Both"=3), 
                      inline=T),
+        
         checkboxGroupInput('chartChoice', "Compare Critic's List To:", 
                            c("Billboard 200"="1", "Country"="2", "R&B/Hip-Hop" = "3", 
                              "Mainstream Rock" = "4"),
