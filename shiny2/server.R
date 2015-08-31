@@ -197,7 +197,7 @@ shinyServer(
             HTML(if(pickList()==2){paste(bbList(), collapse = '')})
             })
         pjList <- reactive({lookAtPJ(input$year, top5ChartPick())})
-        output$bbList <- renderUI({
+        output$pjList <- renderUI({
             HTML(if(pickList()==3){paste(pjList(), collapse = '')})
         })
         chartChoice <- reactive({input$chartChoice})
@@ -733,6 +733,49 @@ shinyServer(
                 
             }
             
+        })
+        output$topComm <- renderText({if(input$commentary==1){
+            "Choose below whether you'd like to check out the Albums charts or the Singles
+            charts or compare them side by side.  You can also select which charts (Country, Hip-Hop, etc.)
+            you'd like to show on the graphs.  The left sidebar provides more detailed information 
+            about each chart for a specific year of your choosing."
+        }
+        })
+        output$percPlotComm <- renderText({if(input$commentary==1){
+            "The original goal of this analysis was to compare what percentage of 
+            chart-topping records also made it on the end-of-year critic's pick list.
+            As you can see, on the Albums chart this number has gotten less variable over time, 
+            but there also seems to be a lower percentage of agreement between the critics 
+            and the public over time.  Interestingly, it seems to be the opposite with 
+            Singles.  Hard to say exactly why that is, but my guess is that it has something
+            to do with the trend towards digital sales and away from buying full albums."
+            }
+        })
+        output$numPlotCComm <- renderText({if(input$commentary==1){
+            "It's interesting to notice that it seems like, although critics in the 80's and
+            early 90's selected a higher percentage of chart-toppers for their list, they
+            actually selected a smaller number of albums.  The only explanation for this
+            is shown in the graph below, which is where we'll discuss it further.  It's also 
+            interesting that in the 80's critics picked very few chart-topping albums,
+            but a ton of chart-topping singles.  For instance, in 1986 they picked only one
+            #1 album (Janet Jackson's 'Control') for the list, but eight different #1 singles!
+            Looking at the genre-specific charts, it seems Country gets no respect at all 
+            (aside from Dwight Yoakam and Steve Earle during the 'Great Nashville Credibility 
+            Crisis of 1986') until at least the late 90's.  R&B and Hip-Hop, on the other hand, is 
+            surprisingly steady over the years, except of a precipitous drop in the late 90's.
+            This is a bit baffling when consider that those were some of the 
+            golden years for popular Hip-Hop.  However, when you look at the Singles charts
+            individually, you notice that they were dominated by the likes of Usher, Deborah
+            Cox and host of others who have never been critical darlings, while classic tracks
+            like Wu-Tang's 'Triumph' or Outkast's 'Rosa Parks' never quite made it #1."
+        }
+        })
+        output$numPlotTComm <- renderText({if(input$commentary==1){
+            "Here is the answer to our riddle from the graph before.  How did the critics 
+            give honors to 50% of 1984's chart-topping albums, while only pick two albums?
+            Because only four albums hit #1 in 1984.  Similarly, only seven albums 
+            reached #1 in 1987, with three of them landing on the critic's list."
+        }
         })
     }
 )

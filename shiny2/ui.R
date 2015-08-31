@@ -34,7 +34,7 @@ shinyUI(pageWithSidebar(
         htmlOutput("pjList"),
         h4('Most Weeks at #1:'),
         verbatimTextOutput("top5"),
-        h4('albums on both lists:'),
+        h4('records on both lists:'),
         verbatimTextOutput("winners"),
         h4('chart-toppers that the critics snubbed:'),
         verbatimTextOutput("losers")
@@ -46,15 +46,18 @@ shinyUI(pageWithSidebar(
             is an aggregated Best Albums of the Year list from several hundred critics.  
             It was started by Robert Christgau in 1971 and has been curated by the 
             Village Voice ever since."),
+        radioButtons('commentary', "", c("Show Commentary"=1, "Hide commentary"=2), inline=T),
+        textOutput("topComm"),
         radioButtons('albSing', "", c("Albums"=1, "Singles"=2, "Both"=3), 
-                     inline=T),
-        
+                     inline=T, selected=3),
         checkboxGroupInput('chartChoice', "Compare Critic's List To:", 
                            c("Billboard 200"="1", "Country"="2", "R&B/Hip-Hop" = "3", 
                              "Mainstream Rock" = "4"),
                            selected="1", inline=T),
         plotOutput("percPlot"),
+        textOutput("percPlotComm"),
         plotOutput("numPlotC"),
+        textOutput("numPlotCComm"),
         plotOutput("numPlotT"),
         plotOutput("weeksPlotAvg"),
         plotOutput("weeksPlot"),
